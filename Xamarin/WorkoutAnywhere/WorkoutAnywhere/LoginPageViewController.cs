@@ -12,7 +12,8 @@ namespace WorkoutAnywhere
 	{
 		public LoginPageViewController (IntPtr handle) : base (handle)
 		{
-			
+            PasswordText.Placeholder = "Password";
+            UsernameText.Placeholder = "Username";			
 		}
 		partial void LoginButtonClick (UIButton sender)
 		{
