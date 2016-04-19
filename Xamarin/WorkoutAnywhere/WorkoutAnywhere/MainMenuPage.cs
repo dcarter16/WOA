@@ -9,6 +9,10 @@ namespace WorkoutAnywhere
 	{
 		public MainMenuPage (IntPtr handle) : base (handle)
 		{
+		
+
+		
 		}
+
 	}
 }

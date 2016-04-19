@@ -32,7 +32,19 @@ namespace WorkoutAnywhere
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton testButton { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
 		UITextField UsernameText { get; set; }
+
+		[Action ("LoginButtonClick:")]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		partial void LoginButtonClick (UIButton sender);
+
+		[Action ("tempTest:")]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		partial void tempTest (UIButton sender);
 
 		void ReleaseDesignerOutlets ()
 		{
@@ -51,6 +63,10 @@ namespace WorkoutAnywhere
 			if (tempText != null) {
 				tempText.Dispose ();
 				tempText = null;
+			}
+			if (testButton != null) {
+				testButton.Dispose ();
+				testButton = null;
 			}
 			if (UsernameText != null) {
 				UsernameText.Dispose ();
