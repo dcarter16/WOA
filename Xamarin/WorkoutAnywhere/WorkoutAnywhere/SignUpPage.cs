@@ -13,9 +13,16 @@ namespace WorkoutAnywhere
 		public SignUpPage (IntPtr handle) : base (handle)
 		{
             Email.Placeholder = "Email";
+            Email.ClearButtonMode = UITextFieldViewMode.WhileEditing;
+            
             UsernameChoice.Placeholder = "Username";
+            UsernameChoice.ClearButtonMode = UITextFieldViewMode.WhileEditing;
+
             PasswordChoice.Placeholder = "Password";
+            PasswordChoice.ClearButtonMode = UITextFieldViewMode.WhileEditing;
+
             PasswordConfirm.Placeholder = "Password";
+            PasswordConfirm.ClearButtonMode = UITextFieldViewMode.WhileEditing;
 		}
 		public void trySubmit()
 		{
