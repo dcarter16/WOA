@@ -12,6 +12,10 @@ namespace WorkoutAnywhere
 	{
 		public SignUpPage (IntPtr handle) : base (handle)
 		{
+            Email.Placeholder = "Email";
+            UsernameChoice.Placeholder = "Username";
+            PasswordChoice.Placeholder = "Password";
+            PasswordConfirm.Placeholder = "Password";
 		}
 		public void trySubmit()
 		{
