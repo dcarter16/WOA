@@ -12,17 +12,7 @@ namespace WorkoutAnywhere
 	{
 		public SignUpPage (IntPtr handle) : base (handle)
 		{
-            Email.Placeholder = "Email";
-            Email.ClearButtonMode = UITextFieldViewMode.WhileEditing;
             
-            UsernameChoice.Placeholder = "Username";
-            UsernameChoice.ClearButtonMode = UITextFieldViewMode.WhileEditing;
-
-            PasswordChoice.Placeholder = "Password";
-            PasswordChoice.ClearButtonMode = UITextFieldViewMode.WhileEditing;
-
-            PasswordConfirm.Placeholder = "Password";
-            PasswordConfirm.ClearButtonMode = UITextFieldViewMode.WhileEditing;
 		}
 		public void trySubmit()
 		{
@@ -31,7 +21,7 @@ namespace WorkoutAnywhere
 				string email = Email.Text;
 				string user = UsernameChoice.Text;
 				string pass = PasswordChoice.Text;
-				HttpWebRequest request = WebRequest.Create ("http://workoutanywhere.net/DatabaseConnection_iOS_App/AddUser.php?user=('" + user + "')&pass=('" + pass + "')&email=('" + email + "')") as HttpWebRequest;
+				HttpWebRequest request = WebRequest.Create ("http://workoutanywhere.net/DatabaseConnection_iOS_App/AddUser.php?user=" + user + "&pass=" + pass + "&email=" + email) as HttpWebRequest;
 				using (HttpWebResponse response = request.GetResponse () as HttpWebResponse) {
 					StreamReader reader = new StreamReader (response.GetResponseStream ());
 					string result = reader.ReadLine ();

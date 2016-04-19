@@ -1,10 +1,10 @@
 # Version: 9.6.1.9 (cycle6-xi-c6sr3: 5f11db8)
-# [first argument, ignore] # /Users/TylerHarding/Documents/GitHub/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/mtouch.exe
+# [first argument, ignore] # /Volumes/CS_Students/jburge16/CS472/Xamarin/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/mtouch.exe
 /Library/Frameworks/Xamarin.iOS.framework/Versions/9.6.1.9/bin/mtouch \
 	--cache \
-	/Users/TylerHarding/Documents/GitHub/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/mtouch-cache \
+	/Volumes/CS_Students/jburge16/CS472/Xamarin/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/mtouch-cache \
 	--sim \
-	/Users/TylerHarding/Documents/GitHub/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/bin/iPhoneSimulator/Debug/WorkoutAnywhere.app \
+	/Volumes/CS_Students/jburge16/CS472/Xamarin/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/bin/iPhoneSimulator/Debug/WorkoutAnywhere.app \
 	--executable \
 	WorkoutAnywhere \
 	--fastdev \
@@ -13,13 +13,13 @@
 	--sdkroot \
 	/Applications/Xcode.app/Contents/Developer \
 	--sdk \
-	9.3 \
+	9.1 \
 	--targetver \
 	9.1 \
 	--new-refcount \
 	--abi=i386 \
 	--symbollist \
-	/Users/TylerHarding/Documents/GitHub/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/mtouch-symbols.list \
+	/Volumes/CS_Students/jburge16/CS472/Xamarin/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/mtouch-symbols.list \
 	--dsym=no \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
@@ -33,4 +33,4 @@
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
 	--target-framework \
 	"Xamarin.iOS,v1.0" \
-	/Users/TylerHarding/Documents/GitHub/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/bin/iPhoneSimulator/Debug//WorkoutAnywhere.exe \
+	/Volumes/CS_Students/jburge16/CS472/Xamarin/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/bin/iPhoneSimulator/Debug//WorkoutAnywhere.exe \

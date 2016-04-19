@@ -26,7 +26,7 @@ namespace WorkoutAnywhere
 		{
 			string username = UsernameText.Text;
 			string password = PasswordText.Text;
-			HttpWebRequest request = WebRequest.Create ("http://workoutanywhere.net/DatabaseConnection_iOS_App/Login.php?user=('" + username + "')&pass=('" + password + "')") as HttpWebRequest;
+			HttpWebRequest request = WebRequest.Create ("http://workoutanywhere.net/DatabaseConnection_iOS_App/connection.php?user=" + username + "&pass=" + password) as HttpWebRequest;
 			using (HttpWebResponse response = request.GetResponse () as HttpWebResponse) {
 			StreamReader reader = new StreamReader (response.GetResponseStream ());
 				string result = reader.ReadLine ();
