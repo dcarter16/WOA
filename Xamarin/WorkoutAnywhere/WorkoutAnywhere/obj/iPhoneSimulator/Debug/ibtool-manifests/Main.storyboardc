@@ -23,21 +23,6 @@
 				<integer>7</integer>
 			</dict>
 		</array>
-		<key>329</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>329</string>
-				</array>
-				<key>message</key>
-				<string>Modal segues are deprecated since iOS 8.0</string>
-				<key>type</key>
-				<string>IBDeprecated</string>
-				<key>type-value</key>
-				<integer>7</integer>
-			</dict>
-		</array>
 		<key>377</key>
 		<array>
 			<dict>
@@ -104,21 +89,6 @@
 				<key>affected-objects</key>
 				<array>
 					<string>543</string>
-				</array>
-				<key>message</key>
-				<string>Modal segues are deprecated since iOS 8.0</string>
-				<key>type</key>
-				<string>IBDeprecated</string>
-				<key>type-value</key>
-				<integer>7</integer>
-			</dict>
-		</array>
-		<key>627</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>627</string>
 				</array>
 				<key>message</key>
 				<string>Modal segues are deprecated since iOS 8.0</string>

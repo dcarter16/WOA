@@ -11,8 +11,8 @@ using UIKit;
 
 namespace WorkoutAnywhere
 {
-	[Register ("SignUpPage")]
-	partial class SignUpPage
+	[Register ("SignUpController")]
+	partial class SignUpController
 	{
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]

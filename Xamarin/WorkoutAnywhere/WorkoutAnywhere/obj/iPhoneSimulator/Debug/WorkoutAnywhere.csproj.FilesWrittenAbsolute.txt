@@ -77,3 +77,5 @@
 /Users/TylerHarding/Documents/GitHub/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/bin/iPhoneSimulator/Debug/WorkoutAnywhere.exe
 /Users/TylerHarding/Documents/GitHub/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/WorkoutAnywhere.exe
 /Users/TylerHarding/Documents/GitHub/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/WorkoutAnywhere.exe.mdb
+/Volumes/CS_Students/jburge16/CS472/Xamarin/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/MainMenuController.nib
+/Volumes/CS_Students/jburge16/CS472/Xamarin/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/SignUpController.nib

@@ -42,7 +42,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue id="627" destination="19" kind="modal"/>
                                     <action selector="LoginButtonClick:" destination="BYZ-38-t0r" id="1174" eventType="touchUpInside"/>
                                 </connections>
                             </button>
@@ -53,15 +52,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1037" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="152" y="360" width="82" height="30"/>
-                                <state key="normal" title="Testing">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="tempTest:" destination="BYZ-38-t0r" id="1152" eventType="touchUpInside"/>
-                                </connections>
-                            </button>
                         </subviews>
                     </view>
                     <connections>
@@ -70,7 +60,6 @@
                         <outlet property="SignupButton" destination="175" id="name-outlet-175"/>
                         <outlet property="LoginButton" destination="176" id="name-outlet-176"/>
                         <outlet property="tempText" destination="1017" id="name-outlet-1017"/>
-                        <outlet property="testButton" destination="1037" id="name-outlet-1037"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -79,7 +68,7 @@
         </scene>
         <scene sceneID="11">
             <objects>
-                <viewController id="12" sceneMemberID="viewController" customClass="SignUpPage" storyboardIdentifier="SignUpPage">
+                <viewController id="12" sceneMemberID="viewController" customClass="SignUpController" storyboardIdentifier="SignUpController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9"/>
                         <viewControllerLayoutGuide type="bottom" id="10"/>
@@ -105,17 +94,17 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="173" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="Confirm Password" clearButtonMode="whileEditing">
-                                <rect key="frame" x="82" y="331" width="254" height="30"/>
+                                <rect key="frame" x="82" y="338" width="254" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="174" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="162" y="401" width="64" height="30"/>
+                                <rect key="frame" x="175" y="434" width="64" height="30"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue id="329" destination="19" kind="modal"/>
+                                    <action selector="Signup_TouchUpInside:" destination="12" id="1185" eventType="touchUpInside"/>
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" id="677" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
@@ -130,6 +119,13 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="1188" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" textAlignment="center">
+                                <rect key="frame" x="82" y="388" width="254" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                     </view>
                     <connections>
@@ -138,6 +134,7 @@
                         <outlet property="PasswordChoice" destination="172" id="name-outlet-172"/>
                         <outlet property="PasswordConfirm" destination="173" id="name-outlet-173"/>
                         <outlet property="Signup" destination="174" id="name-outlet-174"/>
+                        <outlet property="ErrorText" destination="1188" id="name-outlet-1188"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -146,7 +143,7 @@
         </scene>
         <scene sceneID="18">
             <objects>
-                <viewController id="19" sceneMemberID="viewController" customClass="MainMenuPage" storyboardIdentifier="MainMenuPage">
+                <viewController id="19" sceneMemberID="viewController" customClass="MainMenuController" storyboardIdentifier="MainMenuController" restorationIdentifier="MainMenuController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="16"/>
                         <viewControllerLayoutGuide type="bottom" id="17"/>

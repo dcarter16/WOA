@@ -5,14 +5,10 @@ using UIKit;
 
 namespace WorkoutAnywhere
 {
-	partial class MainMenuPage : UIViewController
+	partial class MainMenuController : UIViewController
 	{
-		public MainMenuPage (IntPtr handle) : base (handle)
+		public MainMenuController(IntPtr handle) : base (handle)
 		{
-		
-
-		
 		}
-
 	}
 }

@@ -49,8 +49,8 @@
       <LogicalName>Main.storyboardc/LoginPageViewController.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/MainMenuPage.nib">
-      <LogicalName>Main.storyboardc/MainMenuPage.nib</LogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/MainMenuController.nib">
+      <LogicalName>Main.storyboardc/MainMenuController.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/NutritionPage.nib">
@@ -61,8 +61,8 @@
       <LogicalName>Main.storyboardc/ProfilePage.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/SignUpPage.nib">
-      <LogicalName>Main.storyboardc/SignUpPage.nib</LogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/SignUpController.nib">
+      <LogicalName>Main.storyboardc/SignUpController.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/WorkoutsPage.nib">
