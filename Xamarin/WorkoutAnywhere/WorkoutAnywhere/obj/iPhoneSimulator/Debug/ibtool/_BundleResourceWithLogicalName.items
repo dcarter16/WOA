@@ -53,6 +53,10 @@
       <LogicalName>Main.storyboardc/MainMenuController.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/NavigationController.nib">
+      <LogicalName>Main.storyboardc/NavigationController.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/NutritionPage.nib">
       <LogicalName>Main.storyboardc/NutritionPage.nib</LogicalName>
       <Optimize>false</Optimize>

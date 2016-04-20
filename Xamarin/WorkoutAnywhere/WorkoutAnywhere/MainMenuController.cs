@@ -7,7 +7,7 @@ namespace WorkoutAnywhere
 {
 	partial class MainMenuController : UIViewController
 	{
-		public MainMenuController (IntPtr handle) : base (handle)
+		public MainMenuController(IntPtr handle) : base (handle)
 		{
 		
 

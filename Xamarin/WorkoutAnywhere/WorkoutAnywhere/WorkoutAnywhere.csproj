@@ -104,10 +104,6 @@
     <Compile Include="LoginPageViewController.designer.cs">
       <DependentUpon>LoginPageViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="SignUpPage.cs" />
-    <Compile Include="SignUpPage.designer.cs">
-      <DependentUpon>SignUpPage.cs</DependentUpon>
-    </Compile>
     <Compile Include="CalendarPage.cs" />
     <Compile Include="CalendarPage.designer.cs">
       <DependentUpon>CalendarPage.cs</DependentUpon>
@@ -127,10 +123,6 @@
     <Compile Include="WorkoutsPage.cs" />
     <Compile Include="WorkoutsPage.designer.cs">
       <DependentUpon>WorkoutsPage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SignUpP.cs" />
-    <Compile Include="SignUpP.designer.cs">
-      <DependentUpon>SignUpP.cs</DependentUpon>
     </Compile>
     <Compile Include="SignUpController.cs" />
     <Compile Include="SignUpController.designer.cs">

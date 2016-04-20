@@ -38,6 +38,10 @@ namespace WorkoutAnywhere
 		[GeneratedCode ("iOS Designer", "1.0")]
 		partial void LoginButtonClick (UIButton sender);
 
+		[Action ("SignUpClick:")]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		partial void SignUpClick (UIButton sender);
+
 		void ReleaseDesignerOutlets ()
 		{
 			if (LoginButton != null) {
