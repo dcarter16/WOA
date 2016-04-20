@@ -132,6 +132,14 @@
     <Compile Include="WorkoutsPage.designer.cs">
       <DependentUpon>WorkoutsPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="WorkoutsMenu.cs" />
+    <Compile Include="WorkoutsMenu.designer.cs">
+      <DependentUpon>WorkoutsMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SampleWorkoutController.cs" />
+    <Compile Include="SampleWorkoutController.designer.cs">
+      <DependentUpon>SampleWorkoutController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
