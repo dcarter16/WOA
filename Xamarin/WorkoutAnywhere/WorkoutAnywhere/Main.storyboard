@@ -47,7 +47,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="1017" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="104" y="291" width="177" height="82"/>
+                                <rect key="frame" x="118" y="61" width="177" height="82"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -157,8 +157,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="177" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="76" y="238" width="94" height="30"/>
-                                <state key="normal" title="Workouts">
+                                <rect key="frame" x="89" y="315" width="94" height="78"/>
+                                <state key="normal" backgroundImage="MainMenuImages/WorkoutButtonImage.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -166,8 +166,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="178" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="191" y="238" width="84" height="30"/>
-                                <state key="normal" title="Nutrition">
+                                <rect key="frame" x="217" y="305" width="91" height="88"/>
+                                <state key="normal" backgroundImage="MainMenuImages/NutritionButtonImage.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -175,8 +175,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="179" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="88" y="296" width="71" height="30"/>
-                                <state key="normal" title="Calendar">
+                                <rect key="frame" x="94" y="407" width="83" height="75"/>
+                                <state key="normal" backgroundImage="MainMenuImages/CalendarButtonImage.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -184,8 +184,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="180" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="191" y="296" width="84" height="30"/>
-                                <state key="normal" title="Community">
+                                <rect key="frame" x="224" y="401" width="91" height="88"/>
+                                <state key="normal" backgroundImage="MainMenuImages/StatsButtonImage.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -207,6 +207,13 @@
                                     <navigationItem title="Menu" id="550"/>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Workout of the day here" lineBreakMode="tailTruncation" minimumFontSize="10" id="1524" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="89" y="222" width="219" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                     </view>
                     <connections>
@@ -366,7 +373,7 @@
         <scene sceneID="1185">
             <objects>
                 <tableViewController id="1186" sceneMemberID="viewController" customClass="WorkoutsMenu" storyboardIdentifier="WorkoutsMenu" title="WorkoutsMenu">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="1187">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="1187">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -375,7 +382,7 @@
                             <outlet property="delegate" destination="1186" id="1189"/>
                         </connections>
                         <navigationBar contentMode="scaleToFill" id="552" translatesAutoresizingMaskIntoConstraints="NO" key="tableHeaderView">
-                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
+                            <rect key="frame" x="-12" y="-7" width="0.0" height="44"/>
                             <items>
                                 <navigationItem title="Workouts" id="553">
                                     <barButtonItem title="Back" id="554" translatesAutoresizingMaskIntoConstraints="NO" key="leftBarButtonItem">
@@ -386,47 +393,6 @@
                                 </navigationItem>
                             </items>
                         </navigationBar>
-                        <sections>
-                            <tableViewSection headerTitle="Lower Body Workout" id="1234">
-                                <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="1235" rowHeight="44">
-                                        <rect key="frame" x="0.0" y="110" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1235" id="1236">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1241" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                                    <rect key="frame" x="38" y="7" width="186" height="30"/>
-                                                    <state key="normal" title="Butt and Thigh Workout">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <connections>
-                                                        <segue id="1304" destination="1247" kind="modal"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="1237" rowHeight="44">
-                                        <rect key="frame" x="0.0" y="154" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1237" id="1238">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="1239" rowHeight="44">
-                                        <rect key="frame" x="0.0" y="198" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1239" id="1240">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
                     </tableView>
                     <connections>
                         <outlet property="WorkoutMenuTable" destination="1187" id="name-outlet-1187"/>
@@ -451,7 +417,7 @@
                             <navigationBar contentMode="scaleToFill" id="1252" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <items>
-                                    <navigationItem title="Butt and Thigh Workout" id="1309" translatesAutoresizingMaskIntoConstraints="NO">
+                                    <navigationItem title="15 Minute Outdoor HIIT Workout" id="1309" translatesAutoresizingMaskIntoConstraints="NO">
                                         <barButtonItem title="Back" id="1310" translatesAutoresizingMaskIntoConstraints="NO" key="leftBarButtonItem">
                                             <connections>
                                                 <segue id="1415" destination="1186" kind="modal"/>
@@ -528,6 +494,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Skill Level:" lineBreakMode="tailTruncation" minimumFontSize="10" id="1523" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="16" y="424" width="85" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <constraints>
                             <constraint id="1420" firstItem="1248" firstAttribute="trailing" secondItem="1419" secondAttribute="trailing"/>
@@ -555,4 +528,13 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedScreenMetrics key="destination" type="retina55"/>
     </simulatedMetricsContainer>
+    <resources>
+        <image name="Images/test.png" width="626" height="626"/>
+        <image name="Images/NutritionButtonImage.jpg" width="626" height="626"/>
+        <image name="Images/WorkoutButtonImage.jpg" width="626" height="626"/>
+        <image name="MainMenuImages/CalendarButtonImage.png" width="50" height="50"/>
+        <image name="MainMenuImages/NutritionButtonImage.png" width="263" height="262"/>
+        <image name="MainMenuImages/StatsButtonImage.jpg" width="626" height="626"/>
+        <image name="MainMenuImages/WorkoutButtonImage.jpg" width="626" height="626"/>
+    </resources>
 </document>

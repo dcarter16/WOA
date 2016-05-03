@@ -142,4 +142,10 @@
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <BundleResource Include="Resources\MainMenuImages\CalendarButtonImage.png" />
+    <BundleResource Include="Resources\MainMenuImages\NutritionButtonImage.png" />
+    <BundleResource Include="Resources\MainMenuImages\StatsButtonImage.jpg" />
+    <BundleResource Include="Resources\MainMenuImages\WorkoutButtonImage.jpg" />
+  </ItemGroup>
 </Project>

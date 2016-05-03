@@ -13,7 +13,7 @@ namespace WorkoutAnywhere
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-			SampleWorkoutVideo.LoadRequest (new NSUrlRequest (new NSUrl ("https://www.youtube.com/embed/-iik1PBHeq8")));
+			SampleWorkoutVideo.LoadRequest (new NSUrlRequest (new NSUrl ("https://www.youtube.com/embed/c-5bQaDtwE0")));
 			SampleWorkoutVideo.ScalesPageToFit = true;
 		}
 
