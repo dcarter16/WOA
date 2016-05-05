@@ -14,30 +14,39 @@ namespace WorkoutAnywhere
 		{
            
 		}
+		public override void ViewDidLoad(){
+			base.ViewDidLoad ();
+		}
+		partial void SignUpClick (UIButton sender)
+		{
+			SignUpPage signUpClickController = this.Storyboard.InstantiateViewController("SignUpPage") as SignUpPage;
+			this.NavigationController.PushViewController (signUpClickController, true);
+		}
+
 		partial void LoginButtonClick (UIButton sender)
 		{
-			tryLogin();
+			int result = tryLogin(UsernameText.Text, PasswordText.Text);
+			if (result == 1) {
+				ErrorText.Text = "Logged In";
+				GoToMainMenu();
+			} else if (result == 0) {
+				ErrorText.Text = "Log In Failed";
+			} else {
+				ErrorText.Text = "ERROR";
+			}
 		}
-		partial void tempTest (UIButton sender)
+		public int tryLogin(string username, string password)
 		{
-			tryLogin();
-		}
-		public void tryLogin()
-		{
-			string username = UsernameText.Text;
-			string password = PasswordText.Text;
-			HttpWebRequest request = WebRequest.Create ("http://workoutanywhere.net/DatabaseConnection_iOS_App/connection.php?user=('" + username + "')&pass=('" + password + "')") as HttpWebRequest;
+			HttpWebRequest request = WebRequest.Create ("http://workoutanywhere.net/DatabaseConnection_iOS_App/PDOUserLogin.php?user=('" + username + "')&pass=('" + password + "')") as HttpWebRequest;
 			using (HttpWebResponse response = request.GetResponse () as HttpWebResponse) {
 			StreamReader reader = new StreamReader (response.GetResponseStream ());
-				string result = reader.ReadLine ();      
-				if (Convert.ToInt32(result) == 1)
-					tempText.Text = "Logged In";
-				else if (Convert.ToInt32(result) == 0)
-					tempText.Text = "Log In Failed";
-				else
-					tempText.Text = "ERROR";
-				tempText.Text += result;                
+				return Convert.ToInt32(reader.ReadLine ());      
 			}                                           
-		}	  
+		}
+		public void GoToMainMenu(){
+			MainMenuPage mainMenuController = this.Storyboard.InstantiateViewController("MainMenuPage") as MainMenuPage;
+			this.NavigationController.PushViewController (mainMenuController, true);
+		}
+
 	}
 }

@@ -20,6 +20,10 @@ namespace WorkoutAnywhere
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
+		UILabel ErrorText { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
 		UITextField PasswordChoice { get; set; }
 
 		[Outlet]
@@ -34,11 +38,19 @@ namespace WorkoutAnywhere
 		[GeneratedCode ("iOS Designer", "1.0")]
 		UITextField UsernameChoice { get; set; }
 
+		[Action ("Signup_TouchUpInside:")]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		partial void Signup_TouchUpInside (UIButton sender);
+
 		void ReleaseDesignerOutlets ()
 		{
 			if (Email != null) {
 				Email.Dispose ();
 				Email = null;
+			}
+			if (ErrorText != null) {
+				ErrorText.Dispose ();
+				ErrorText = null;
 			}
 			if (PasswordChoice != null) {
 				PasswordChoice.Dispose ();

@@ -1,9 +1,12 @@
 ﻿<Properties StartupItem="WorkoutAnywhere.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.1" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../../../../../../Library/Frameworks/Xamarin.iOS.framework/Versions/9.6.1.9/lib/mono/2.1/Xamarin.iOS.Common.targets">
     <Files>
       <File FileName="SampleWorkoutController.cs" Line="17" Column="46" />
       <File FileName="LoginPageViewController.cs" Line="1" Column="1" />
+      <File FileName="WorkoutsMenu.cs" Line="5" Column="1" />
+      <File FileName="../../../../../../../../../Library/Frameworks/Xamarin.iOS.framework/Versions/9.6.1.9/lib/mono/2.1/Xamarin.iOS.Common.targets" Line="1" Column="1" />
+      <File FileName="SignUpPage.cs" Line="29" Column="25" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

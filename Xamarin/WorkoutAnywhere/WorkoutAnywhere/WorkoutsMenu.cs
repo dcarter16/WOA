@@ -2,7 +2,6 @@ using Foundation;
 using System;
 using System.CodeDom.Compiler;
 using UIKit;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -55,6 +54,7 @@ namespace WorkoutAnywhere
 					cell = new UITableViewCell (UITableViewCellStyle.Value1, cellIdentifier);
 				cell.TextLabel.Text = tableItems[indexPath.Row];
 				cell.DetailTextLabel.Text = itemCounts[indexPath.Row];
+				cell.Accessory = UITableViewCellAccessory.DisclosureIndicator;
 				return cell;
 			}
 		}

@@ -16,6 +16,10 @@ namespace WorkoutAnywhere
 	{
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
+		UILabel ErrorText { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
 		UIButton LoginButton { get; set; }
 
 		[Outlet]
@@ -28,26 +32,22 @@ namespace WorkoutAnywhere
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UILabel tempText { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UIButton testButton { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
 		UITextField UsernameText { get; set; }
 
 		[Action ("LoginButtonClick:")]
 		[GeneratedCode ("iOS Designer", "1.0")]
 		partial void LoginButtonClick (UIButton sender);
 
-		[Action ("tempTest:")]
+		[Action ("SignUpClick:")]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		partial void tempTest (UIButton sender);
+		partial void SignUpClick (UIButton sender);
 
 		void ReleaseDesignerOutlets ()
 		{
+			if (ErrorText != null) {
+				ErrorText.Dispose ();
+				ErrorText = null;
+			}
 			if (LoginButton != null) {
 				LoginButton.Dispose ();
 				LoginButton = null;
@@ -59,14 +59,6 @@ namespace WorkoutAnywhere
 			if (SignupButton != null) {
 				SignupButton.Dispose ();
 				SignupButton = null;
-			}
-			if (tempText != null) {
-				tempText.Dispose ();
-				tempText = null;
-			}
-			if (testButton != null) {
-				testButton.Dispose ();
-				testButton = null;
 			}
 			if (UsernameText != null) {
 				UsernameText.Dispose ();
