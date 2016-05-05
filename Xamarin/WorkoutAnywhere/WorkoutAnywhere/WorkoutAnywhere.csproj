@@ -94,13 +94,13 @@
     <None Include="Entitlements.plist" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="ViewController.cs" />
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginPageViewController.cs" />
+    <Compile Include="Main.cs" />
     <Compile Include="LoginPageViewController.designer.cs">
       <DependentUpon>LoginPageViewController.cs</DependentUpon>
     </Compile>

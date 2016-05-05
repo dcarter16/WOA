@@ -108,16 +108,6 @@
                                     <action selector="Signup_TouchUpInside:" destination="12" id="1620" eventType="touchUpInside"/>
                                 </connections>
                             </button>
-                            <navigationBar contentMode="scaleToFill" id="677" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="0.0" y="22" width="414" height="44"/>
-                                <items>
-                                    <navigationItem title="Sign Up" id="678">
-                                        <barButtonItem title="Back" id="679" translatesAutoresizingMaskIntoConstraints="NO" key="leftBarButtonItem">
-                                            <connections/>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="1625" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" textAlignment="center">
                                 <rect key="frame" x="80" y="463" width="254" height="42"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -135,6 +125,7 @@
                         <outlet property="Signup" destination="174" id="name-outlet-174"/>
                         <outlet property="ErrorText" destination="1625" id="name-outlet-1625"/>
                     </connections>
+                    <navigationItem title="Sign Up" id="2770" translatesAutoresizingMaskIntoConstraints="NO" key="navigationItem"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -197,15 +188,6 @@
                                     <action selector="ProfileButton_TouchUpInside:" destination="19" id="2227" eventType="touchUpInside"/>
                                 </connections>
                             </button>
-                            <navigationBar contentMode="scaleToFill" id="549" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="0.0" y="19" width="414" height="44"/>
-                                <items>
-                                    <navigationItem title="Main Menu" id="550"/>
-                                </items>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" none="YES" header="YES"/>
-                                </accessibility>
-                            </navigationBar>
                         </subviews>
                     </view>
                     <connections>
@@ -215,7 +197,7 @@
                         <outlet property="CalendarButton" destination="179" id="name-outlet-179"/>
                         <outlet property="CommunityButton" destination="180" id="name-outlet-180"/>
                     </connections>
-                    <navigationItem title="Main Menu " id="2484" key="navigationItem"/>
+                    <navigationItem id="2773" translatesAutoresizingMaskIntoConstraints="NO" key="navigationItem" title="Main Menu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="21" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -232,19 +214,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" id="760" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                <items>
-                                    <navigationItem title="Profile" id="761">
-                                        <barButtonItem title="Back" id="762" translatesAutoresizingMaskIntoConstraints="NO" key="leftBarButtonItem">
-                                            <connections/>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
+                        <subviews/>
                     </view>
+                    <navigationItem title="Profile" id="2781" translatesAutoresizingMaskIntoConstraints="NO" key="navigationItem"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="194" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -261,20 +233,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" id="823" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                <items>
-                                    <navigationItem title="Nutrition" id="824">
-                                        <barButtonItem title="Back" id="825" translatesAutoresizingMaskIntoConstraints="NO" key="leftBarButtonItem">
-                                            <connections/>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
+                        <subviews/>
                     </view>
                     <connections/>
+                    <navigationItem title="Nutrition" id="2782" translatesAutoresizingMaskIntoConstraints="NO" key="navigationItem"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="201" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -291,19 +253,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" id="864" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                <items>
-                                    <navigationItem title="Community" id="865">
-                                        <barButtonItem title="Back" id="866" translatesAutoresizingMaskIntoConstraints="NO" key="leftBarButtonItem">
-                                            <connections/>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
+                        <subviews/>
                     </view>
+                    <navigationItem title="C" id="2780" translatesAutoresizingMaskIntoConstraints="NO" key="navigationItem"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="208" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -320,19 +272,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" id="953" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                <items>
-                                    <navigationItem title="Calendar" id="954">
-                                        <barButtonItem title="Back" id="955" translatesAutoresizingMaskIntoConstraints="NO" key="leftBarButtonItem">
-                                            <connections/>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
+                        <subviews/>
                     </view>
+                    <navigationItem title="Calendar" id="2777" translatesAutoresizingMaskIntoConstraints="NO" key="navigationItem"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="215" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -490,28 +432,12 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes/>
                             </tableView>
-                            <navigationBar contentMode="scaleToFill" id="2118" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="0.0" y="1" width="414" height="44"/>
-                                <items>
-                                    <navigationItem title="Workout Menu" id="2119">
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" none="YES" header="YES"/>
-                                        </accessibility>
-                                    </navigationItem>
-                                </items>
-                                <constraints>
-                                    <constraint id="2180" firstAttribute="width" constant="414"/>
-                                </constraints>
-                            </navigationBar>
                         </subviews>
-                        <constraints>
-                            <constraint id="2333" firstItem="2115" firstAttribute="trailing" secondItem="2118" secondAttribute="trailing"/>
-                            <constraint id="2334" firstItem="2118" firstAttribute="top" secondItem="2115" secondAttribute="top" constant="1"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="WorkoutMenuTable" destination="2127" id="name-outlet-2127"/>
                     </connections>
+                    <navigationItem title="Workout Categlories" id="2776" translatesAutoresizingMaskIntoConstraints="NO" key="navigationItem"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2116" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
