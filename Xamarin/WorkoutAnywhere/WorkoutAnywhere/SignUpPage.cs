@@ -15,19 +15,24 @@ namespace WorkoutAnywhere
 
 		}
 
-		public void trySubmit (string email, string username, string password)
+		private void trySubmit (string email, string username, string password)
 		{
-			HttpWebRequest request = WebRequest.Create ("http://workoutanywhere.net/DatabaseConnection_iOS_App/PDOAddUser.php?user=" + username + "&pass=" + password + "&email=" + email) as HttpWebRequest;
+			int result = trySignUp (email, username, password);
+			if (result == 1) {
+				ErrorText.Text = "New User Created";
+				GoToMainMenu ();
+			} else if (result == 0) {
+				ErrorText.Text = "Submission Failed";
+			} else if (result == -1) {
+				ErrorText.Text = "This email is already in use";
+			}
+		}
+		private int trySignUp(string email, string username, string password){
+			HttpWebRequest request = WebRequest.Create ("http://workoutanywhere.net/DatabaseConnection_iOS_App/AddUser.php?user=" + username + "&pass=" + password + "&email=" + email) as HttpWebRequest;
 			using (HttpWebResponse response = request.GetResponse () as HttpWebResponse) {
 				StreamReader reader = new StreamReader (response.GetResponseStream ());
 				string result = reader.ReadLine ();
-				if (Convert.ToInt32 (result) == 1) {
-					ErrorText.Text = "New User Created";
-				} else if (Convert.ToInt32 (result) == 0) {
-					ErrorText.Text = "Submission Failed";
-				} else if (Convert.ToInt32 (result) == -1) {
-					ErrorText.Text = "This email is already in use";
-				}
+				return Convert.ToInt32(result);
 			}
 		}
 
@@ -38,6 +43,10 @@ namespace WorkoutAnywhere
 			} else {
 				ErrorText.Text = "Passwords do not match.";			
 			}
+		}
+		private void GoToMainMenu(){
+			MainMenuPage mainMenuController = this.Storyboard.InstantiateViewController("MainMenuPage") as MainMenuPage;
+			this.NavigationController.PushViewController (mainMenuController, true);
 		}
 	}
 }

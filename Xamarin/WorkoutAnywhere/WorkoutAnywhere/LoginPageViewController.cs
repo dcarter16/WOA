@@ -43,7 +43,7 @@ namespace WorkoutAnywhere
 				return Convert.ToInt32(reader.ReadLine ());      
 			}                                           
 		}
-		public void GoToMainMenu(){
+		private void GoToMainMenu(){
 			MainMenuPage mainMenuController = this.Storyboard.InstantiateViewController("MainMenuPage") as MainMenuPage;
 			this.NavigationController.PushViewController (mainMenuController, true);
 		}
