@@ -303,6 +303,7 @@
                             </navigationBar>
                         </subviews>
                     </view>
+                    <connections/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="201" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -396,11 +397,12 @@
                     </tableView>
                     <connections>
                         <outlet property="WorkoutMenuTable" destination="1187" id="name-outlet-1187"/>
+                        <outlet property="NavBar" destination="552" id="name-outlet-552"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1192" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="490" y="-788"/>
+            <point key="canvasLocation" x="500" y="-816"/>
         </scene>
         <scene sceneID="1246">
             <objects>

@@ -19,8 +19,11 @@ namespace WorkoutAnywhere
 		{
 			// Override point for customization after application launch.
 			// If not required for your application you can safely delete this method
-
+			InitializeWorkoutManager();
 			return true;
+		}
+		private void InitializeWorkoutManager(){
+			WorkoutManager.Initialize ();
 		}
 
 		public override void OnResignActivation (UIApplication application)

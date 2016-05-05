@@ -140,6 +140,8 @@
     <Compile Include="SampleWorkoutController.designer.cs">
       <DependentUpon>SampleWorkoutController.cs</DependentUpon>
     </Compile>
+    <Compile Include="MultiMap.cs" />
+    <Compile Include="WorkoutManager.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
