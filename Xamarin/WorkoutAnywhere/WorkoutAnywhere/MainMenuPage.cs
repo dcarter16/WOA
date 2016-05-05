@@ -21,7 +21,6 @@ namespace WorkoutAnywhere
 			i = i.Scale (this.View.Frame.Size);
 			this.View.BackgroundColor = UIColor.FromPatternImage(i); 
 		}
-
 		partial void WorkoutsButton_TouchUpInside (UIButton sender)
 		{
 			WorkoutClassPage workoutClassController = this.Storyboard.InstantiateViewController("WorkoutClassPage") as WorkoutClassPage;
@@ -39,13 +38,17 @@ namespace WorkoutAnywhere
 		}
 		partial void CommunityButton_TouchUpInside (UIButton sender)
 		{
-			CommunityPage communityController = this.Storyboard.InstantiateViewController("CommunityPage") as CommunityPage;
+			SampleWorkoutController communityController = this.Storyboard.InstantiateViewController("SampleWorkoutController") as SampleWorkoutController;
 			this.NavigationController.PushViewController (communityController, true);
 		}
 		partial void ProfileButton_TouchUpInside (UIButton sender)
 		{
 			ProfilePage profileController = this.Storyboard.InstantiateViewController("ProfilePage") as ProfilePage;
 			this.NavigationController.PushViewController (profileController, true);
+		}
+		public void ViewWorkoutButton_TouchInside(UIButton sender){
+			SampleWorkoutController workoutController = this.Storyboard.InstantiateViewController("SampleWorkoutController") as SampleWorkoutController;
+			this.NavigationController.PushViewController (workoutController, true);
 		}
 	}
 }

@@ -25,7 +25,7 @@ namespace WorkoutAnywhere
 
 		partial void LoginButtonClick (UIButton sender)
 		{
-			int result = tryLogin(UsernameText.Text, PasswordText.Text);
+			int result = 1;//tryLogin(UsernameText.Text, PasswordText.Text);
 			if (result == 1) {
 				ErrorText.Text = "Logged In";
 				GoToMainMenu();
