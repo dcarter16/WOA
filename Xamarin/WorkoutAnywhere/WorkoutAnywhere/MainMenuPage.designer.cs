@@ -34,6 +34,26 @@ namespace WorkoutAnywhere
 		[GeneratedCode ("iOS Designer", "1.0")]
 		UIButton WorkoutsButton { get; set; }
 
+		[Action ("CalendarButton_TouchUpInside:")]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		partial void CalendarButton_TouchUpInside (UIButton sender);
+
+		[Action ("CommunityButton_TouchUpInside:")]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		partial void CommunityButton_TouchUpInside (UIButton sender);
+
+		[Action ("NutritionButton_TouchUpInside:")]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		partial void NutritionButton_TouchUpInside (UIButton sender);
+
+		[Action ("ProfileButton_TouchUpInside:")]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		partial void ProfileButton_TouchUpInside (UIButton sender);
+
+		[Action ("WorkoutsButton_TouchUpInside:")]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		partial void WorkoutsButton_TouchUpInside (UIButton sender);
+
 		void ReleaseDesignerOutlets ()
 		{
 			if (CalendarButton != null) {

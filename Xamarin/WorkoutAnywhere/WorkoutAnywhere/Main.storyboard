@@ -113,9 +113,7 @@
                                 <items>
                                     <navigationItem title="Sign Up" id="678">
                                         <barButtonItem title="Back" id="679" translatesAutoresizingMaskIntoConstraints="NO" key="leftBarButtonItem">
-                                            <connections>
-                                                <segue id="700" destination="BYZ-38-t0r" kind="modal"/>
-                                            </connections>
+                                            <connections/>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -160,7 +158,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue id="1232" destination="1186" kind="modal"/>
+                                    <action selector="WorkoutsButton_TouchUpInside:" destination="19" id="2205" eventType="touchUpInside"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="178" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
@@ -169,7 +167,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue id="447" destination="199" kind="modal"/>
+                                    <action selector="NutritionButton_TouchUpInside:" destination="19" id="2218" eventType="touchUpInside"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="179" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
@@ -178,7 +176,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue id="377" destination="213" kind="modal"/>
+                                    <action selector="CalendarButton_TouchUpInside:" destination="19" id="2219" eventType="touchUpInside"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="180" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
@@ -187,7 +185,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue id="405" destination="206" kind="modal"/>
+                                    <action selector="CommunityButton_TouchUpInside:" destination="19" id="2220" eventType="touchUpInside"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="181" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
@@ -196,14 +194,17 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue id="499" destination="192" kind="modal"/>
+                                    <action selector="ProfileButton_TouchUpInside:" destination="19" id="2227" eventType="touchUpInside"/>
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" id="549" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <items>
-                                    <navigationItem title="Menu" id="550"/>
+                                    <navigationItem title="Main Menu" id="550"/>
                                 </items>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" header="YES"/>
+                                </accessibility>
                             </navigationBar>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Workout of the day here" lineBreakMode="tailTruncation" minimumFontSize="10" id="1524" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="89" y="222" width="219" height="21"/>
@@ -226,27 +227,9 @@
             </objects>
             <point key="canvasLocation" x="1156" y="4"/>
         </scene>
-        <scene sceneID="184">
-            <objects>
-                <viewController id="185" sceneMemberID="viewController" customClass="WorkoutsPage" storyboardIdentifier="WorkoutsPage">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="182"/>
-                        <viewControllerLayoutGuide type="bottom" id="183"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="186">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <subviews/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="187" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-117" y="-840"/>
-        </scene>
         <scene sceneID="191">
             <objects>
-                <viewController id="192" sceneMemberID="viewController" customClass="ProfilePage" storyboardIdentifier="ProfilePage">
+                <viewController id="192" sceneMemberID="viewController" customClass="ProfilePage" storyboardIdentifier="ProfilePage" useStoryboardIdentifierAsRestorationIdentifier="YES">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="189"/>
                         <viewControllerLayoutGuide type="bottom" id="190"/>
@@ -261,9 +244,7 @@
                                 <items>
                                     <navigationItem title="Profile" id="761">
                                         <barButtonItem title="Back" id="762" translatesAutoresizingMaskIntoConstraints="NO" key="leftBarButtonItem">
-                                            <connections>
-                                                <segue id="821" destination="19" kind="modal"/>
-                                            </connections>
+                                            <connections/>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -277,7 +258,7 @@
         </scene>
         <scene sceneID="198">
             <objects>
-                <viewController id="199" sceneMemberID="viewController" customClass="NutritionPage" storyboardIdentifier="NutritionPage">
+                <viewController id="199" sceneMemberID="viewController" customClass="NutritionPage" storyboardIdentifier="NutritionPage" useStoryboardIdentifierAsRestorationIdentifier="YES">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="196"/>
                         <viewControllerLayoutGuide type="bottom" id="197"/>
@@ -292,9 +273,7 @@
                                 <items>
                                     <navigationItem title="Nutrition" id="824">
                                         <barButtonItem title="Back" id="825" translatesAutoresizingMaskIntoConstraints="NO" key="leftBarButtonItem">
-                                            <connections>
-                                                <segue id="951" destination="19" kind="modal"/>
-                                            </connections>
+                                            <connections/>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -309,7 +288,7 @@
         </scene>
         <scene sceneID="205">
             <objects>
-                <viewController id="206" sceneMemberID="viewController" customClass="CommunityPage" storyboardIdentifier="CommunityPage">
+                <viewController id="206" sceneMemberID="viewController" customClass="CommunityPage" storyboardIdentifier="CommunityPage" useStoryboardIdentifierAsRestorationIdentifier="YES">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="203"/>
                         <viewControllerLayoutGuide type="bottom" id="204"/>
@@ -324,9 +303,7 @@
                                 <items>
                                     <navigationItem title="Community" id="865">
                                         <barButtonItem title="Back" id="866" translatesAutoresizingMaskIntoConstraints="NO" key="leftBarButtonItem">
-                                            <connections>
-                                                <segue id="907" destination="19" kind="modal"/>
-                                            </connections>
+                                            <connections/>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -340,7 +317,7 @@
         </scene>
         <scene sceneID="212">
             <objects>
-                <viewController id="213" sceneMemberID="viewController" customClass="CalendarPage" storyboardIdentifier="CalendarPage">
+                <viewController id="213" sceneMemberID="viewController" customClass="CalendarPage" storyboardIdentifier="CalendarPage" useStoryboardIdentifierAsRestorationIdentifier="YES">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="210"/>
                         <viewControllerLayoutGuide type="bottom" id="211"/>
@@ -355,9 +332,7 @@
                                 <items>
                                     <navigationItem title="Calendar" id="954">
                                         <barButtonItem title="Back" id="955" translatesAutoresizingMaskIntoConstraints="NO" key="leftBarButtonItem">
-                                            <connections>
-                                                <segue id="1006" destination="19" kind="modal"/>
-                                            </connections>
+                                            <connections/>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -368,39 +343,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="215" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1153" y="936"/>
-        </scene>
-        <scene sceneID="1185">
-            <objects>
-                <tableViewController id="1186" sceneMemberID="viewController" customClass="WorkoutsMenu" storyboardIdentifier="WorkoutsMenu" title="WorkoutsMenu">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="1187">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <connections>
-                            <outlet property="dataSource" destination="1186" id="1188"/>
-                            <outlet property="delegate" destination="1186" id="1189"/>
-                        </connections>
-                        <navigationBar contentMode="scaleToFill" id="552" translatesAutoresizingMaskIntoConstraints="NO" key="tableHeaderView">
-                            <rect key="frame" x="-12" y="-7" width="0.0" height="44"/>
-                            <items>
-                                <navigationItem title="Workouts" id="553">
-                                    <barButtonItem title="Back" id="554" translatesAutoresizingMaskIntoConstraints="NO" key="leftBarButtonItem">
-                                        <connections>
-                                            <segue id="758" destination="19" kind="modal"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </navigationItem>
-                            </items>
-                        </navigationBar>
-                    </tableView>
-                    <connections>
-                        <outlet property="WorkoutMenuTable" destination="1187" id="name-outlet-1187"/>
-                        <outlet property="NavBar" destination="552" id="name-outlet-552"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1192" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="494" y="-826"/>
         </scene>
         <scene sceneID="1246">
             <objects>
@@ -419,9 +361,7 @@
                                 <items>
                                     <navigationItem title="15 Minute Outdoor HIIT Workout" id="1309" translatesAutoresizingMaskIntoConstraints="NO">
                                         <barButtonItem title="Back" id="1310" translatesAutoresizingMaskIntoConstraints="NO" key="leftBarButtonItem">
-                                            <connections>
-                                                <segue id="1415" destination="1186" kind="modal"/>
-                                            </connections>
+                                            <connections/>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -532,12 +472,48 @@
                         <rect key="frame" x="0.0" y="20" width="508" height="44"/>
                     </navigationBar>
                     <connections>
-                        <segue id="1604" destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController"/>
+                        <segue id="2106" destination="19" kind="relationship" relationship="rootViewController"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1567" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-572" y="18"/>
+        </scene>
+        <scene sceneID="2113">
+            <objects>
+                <viewController id="2114" sceneMemberID="viewController" customClass="WorkoutClassPage" useStoryboardIdentifierAsRestorationIdentifier="YES" storyboardIdentifier="WorkoutClassPage">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2111"/>
+                        <viewControllerLayoutGuide type="bottom" id="2112"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2115">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" id="2118" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="0.0" y="1" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="2119"/>
+                                </items>
+                                <constraints>
+                                    <constraint id="2180" firstAttribute="width" constant="414"/>
+                                </constraints>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="2127" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="0.0" y="53" width="414" height="684"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes/>
+                            </tableView>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="WorkoutMenuTable" destination="2127" id="name-outlet-2127"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2116" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="500" y="-573"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -551,5 +527,6 @@
         <image name="MainMenuImages/NutritionButtonImage.png" width="263" height="262"/>
         <image name="MainMenuImages/StatsButtonImage.jpg" width="626" height="626"/>
         <image name="MainMenuImages/WorkoutButtonImage.jpg" width="626" height="626"/>
+        <image name="BackgroundImages/fon-36630.jpg" width="1080" height="1920"/>
     </resources>
 </document>

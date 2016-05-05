@@ -5,10 +5,11 @@ using UIKit;
 
 namespace WorkoutAnywhere
 {
-	partial class WorkoutsPage : UIViewController
+	partial class WorkoutPage : UIViewController
 	{
-		public WorkoutsPage (IntPtr handle) : base (handle)
+		public WorkoutPage (IntPtr handle) : base (handle)
 		{
+			
 		}
 	}
 }

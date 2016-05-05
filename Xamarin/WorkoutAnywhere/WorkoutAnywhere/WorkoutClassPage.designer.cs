@@ -11,23 +11,15 @@ using UIKit;
 
 namespace WorkoutAnywhere
 {
-	[Register ("WorkoutsMenu")]
-	partial class WorkoutsMenu
+	[Register ("WorkoutClassPage")]
+	partial class WorkoutClassPage
 	{
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UINavigationBar NavBar { get; set; }
-
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
 		UITableView WorkoutMenuTable { get; set; }
 
 		void ReleaseDesignerOutlets ()
 		{
-			if (NavBar != null) {
-				NavBar.Dispose ();
-				NavBar = null;
-			}
 			if (WorkoutMenuTable != null) {
 				WorkoutMenuTable.Dispose ();
 				WorkoutMenuTable = null;

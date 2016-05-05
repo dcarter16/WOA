@@ -128,13 +128,8 @@
     <Compile Include="ProfilePage.designer.cs">
       <DependentUpon>ProfilePage.cs</DependentUpon>
     </Compile>
-    <Compile Include="WorkoutsPage.cs" />
     <Compile Include="WorkoutsPage.designer.cs">
-      <DependentUpon>WorkoutsPage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="WorkoutsMenu.cs" />
-    <Compile Include="WorkoutsMenu.designer.cs">
-      <DependentUpon>WorkoutsMenu.cs</DependentUpon>
+      <DependentUpon>WorkoutPage.cs</DependentUpon>
     </Compile>
     <Compile Include="SampleWorkoutController.cs" />
     <Compile Include="SampleWorkoutController.designer.cs">
@@ -142,6 +137,11 @@
     </Compile>
     <Compile Include="MultiMap.cs" />
     <Compile Include="WorkoutManager.cs" />
+    <Compile Include="WorkoutPage.cs" />
+    <Compile Include="WorkoutClassPage.cs" />
+    <Compile Include="WorkoutClassPage.designer.cs">
+      <DependentUpon>WorkoutClassPage.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -149,5 +149,6 @@
     <BundleResource Include="Resources\MainMenuImages\NutritionButtonImage.png" />
     <BundleResource Include="Resources\MainMenuImages\StatsButtonImage.jpg" />
     <BundleResource Include="Resources\MainMenuImages\WorkoutButtonImage.jpg" />
+    <BundleResource Include="Resources\BackgroundImages\fon-36630.jpg" />
   </ItemGroup>
 </Project>

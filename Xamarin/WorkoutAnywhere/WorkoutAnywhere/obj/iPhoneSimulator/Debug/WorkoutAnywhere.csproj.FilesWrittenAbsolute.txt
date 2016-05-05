@@ -65,3 +65,6 @@
 /Volumes/CS_Students/jburge16/CS472/WOA/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/WorkoutsPage.nib
 /Volumes/CS_Students/jburge16/CS472/WOA/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/ibtool/_BundleResourceWithLogicalName.items
 /Volumes/CS_Students/jburge16/CS472/WOA/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/UINavigationController-1563.nib
+/Volumes/CS_Students/jburge16/CS472/WOA/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/2114-view-2115.nib
+/Volumes/CS_Students/jburge16/CS472/WOA/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/UIViewController-2114.nib
+/Volumes/CS_Students/jburge16/CS472/WOA/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/WorkoutClassPage.nib

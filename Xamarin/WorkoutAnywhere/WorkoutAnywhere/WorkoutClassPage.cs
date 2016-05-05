@@ -9,19 +9,17 @@ using System.Threading.Tasks;
 
 namespace WorkoutAnywhere
 {
-	partial class WorkoutsMenu : UITableViewController
+	partial class WorkoutClassPage : UIViewController
 	{
 		protected List<Tuple<string, int>> tableItems;
 		protected string[] titles;
 		protected string[] counts;
-		public WorkoutsMenu (IntPtr handle) : base (handle)
+		public WorkoutClassPage (IntPtr handle) : base (handle)
 		{
-			
+
 		}
 		public override void ViewDidLoad(){
 			base.ViewDidLoad ();
-			WorkoutMenuTable = new UITableView (View.Bounds);
-			Add (WorkoutMenuTable);
 			tableItems  = WorkoutManager.GetLabelMenu();
 			ReformatData ();
 			WorkoutMenuTable.Source = new TableSource (titles, counts);
@@ -31,7 +29,7 @@ namespace WorkoutAnywhere
 			List<string> _counts = new List<string> ();
 			for(int i = 0; i < tableItems.Count; i++)
 			{
-				_titles.Add(tableItems[i].Item1);
+				_titles.Add(tableItems[i].Item1.Substring(0,1).ToUpper() + tableItems[i].Item1.Substring(1, tableItems[i].Item1.Length-1));
 				_counts.Add(tableItems[i].Item2.ToString());
 			}
 			titles = _titles.ToArray();
@@ -57,6 +55,10 @@ namespace WorkoutAnywhere
 				cell.Accessory = UITableViewCellAccessory.DisclosureIndicator;
 				return cell;
 			}
+			//public override void AccessoryButtonTapped (UITableView tableView, NSIndexPath indexPath)
+			//{
+			//WorkoutsPage mainMenuController = this.Storyboard.InstantiateViewController("MainMenuPage") as MainMenuPage;
+			//this.NavigationController.PushViewController (mainMenuController, true);			}
 		}
 	}
 }
