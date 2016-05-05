@@ -71,10 +71,15 @@ namespace WorkoutAnywhere
                     ParseLine(line);
             }
         }
-		public static string[] GetLabelMenu(){
-			List<string> allLabels = labelMappings.Keys.ToList ();
+		public static List<Tuple<string, int>> GetLabelMenu(){
+			List<Tuple<string, int>> allLabels = new List<Tuple<string, int>>();
+			int temp;
+			foreach (string s in labelMappings.Keys) {
+				temp = labelMappings [s].Count;
+				allLabels.Add(new Tuple<string, int>(s, temp));
+			}
 			allLabels.Sort ();
-			return allLabels.ToArray ();
+			return allLabels;
 		}
 
     }

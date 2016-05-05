@@ -81,6 +81,10 @@
       <LogicalName>Main.storyboardc/SignUpPage.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/UINavigationController-1563.nib">
+      <LogicalName>Main.storyboardc/UINavigationController-1563.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/WorkoutsMenu.nib">
       <LogicalName>Main.storyboardc/WorkoutsMenu.nib</LogicalName>
       <Optimize>false</Optimize>
