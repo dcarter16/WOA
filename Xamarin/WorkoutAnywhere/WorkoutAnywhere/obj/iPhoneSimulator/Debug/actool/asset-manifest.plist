@@ -6,7 +6,7 @@
 	<dict>
 		<key>output-files</key>
 		<array>
-			<string>/Users/dcarter16/Desktop/WOA_Xamarin-master/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/actool/partial-info.plist</string>
+			<string>/Users/dcarter16/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/actool/partial-info.plist</string>
 		</array>
 	</dict>
 	<key>com.apple.actool.document.warnings</key>
@@ -17,7 +17,7 @@
 				<string>./AppIcons.appiconset/[car][120x120][][][1x][2d][(null)]</string>
 			</array>
 			<key>catalog</key>
-			<string>/Users/dcarter16/Desktop/WOA_Xamarin-master/Xamarin/WorkoutAnywhere/WorkoutAnywhere/Resources/Images.xcassets</string>
+			<string>/Users/dcarter16/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/Resources/Images.xcassets</string>
 			<key>message</key>
 			<string>The app icon set "AppIcons" has an unassigned child.</string>
 			<key>type</key>

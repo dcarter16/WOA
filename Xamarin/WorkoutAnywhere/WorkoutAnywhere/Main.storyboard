@@ -143,37 +143,41 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="177" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="94" y="296" width="94" height="78"/>
-                                <state key="normal" backgroundImage="MainMenuImages/WorkoutButtonImage.jpg">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="177" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="94" y="291" width="94" height="88"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.54509803921568623"/>
+                                <state key="normal" backgroundImage="MainMenuImages/WorkoutButtonImage.png">
+                                    <color key="titleShadowColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
                                 </state>
                                 <connections>
                                     <action selector="WorkoutsButton_TouchUpInside:" destination="19" id="2205" eventType="touchUpInside"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="178" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="246" y="291" width="91" height="88"/>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="178" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="214" y="292" width="91" height="88"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.5490196078431373"/>
                                 <state key="normal" backgroundImage="MainMenuImages/NutritionButtonImage.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
                                 </state>
                                 <connections>
                                     <action selector="NutritionButton_TouchUpInside:" destination="19" id="2218" eventType="touchUpInside"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="179" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="94" y="407" width="83" height="75"/>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="179" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="94" y="400" width="94" height="88"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.5490196078431373"/>
                                 <state key="normal" backgroundImage="MainMenuImages/CalendarButtonImage.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
                                 </state>
                                 <connections>
                                     <action selector="CalendarButton_TouchUpInside:" destination="19" id="2219" eventType="touchUpInside"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="180" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="224" y="401" width="91" height="88"/>
-                                <state key="normal" backgroundImage="MainMenuImages/StatsButtonImage.jpg">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="180" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="214" y="400" width="91" height="88"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.5490196078431373"/>
+                                <state key="normal" backgroundImage="MainMenuImages/StatsButtonImage.png">
+                                    <color key="titleShadowColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
                                 </state>
                                 <connections>
                                     <action selector="CommunityButton_TouchUpInside:" destination="19" id="2220" eventType="touchUpInside"/>
@@ -195,7 +199,7 @@
                         <outlet property="WorkoutsButton" destination="177" id="name-outlet-177"/>
                         <outlet property="NutritionButton" destination="178" id="name-outlet-178"/>
                         <outlet property="CalendarButton" destination="179" id="name-outlet-179"/>
-                        <outlet property="CommunityButton" destination="180" id="name-outlet-180"/>
+                        <outlet property="StatsButton" destination="180" id="name-outlet-180"/>
                     </connections>
                     <navigationItem id="2773" translatesAutoresizingMaskIntoConstraints="NO" key="navigationItem" title="Main Menu"/>
                 </viewController>
@@ -451,10 +455,12 @@
         <image name="Images/test.png" width="626" height="626"/>
         <image name="Images/NutritionButtonImage.jpg" width="626" height="626"/>
         <image name="Images/WorkoutButtonImage.jpg" width="626" height="626"/>
-        <image name="MainMenuImages/CalendarButtonImage.png" width="50" height="50"/>
+        <image name="MainMenuImages/CalendarButtonImage.png" width="1200" height="1200"/>
         <image name="MainMenuImages/NutritionButtonImage.png" width="263" height="262"/>
         <image name="MainMenuImages/StatsButtonImage.jpg" width="626" height="626"/>
         <image name="MainMenuImages/WorkoutButtonImage.jpg" width="626" height="626"/>
         <image name="BackgroundImages/fon-36630.jpg" width="1080" height="1920"/>
+        <image name="MainMenuImages/StatsButtonImage.png" width="626" height="626"/>
+        <image name="MainMenuImages/WorkoutButtonImage.png" width="626" height="626"/>
     </resources>
 </document>

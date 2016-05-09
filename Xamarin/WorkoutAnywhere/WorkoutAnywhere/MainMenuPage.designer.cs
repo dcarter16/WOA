@@ -20,15 +20,15 @@ namespace WorkoutAnywhere
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UIButton CommunityButton { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
 		UIButton NutritionButton { get; set; }
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
 		UIButton ProfileButton { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton StatsButton { get; set; }
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
@@ -60,10 +60,6 @@ namespace WorkoutAnywhere
 				CalendarButton.Dispose ();
 				CalendarButton = null;
 			}
-			if (CommunityButton != null) {
-				CommunityButton.Dispose ();
-				CommunityButton = null;
-			}
 			if (NutritionButton != null) {
 				NutritionButton.Dispose ();
 				NutritionButton = null;
@@ -71,6 +67,10 @@ namespace WorkoutAnywhere
 			if (ProfileButton != null) {
 				ProfileButton.Dispose ();
 				ProfileButton = null;
+			}
+			if (StatsButton != null) {
+				StatsButton.Dispose ();
+				StatsButton = null;
 			}
 			if (WorkoutsButton != null) {
 				WorkoutsButton.Dispose ();

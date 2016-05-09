@@ -147,8 +147,8 @@
   <ItemGroup>
     <BundleResource Include="Resources\MainMenuImages\CalendarButtonImage.png" />
     <BundleResource Include="Resources\MainMenuImages\NutritionButtonImage.png" />
-    <BundleResource Include="Resources\MainMenuImages\StatsButtonImage.jpg" />
-    <BundleResource Include="Resources\MainMenuImages\WorkoutButtonImage.jpg" />
     <BundleResource Include="Resources\BackgroundImages\fon-36630.jpg" />
+    <BundleResource Include="Resources\MainMenuImages\StatsButtonImage.png" />
+    <BundleResource Include="Resources\MainMenuImages\WorkoutButtonImage.png" />
   </ItemGroup>
 </Project>
