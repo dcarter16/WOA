@@ -1,5 +1,4 @@
 /Users/dcarter16/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
-/Users/dcarter16/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/ibtool/LaunchScreen.nib
 /Users/dcarter16/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/12-view-13.nib
 /Users/dcarter16/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/1247-view-1248.nib
 /Users/dcarter16/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/19-view-20.nib
@@ -20,6 +19,7 @@
 /Users/dcarter16/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/SignUpPage.nib
 /Users/dcarter16/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/UINavigationController-1563.nib
 /Users/dcarter16/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/WorkoutClassPage.nib
+/Users/dcarter16/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/ibtool/WorkoutAnywhereLaunchScreen.nib
 /Users/dcarter16/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/ibtool/_BundleResourceWithLogicalName.items
 /Users/dcarter16/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/actool/partial-info.plist
 /Users/dcarter16/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/actool/asset-manifest.plist
@@ -29,6 +29,7 @@
 /Users/dcarter16/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/optimized/MainMenuImages/NutritionButtonImage.png
 /Users/dcarter16/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/optimized/MainMenuImages/StatsButtonImage.png
 /Users/dcarter16/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/optimized/MainMenuImages/WorkoutButtonImage.png
+/Users/dcarter16/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/optimized/BackgroundImages/WorkoutAnywherebyRundleFit.png
 /Users/dcarter16/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/optimized/
 /Users/dcarter16/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/bin/iPhoneSimulator/Debug/WorkoutAnywhere.exe.mdb
 /Users/dcarter16/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/bin/iPhoneSimulator/Debug/WorkoutAnywhere.exe

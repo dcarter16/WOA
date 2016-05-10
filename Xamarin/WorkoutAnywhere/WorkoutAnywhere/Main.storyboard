@@ -462,5 +462,6 @@
         <image name="BackgroundImages/fon-36630.jpg" width="1080" height="1920"/>
         <image name="MainMenuImages/StatsButtonImage.png" width="626" height="626"/>
         <image name="MainMenuImages/WorkoutButtonImage.png" width="626" height="626"/>
+        <image name="BackgroundImages/WorkoutAnywherebyRundleFit.png" width="1024" height="258"/>
     </resources>
 </document>

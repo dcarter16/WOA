@@ -86,8 +86,8 @@
     </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
     <InterfaceDefinition Include="Main.storyboard" />
+    <InterfaceDefinition Include="Resources\WorkoutAnywhereLaunchScreen.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -150,5 +150,6 @@
     <BundleResource Include="Resources\BackgroundImages\fon-36630.jpg" />
     <BundleResource Include="Resources\MainMenuImages\StatsButtonImage.png" />
     <BundleResource Include="Resources\MainMenuImages\WorkoutButtonImage.png" />
+    <BundleResource Include="Resources\BackgroundImages\WorkoutAnywherebyRundleFit.png" />
   </ItemGroup>
 </Project>

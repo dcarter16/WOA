@@ -7,21 +7,21 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" horizontalContentHuggingPriority="1000" verticalContentHuggingPriority="1000">
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="4" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="BackgroundImages/fon-36630.jpg">
-                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="2" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="BackgroundImages/fon-36630.jpg" alpha="0.35">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="783"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="5" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="BackgroundImages/WorkoutAnywherebyRundleFit.png">
-                    <rect key="frame" x="84" y="140" width="313" height="120"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="3" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="BackgroundImages/WorkoutAnywherebyRundleFit.png">
+                    <rect key="frame" x="22" y="193" width="367" height="168"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="548" y="455"/>
+            <point key="canvasLocation" x="574" y="459"/>
         </view>
     </objects>
     <resources>
