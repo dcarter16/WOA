@@ -437,7 +437,7 @@
                     <connections>
                         <outlet property="WorkoutMenuTable" destination="2127" id="name-outlet-2127"/>
                     </connections>
-                    <navigationItem title="Workout Categlories" id="2776" translatesAutoresizingMaskIntoConstraints="NO" key="navigationItem"/>
+                    <navigationItem id="2776" translatesAutoresizingMaskIntoConstraints="NO" key="navigationItem" title="Workouts"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2116" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
