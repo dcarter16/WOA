@@ -28,9 +28,13 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
 	-r \
+	/Volumes/CS_Students/jburge16/CS472/WOA/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/packages/Newtonsoft.Json.8.0.3/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll \
+	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
+	-r \
+	/Volumes/CS_Students/jburge16/CS472/WOA/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/packages/Newtonsoft.Json.8.0.3/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll \
 	--target-framework \
 	"Xamarin.iOS,v1.0" \
 	/Volumes/CS_Students/jburge16/CS472/WOA/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/bin/iPhoneSimulator/Debug//WorkoutAnywhere.exe \

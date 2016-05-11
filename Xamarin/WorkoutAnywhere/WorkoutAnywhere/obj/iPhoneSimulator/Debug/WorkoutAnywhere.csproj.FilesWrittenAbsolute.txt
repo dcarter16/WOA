@@ -70,3 +70,4 @@
 /Volumes/CS_Students/jburge16/CS472/WOA/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/WorkoutClassPage.nib
 /Volumes/CS_Students/jburge16/CS472/WOA/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/NavBarController.nib
 /Volumes/CS_Students/jburge16/CS472/WOA/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/NavController.nib
+/Volumes/CS_Students/jburge16/CS472/WOA/WOA_Xamarin/Xamarin/WorkoutAnywhere/WorkoutAnywhere/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll

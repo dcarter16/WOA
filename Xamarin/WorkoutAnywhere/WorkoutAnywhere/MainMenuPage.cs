@@ -7,7 +7,7 @@ namespace WorkoutAnywhere
 {
 	partial class MainMenuPage : UIViewController
 	{
-		public MainMenuPage (IntPtr handle) : base (handle)
+		public MainMenuPage (IntPtr handle) : base (handle) 
 		{
 		
 
@@ -20,7 +20,8 @@ namespace WorkoutAnywhere
 			UIImage i = UIImage.FromFile (@"BackgroundImages/fon-36630.jpg");
 			i = i.Scale (this.View.Frame.Size);
 			this.View.BackgroundColor = UIColor.FromPatternImage(i);
-			ParentViewController.NavigationItem.SetHidesBackButton(true, false);
+			ProfileButton.SetTitle(String.Format("{0}", UserDataManager.userName), UIControlState.Normal);
+			//ParentViewController.NavigationItem.SetHidesBackButton(true, false);
 		}
 		partial void WorkoutsButton_TouchUpInside (UIButton sender)
 		{
