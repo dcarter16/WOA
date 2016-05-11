@@ -24,7 +24,15 @@ namespace WorkoutAnywhere
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
+<<<<<<< HEAD
 		UIButton ProfileButton { get; set; }
+=======
+		UINavigationItem NavBar { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton NutritionButton { get; set; }
+>>>>>>> menus
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
@@ -60,6 +68,17 @@ namespace WorkoutAnywhere
 				CalendarButton.Dispose ();
 				CalendarButton = null;
 			}
+<<<<<<< HEAD
+=======
+			if (CommunityButton != null) {
+				CommunityButton.Dispose ();
+				CommunityButton = null;
+			}
+			if (NavBar != null) {
+				NavBar.Dispose ();
+				NavBar = null;
+			}
+>>>>>>> menus
 			if (NutritionButton != null) {
 				NutritionButton.Dispose ();
 				NutritionButton = null;

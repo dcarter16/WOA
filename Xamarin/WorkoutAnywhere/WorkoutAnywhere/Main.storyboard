@@ -183,10 +183,12 @@
                                     <action selector="CommunityButton_TouchUpInside:" destination="19" id="2220" eventType="touchUpInside"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="181" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="269" y="113" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="181" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="224" y="85" width="132" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Profile">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="0" alpha="1"/>
                                 </state>
                                 <connections>
                                     <action selector="ProfileButton_TouchUpInside:" destination="19" id="2227" eventType="touchUpInside"/>
@@ -199,7 +201,12 @@
                         <outlet property="WorkoutsButton" destination="177" id="name-outlet-177"/>
                         <outlet property="NutritionButton" destination="178" id="name-outlet-178"/>
                         <outlet property="CalendarButton" destination="179" id="name-outlet-179"/>
+<<<<<<< HEAD
                         <outlet property="StatsButton" destination="180" id="name-outlet-180"/>
+=======
+                        <outlet property="CommunityButton" destination="180" id="name-outlet-180"/>
+                        <outlet property="NavBar" destination="2773" id="name-outlet-2773"/>
+>>>>>>> menus
                     </connections>
                     <navigationItem id="2773" translatesAutoresizingMaskIntoConstraints="NO" key="navigationItem" title="Main Menu"/>
                 </viewController>
@@ -406,7 +413,7 @@
         </scene>
         <scene sceneID="1562">
             <objects>
-                <navigationController definesPresentationContext="YES" id="1563" sceneMemberID="viewController">
+                <navigationController definesPresentationContext="YES" id="1563" sceneMemberID="viewController" storyboardIdentifier="NavController" useStoryboardIdentifierAsRestorationIdentifier="YES">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1566">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                         <rect key="frame" x="0.0" y="20" width="508" height="44"/>
@@ -441,7 +448,7 @@
                     <connections>
                         <outlet property="WorkoutMenuTable" destination="2127" id="name-outlet-2127"/>
                     </connections>
-                    <navigationItem title="Workout Categlories" id="2776" translatesAutoresizingMaskIntoConstraints="NO" key="navigationItem"/>
+                    <navigationItem id="2776" translatesAutoresizingMaskIntoConstraints="NO" key="navigationItem" title="Workouts"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2116" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

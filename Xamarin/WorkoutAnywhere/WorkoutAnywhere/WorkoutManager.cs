@@ -10,8 +10,8 @@ namespace WorkoutAnywhere
 {
     public static class WorkoutManager
     {
-        private static MultiMap<string> labelMappings;
-        private static Dictionary<string, string> urlMappings;
+        private static MultiMap<string> labelMappings;			//label -> List<string> urls
+        private static Dictionary<string, string> urlMappings;	//url -> title
         private static string filePath = "http://workoutanywhere.net/MobileData/mappings.txt";
 
 		public static void Initialize(){
