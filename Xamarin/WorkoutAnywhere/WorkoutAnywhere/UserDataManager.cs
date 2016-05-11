@@ -1,5 +1,4 @@
 using System;
-using Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,12 +22,14 @@ namespace WorkoutAnywhere
         userName = "";
         userFullName = "";
     }
-    public static void SetData(string email, string password){	//use for loginpage
-        userEmail = email;
+	public static void SetData(string dataString){
+		}
+    public static void SetData(string username, string password){	//use for loginpage
+        userName = username;
         userPassword = password;
         }
-    public static void SetName(string uName, string fName){
-        userName = uName;
+    public static void SetName(string email, string fName){
+        userEmail = email;
         userFullName = fName;
         }
     public static void SetData(string uName, string fName, string email, string password){	//used for signup page

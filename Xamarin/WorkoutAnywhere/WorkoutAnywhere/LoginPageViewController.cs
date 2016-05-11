@@ -25,22 +25,21 @@ namespace WorkoutAnywhere
 
 		partial void LoginButtonClick (UIButton sender)
 		{
-			int result = 1;//tryLogin(UsernameText.Text, PasswordText.Text);
-			if (result == 1) {
-				ErrorText.Text = "Logged In";
-				GoToMainMenu();
-			} else if (result == 0) {
+			string result = tryLogin(UsernameText.Text, PasswordText.Text);
+			if(result == "0") {
 				ErrorText.Text = "Log In Failed";
-			} else {
-				ErrorText.Text = "ERROR";
+			}else{
+				ErrorText.Text = "Logged In";
+				UserDataManager.SetData(result);
+				GoToMainMenu();
 			}
 		}
-		public int tryLogin(string username, string password)
+		public string tryLogin(string username, string password)
 		{
-			HttpWebRequest request = WebRequest.Create ("http://workoutanywhere.net/DatabaseConnection_iOS_App/PDOUserLogin.php?user=('" + username + "')&pass=('" + password + "')") as HttpWebRequest;
+			HttpWebRequest request = WebRequest.Create ("http://workoutanywhere.net/DatabaseConnection_iOS_App/PDOUserLogin.php?user=" + username + "&pass=" + password) as HttpWebRequest;
 			using (HttpWebResponse response = request.GetResponse () as HttpWebResponse) {
 			StreamReader reader = new StreamReader (response.GetResponseStream ());
-				return Convert.ToInt32(reader.ReadLine ());      
+				return (reader.ReadLine ());      
 			}                                           
 		}
 		private void GoToMainMenu(){

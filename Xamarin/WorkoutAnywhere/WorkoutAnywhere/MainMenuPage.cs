@@ -19,7 +19,8 @@ namespace WorkoutAnywhere
 			UIGraphics.BeginImageContext (this.View.Frame.Size);
 			UIImage i = UIImage.FromFile (@"BackgroundImages/fon-36630.jpg");
 			i = i.Scale (this.View.Frame.Size);
-			this.View.BackgroundColor = UIColor.FromPatternImage(i); 
+			this.View.BackgroundColor = UIColor.FromPatternImage(i);
+			ParentViewController.NavigationItem.SetHidesBackButton(true, false);
 		}
 		partial void WorkoutsButton_TouchUpInside (UIButton sender)
 		{
