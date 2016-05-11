@@ -201,12 +201,9 @@
                         <outlet property="WorkoutsButton" destination="177" id="name-outlet-177"/>
                         <outlet property="NutritionButton" destination="178" id="name-outlet-178"/>
                         <outlet property="CalendarButton" destination="179" id="name-outlet-179"/>
-<<<<<<< HEAD
                         <outlet property="StatsButton" destination="180" id="name-outlet-180"/>
-=======
                         <outlet property="CommunityButton" destination="180" id="name-outlet-180"/>
                         <outlet property="NavBar" destination="2773" id="name-outlet-2773"/>
->>>>>>> menus
                     </connections>
                     <navigationItem id="2773" translatesAutoresizingMaskIntoConstraints="NO" key="navigationItem" title="Main Menu"/>
                 </viewController>
