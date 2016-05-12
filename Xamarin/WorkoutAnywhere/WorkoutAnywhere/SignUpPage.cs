@@ -17,22 +17,24 @@ namespace WorkoutAnywhere
 
 		private void trySubmit (string email, string username, string password)
 		{
-			int result = trySignUp (email, username, password);
-			if (result == 1) {
-				ErrorText.Text = "New User Created";
-				GoToMainMenu ();
-			} else if (result == 0) {
+			string result = trySignUp (email, username, password);
+			if (result == "0") {
 				ErrorText.Text = "Submission Failed";
-			} else if (result == -1) {
+			} else if (result == "-1") {
 				ErrorText.Text = "This email is already in use";
+			} else{
+				ErrorText.Text = "New User Created";
+				UserDataManager.SetData(result);
+				UserDataManager.SetPassword(password);
+				UserDataManager.SaveKeys();
+				GoToMainMenu ();
 			}
 		}
-		private int trySignUp(string email, string username, string password){
+		private string trySignUp(string email, string username, string password){
 			HttpWebRequest request = WebRequest.Create ("http://workoutanywhere.net/DatabaseConnection_iOS_App/AddUser.php?user=" + username + "&pass=" + password + "&email=" + email) as HttpWebRequest;
 			using (HttpWebResponse response = request.GetResponse () as HttpWebResponse) {
 				StreamReader reader = new StreamReader (response.GetResponseStream ());
-				string result = reader.ReadLine ();
-				return Convert.ToInt32(result);
+				return reader.ReadLine ();
 			}
 		}
 
