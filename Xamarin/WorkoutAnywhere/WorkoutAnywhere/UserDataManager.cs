@@ -19,12 +19,17 @@ namespace WorkoutAnywhere
 
 	    private static bool member; //for future use; when adding member dependent functionality
 
+	    //when the app is initialzied, all fields are set to blank strings
 	    public static void Initialize(){
 	        userEmail = "";
 	        userPassword = "";
 	        userName = "";
 	        userDisplayName = "";
 	    }
+
+	    //from the returned json gotten from the login script, set the fields 
+	    //that were initially set to blank
+	    //used for displaying user information in profile section and on homepage
 		public static void SetData(string dataString){
 				var user = JObject.Parse(dataString);
 				userEmail = user["user_email"].ToString();
@@ -37,6 +42,8 @@ namespace WorkoutAnywhere
 					member = false;
 		}
 	    public static string getDisplayName(){return userDisplayName;}
+
+	    //functions used for saving keys to keychain
 		public static void SaveKeys()
 		{
 			var s = new SecRecord (SecKind.GenericPassword) {
