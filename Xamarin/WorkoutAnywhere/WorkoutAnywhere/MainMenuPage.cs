@@ -20,7 +20,7 @@ namespace WorkoutAnywhere
 			UIImage i = UIImage.FromFile (@"BackgroundImages/fon-36630.jpg");
 			i = i.Scale (this.View.Frame.Size);
 			this.View.BackgroundColor = UIColor.FromPatternImage(i);
-			ProfileButton.SetTitle(String.Format("{0}", UserDataManager.userName), UIControlState.Normal);
+			ProfileButton.SetTitle(String.Format("{0}", UserDataManager.getDisplayName()), UIControlState.Normal);
 			//ParentViewController.NavigationItem.SetHidesBackButton(true, false);
 		}
 		partial void WorkoutsButton_TouchUpInside (UIButton sender)

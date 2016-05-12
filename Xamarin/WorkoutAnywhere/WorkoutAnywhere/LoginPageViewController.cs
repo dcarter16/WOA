@@ -29,9 +29,10 @@ namespace WorkoutAnywhere
 			if(result == "0") {
 				ErrorText.Text = "Log In Failed";
 			}else{
-				ErrorText.Text = "Logged In";
+				/*ErrorText.Text = "Logged In";
 				UserDataManager.SetData(result);
-				GoToMainMenu();
+				UserDataManager.SaveKeys(UsernameText.Text, PasswordText.Text);
+				GoToMainMenu();*/
 			}
 		}
 		public string tryLogin(string username, string password)

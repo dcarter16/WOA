@@ -12,8 +12,10 @@ namespace WorkoutAnywhere
     {
     private static string userEmail { get; set; }
     private static string userPassword { get; set ;}
-    public static string userName { get; set; }
-    private static string userFullName { get; set; }
+    private static string userName { get; set; }
+    private static string userDisplayName { get; set; }
+		private static string userKey = "asdfasdgasdgfasasdfasdf";
+		private static string passKey = "Asdfaghfabsdfasdf";
 
     private static bool member; //for future use; when adding member dependent functionality
 
@@ -28,12 +30,23 @@ namespace WorkoutAnywhere
 			userEmail = user["user_email"].ToString();
 			userPassword = user["user_pass"].ToString();
 			userName = user["user_login"].ToString();
-			userFullName = user["display_name"].ToString();
+			userDisplayName = user["display_name"].ToString();
 			if (user["user_activation_key"].ToString() != "")
 				member = true;
 			else
 				member = false;
 	}
+    public string getDisplayName(){return userDisplayName;}
+		/*
+		public static void SaveKeys()
+		{
+			var s = new SecRecord (SecKind.GenericPassword) {
+				ValueData = NSData.FromString(userName),
+				GenericUriParser = NSData.FromString(userKey);
+			};
+			var err = SecKeyChain.Add(s);
+		}		
+		*/
     /*public static void SetData(string username, string password){	//use for loginpage
         userName = username;
         userPassword = password;
