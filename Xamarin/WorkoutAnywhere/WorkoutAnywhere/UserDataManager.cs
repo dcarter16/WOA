@@ -12,10 +12,10 @@ namespace WorkoutAnywhere
 {
     public static class UserDataManager
     {
-	    private static string userEmail { get; set; }
-	    private static string userPassword { get; set ;}
-	    private static string userName { get; set; }
-	    private static string userDisplayName { get; set; }
+		private static string userEmail;
+		private static string userPassword;
+		private static string userName;
+		private static string userDisplayName;
 
 	    private static bool member; //for future use; when adding member dependent functionality
 
@@ -33,13 +33,16 @@ namespace WorkoutAnywhere
 		public static void SetData(string dataString){
 				var user = JObject.Parse(dataString);
 				userEmail = user["user_email"].ToString();
-				userPassword = user["user_pass"].ToString();
 				userName = user["user_login"].ToString();
 				userDisplayName = user["display_name"].ToString();
 				if (user["user_activation_key"].ToString() != "")
 					member = true;
 				else
 					member = false;
+		}
+		public static void SetPassword(string password)
+		{
+			userPassword = password;
 		}
 	    public static string getDisplayName(){return userDisplayName;}
 
