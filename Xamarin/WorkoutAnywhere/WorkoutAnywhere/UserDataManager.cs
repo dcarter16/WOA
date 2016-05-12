@@ -23,7 +23,7 @@ namespace WorkoutAnywhere
         userEmail = "";
         userPassword = "";
         userName = "";
-        userFullName = "";
+        userDisplayName = "";
     }
 	public static void SetData(string dataString){
 			var user = JObject.Parse(dataString);
@@ -36,32 +36,13 @@ namespace WorkoutAnywhere
 			else
 				member = false;
 	}
-    public string getDisplayName(){return userDisplayName;}
-		/*
+    public static string getDisplayName(){return userDisplayName;}
+
 		public static void SaveKeys()
 		{
-			var s = new SecRecord (SecKind.GenericPassword) {
-				ValueData = NSData.FromString(userName),
-				GenericUriParser = NSData.FromString(userKey);
-			};
-			var err = SecKeyChain.Add(s);
+
 		}		
-		*/
-    /*public static void SetData(string username, string password){	//use for loginpage
-        userName = username;
-        userPassword = password;
-        }
-    public static void SetName(string email, string fName){
-        userEmail = email;
-        userFullName = fName;
-        }
-    public static void SetData(string uName, string fName, string email, string password){	//used for signup page
-        userName = uName;
-        userFullName = fName;
-        userEmail = email;
-        userPassword = password;
-        }
-*/
+
     }
 }
 

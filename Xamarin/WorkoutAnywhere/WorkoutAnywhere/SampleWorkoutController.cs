@@ -41,17 +41,11 @@ namespace WorkoutAnywhere
 					DetailLabel.Text = page.Item2.ToString ();
 					break;
 				case "step":
-					StepLabel.Text += page.Item2.ToString ();
+					StepLabel.Text += page.Item2.ToString () + "\n";
 					break;
 				case "video":
 					string video = null;
-					// SHOULD MAKE THIS A FUNCTION
-					foreach(Tuple<string, string> pagepage in pageDetails) {
-						if (pagepage.Item1.ToString() == "video") {
-							video = pagepage.Item2.ToString();
-							break;
-						}
-					}
+					video = findValuebyKey("video");
 					VideoLabel.LoadRequest (new NSUrlRequest (new NSUrl (video.ToString ())));
 					VideoLabel.ScalesPageToFit = true;
 					break;
@@ -71,15 +65,28 @@ namespace WorkoutAnywhere
 		partial void UIButton1438_TouchUpInside (UIButton sender)
 		{
 			string title = null;
+			title = findValuebyKey("title");
+
+			Console.WriteLine(Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments));
+
+			var documents = Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments);
+			if (!Directory.Exists(documents + "/SavedWorkouts")) {
+				var directoryname = Path.Combine (documents, "SavedWorkouts");
+				Directory.CreateDirectory(directoryname);
+			}
+
+			client.DownloadFile("http://workoutanywhere.net/MobileData/Workouts/15-minute-outdoor-hiit-workout-workout-anywhere.txt", documents + "/SavedWorkouts/" + title + ".txt");
+		}
+
+		private string findValuebyKey(string key) {
+			string value = null;
 			foreach(Tuple<string, string> page in pageDetails) {
-				if (page.Item1.ToString() == "title") {
-					title = page.Item2.ToString();
+				if (page.Item1.ToString() == key) {
+					value = page.Item2.ToString();
 					break;
 				}
 			}
-
-			// DOESN'T WORK
-			client.DownloadFile("http://workoutanywhere.net/MobileData/Workouts/15-minute-outdoor-hiit-workout-workout-anywhere.txt", @"SavedWorkouts\test.txt");
+			return value;
 		}
 	}
 }
