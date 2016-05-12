@@ -16,7 +16,7 @@ namespace WorkoutAnywhere
 	{
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UIButton SampleSubmitButton { get; set; }
+		UILabel DetailLabel { get; set; }
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
@@ -28,21 +28,37 @@ namespace WorkoutAnywhere
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UIWebView SampleWorkoutVideo { get; set; }
+		UIView SampleWorkoutView { get; set; }
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UIView SampleWorkoutView { get; set; }
+		UILabel StepLabel { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UILabel TitleLabel { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIWebView VideoLabel { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UILabel WorkoutAmount { get; set; }
 
 		[Action ("SampleSliderChanged:")]
 		[GeneratedCode ("iOS Designer", "1.0")]
 		partial void SampleSliderChanged (UISlider sender);
 
+		[Action ("UIButton1438_TouchUpInside:")]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		partial void UIButton1438_TouchUpInside (UIButton sender);
+
 		void ReleaseDesignerOutlets ()
 		{
-			if (SampleSubmitButton != null) {
-				SampleSubmitButton.Dispose ();
-				SampleSubmitButton = null;
+			if (DetailLabel != null) {
+				DetailLabel.Dispose ();
+				DetailLabel = null;
 			}
 			if (SampleWorkoutAmount != null) {
 				SampleWorkoutAmount.Dispose ();
@@ -52,13 +68,25 @@ namespace WorkoutAnywhere
 				SampleWorkoutSlider.Dispose ();
 				SampleWorkoutSlider = null;
 			}
-			if (SampleWorkoutVideo != null) {
-				SampleWorkoutVideo.Dispose ();
-				SampleWorkoutVideo = null;
-			}
 			if (SampleWorkoutView != null) {
 				SampleWorkoutView.Dispose ();
 				SampleWorkoutView = null;
+			}
+			if (StepLabel != null) {
+				StepLabel.Dispose ();
+				StepLabel = null;
+			}
+			if (TitleLabel != null) {
+				TitleLabel.Dispose ();
+				TitleLabel = null;
+			}
+			if (VideoLabel != null) {
+				VideoLabel.Dispose ();
+				VideoLabel = null;
+			}
+			if (WorkoutAmount != null) {
+				WorkoutAmount.Dispose ();
+				WorkoutAmount = null;
 			}
 		}
 	}
