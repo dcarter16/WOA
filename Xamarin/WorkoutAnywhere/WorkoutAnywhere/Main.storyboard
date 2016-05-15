@@ -18,17 +18,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="168" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="Username" clearsOnBeginEditing="YES" clearButtonMode="whileEditing">
-                                <rect key="frame" x="85" y="225" width="250" height="30"/>
+                                <rect key="frame" x="64" y="225" width="250" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="169" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="Password" clearsOnBeginEditing="YES" clearButtonMode="whileEditing">
-                                <rect key="frame" x="85" y="285" width="250" height="30"/>
+                                <rect key="frame" x="64" y="285" width="250" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="175" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="173" y="446" width="74" height="30"/>
+                                <rect key="frame" x="152" y="446" width="74" height="30"/>
                                 <state key="normal" title="Sign up">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -37,7 +37,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="176" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="85" y="346" width="46" height="30"/>
+                                <rect key="frame" x="64" y="346" width="46" height="30"/>
                                 <state key="normal" title="Login">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -46,21 +46,21 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="1017" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" textAlignment="center">
-                                <rect key="frame" x="85" y="346" width="244" height="44"/>
+                                <rect key="frame" x="64" y="346" width="244" height="44"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Don't have an account?" lineBreakMode="tailTruncation" minimumFontSize="10" id="2865" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" textAlignment="center">
-                                <rect key="frame" x="102" y="405" width="216" height="21"/>
+                                <rect key="frame" x="81" y="405" width="216" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="2871" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="BackgroundImages/WorkoutAnywherebyRundleFit.png">
-                                <rect key="frame" x="39" y="72" width="336" height="128"/>
+                                <rect key="frame" x="18" y="72" width="336" height="128"/>
                             </imageView>
                         </subviews>
                     </view>
@@ -90,27 +90,27 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="170" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="Username" clearButtonMode="whileEditing">
-                                <rect key="frame" x="78" y="150" width="250" height="30"/>
+                                <rect key="frame" x="63" y="150" width="250" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="171" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="Email" clearButtonMode="whileEditing">
-                                <rect key="frame" x="78" y="200" width="250" height="30"/>
+                                <rect key="frame" x="63" y="200" width="250" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="172" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="Password" clearButtonMode="whileEditing" clearsOnBeginEditing="YES">
-                                <rect key="frame" x="78" y="350" width="250" height="30"/>
+                                <rect key="frame" x="63" y="350" width="250" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="173" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="Confirm Password" clearButtonMode="whileEditing" clearsOnBeginEditing="YES">
-                                <rect key="frame" x="78" y="400" width="250" height="30"/>
+                                <rect key="frame" x="63" y="400" width="250" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="174" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="171" y="445" width="64" height="30"/>
+                                <rect key="frame" x="156" y="445" width="64" height="30"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -119,24 +119,24 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="1625" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" textAlignment="center">
-                                <rect key="frame" x="76" y="485" width="254" height="42"/>
+                                <rect key="frame" x="61" y="485" width="254" height="42"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="2867" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="First Name" clearButtonMode="whileEditing">
-                                <rect key="frame" x="78" y="250" width="250" height="30"/>
+                                <rect key="frame" x="63" y="250" width="250" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="2868" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="Last Name" clearButtonMode="whileEditing">
-                                <rect key="frame" x="78" y="300" width="250" height="30"/>
+                                <rect key="frame" x="63" y="300" width="250" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="2874" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="BackgroundImages/WorkoutAnywherebyRundleFit.png">
-                                <rect key="frame" x="41" y="66" width="325" height="63"/>
+                                <rect key="frame" x="26" y="66" width="325" height="63"/>
                             </imageView>
                         </subviews>
                     </view>
@@ -167,7 +167,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="177" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="94" y="291" width="94" height="88"/>
+                                <rect key="frame" x="78" y="291" width="94" height="88"/>
                                 <color key="backgroundColor" colorSpace="calibratedRGB" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.54509803921568623"/>
                                 <state key="normal" backgroundImage="MainMenuImages/WorkoutButtonImage.png">
                                     <color key="titleShadowColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
@@ -177,7 +177,7 @@
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="178" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="214" y="292" width="91" height="88"/>
+                                <rect key="frame" x="198" y="292" width="91" height="88"/>
                                 <color key="backgroundColor" colorSpace="calibratedRGB" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.5490196078431373"/>
                                 <state key="normal" backgroundImage="MainMenuImages/NutritionButtonImage.png">
                                     <color key="titleShadowColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
@@ -187,7 +187,7 @@
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="179" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="94" y="400" width="94" height="88"/>
+                                <rect key="frame" x="78" y="400" width="94" height="88"/>
                                 <color key="backgroundColor" colorSpace="calibratedRGB" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.5490196078431373"/>
                                 <state key="normal" backgroundImage="MainMenuImages/CalendarButtonImage.png">
                                     <color key="titleShadowColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
@@ -197,7 +197,7 @@
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="180" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="214" y="400" width="91" height="88"/>
+                                <rect key="frame" x="198" y="400" width="91" height="88"/>
                                 <color key="backgroundColor" colorSpace="calibratedRGB" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.5490196078431373"/>
                                 <state key="normal" backgroundImage="MainMenuImages/StatsButtonImage.png">
                                     <color key="titleShadowColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
@@ -207,7 +207,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="181" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="224" y="85" width="132" height="58"/>
+                                <rect key="frame" x="208" y="85" width="132" height="58"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Profile">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -508,5 +508,6 @@
         <image name="MainMenuImages/StatsButtonImage.png" width="626" height="626"/>
         <image name="MainMenuImages/WorkoutButtonImage.png" width="626" height="626"/>
         <image name="BackgroundImages/WorkoutAnywherebyRundleFit.png" width="1024" height="258"/>
+        <image name="BackgroundImages/LoadingScreenImage.JPG" width="960" height="720"/>
     </resources>
 </document>

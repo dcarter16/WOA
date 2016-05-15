@@ -11,11 +11,11 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="2" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="BackgroundImages/fon-36630.jpg" alpha="0.35">
-                    <rect key="frame" x="0.0" y="0.0" width="480" height="783"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="2" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="BackgroundImages/LoadingScreenImage.JPG" alpha="0.35">
+                    <rect key="frame" x="0.0" y="-11" width="480" height="783"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="3" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="BackgroundImages/WorkoutAnywherebyRundleFit.png">
-                    <rect key="frame" x="22" y="193" width="367" height="168"/>
+                    <rect key="frame" x="7" y="61" width="356" height="151"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -31,5 +31,6 @@
         <image name="MainMenuImages/StatsButtonImage.png" width="626" height="626"/>
         <image name="MainMenuImages/WorkoutButtonImage.png" width="626" height="626"/>
         <image name="BackgroundImages/WorkoutAnywherebyRundleFit.png" width="1024" height="258"/>
+        <image name="BackgroundImages/LoadingScreenImage.JPG" width="960" height="720"/>
     </resources>
 </document>

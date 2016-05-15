@@ -152,6 +152,7 @@
     <BundleResource Include="Resources\MainMenuImages\StatsButtonImage.png" />
     <BundleResource Include="Resources\MainMenuImages\WorkoutButtonImage.png" />
     <BundleResource Include="Resources\BackgroundImages\WorkoutAnywherebyRundleFit.png" />
+    <BundleResource Include="Resources\BackgroundImages\LoadingScreenImage.JPG" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="SavedWorkouts\" />
