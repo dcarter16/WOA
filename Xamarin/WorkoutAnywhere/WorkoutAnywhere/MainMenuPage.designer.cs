@@ -20,15 +20,15 @@ namespace WorkoutAnywhere
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
+		UINavigationItem NavBar { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
 		UIButton NutritionButton { get; set; }
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
 		UIButton ProfileButton { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UINavigationBar NavBar { get; set; }
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
@@ -68,7 +68,6 @@ namespace WorkoutAnywhere
 				NavBar.Dispose ();
 				NavBar = null;
 			}
-
 			if (NutritionButton != null) {
 				NutritionButton.Dispose ();
 				NutritionButton = null;
