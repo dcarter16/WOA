@@ -153,6 +153,19 @@
     <BundleResource Include="Resources\MainMenuImages\WorkoutButtonImage.png" />
     <BundleResource Include="Resources\BackgroundImages\WorkoutAnywherebyRundleFit.png" />
     <BundleResource Include="Resources\BackgroundImages\LoadingScreenImage.JPG" />
+    <BundleResource Include="Resources\Workout Images\AbdominalWorkout.svg" />
+    <BundleResource Include="Resources\Workout Images\BenchWorkout.svg" />
+    <BundleResource Include="Resources\Workout Images\Dumbbell.svg" />
+    <BundleResource Include="Resources\Workout Images\FreeweightIcon.svg" />
+    <BundleResource Include="Resources\Workout Images\GymObjects.svg" />
+    <BundleResource Include="Resources\Workout Images\HeartIcon.svg" />
+    <BundleResource Include="Resources\Workout Images\LegWorkout.svg" />
+    <BundleResource Include="Resources\Workout Images\MealplanIcon.svg" />
+    <BundleResource Include="Resources\Workout Images\MedalIcon.svg" />
+    <BundleResource Include="Resources\Workout Images\OverheadLiftWorkout.svg" />
+    <BundleResource Include="Resources\Workout Images\PullupWorkout.svg" />
+    <BundleResource Include="Resources\Workout Images\TimerIcon.svg" />
+    <BundleResource Include="Resources\Workout Images\WaterBottleIcon.svg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="SavedWorkouts\" />
