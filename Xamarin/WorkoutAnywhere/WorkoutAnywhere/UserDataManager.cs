@@ -7,6 +7,7 @@ using System.Net;
 using Newtonsoft.Json.Linq;
 using Security;
 using Foundation;
+using Xamarin.Auth;
 
 namespace WorkoutAnywhere
 {
@@ -84,6 +85,17 @@ namespace WorkoutAnywhere
 			//Console.WriteLine (code);
 			return new Tuple<string, string> (username.ToString(), password.ToString());
 		}
+
+		//Xamarin.Auth Attempt at using the keychain
+		public static void SaveCredentials(string username, string password){
+			if (!string.IsNullOrWhiteSpace (username) && !string.IsNullOrWhiteSpace (password)) {
+				Account account = new Account ();
+				account.Username = username;
+				account.Properties.Add("Password", password);
+				AccountStore.Create ().Save (account, "WorkoutAnywhere");
+			}
+		}
+
     }
 }
 
