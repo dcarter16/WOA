@@ -55,45 +55,6 @@ namespace WorkoutAnywhere
 		}
 	    public static string getDisplayName(){return userDisplayName;}
 
-	    //functions used for saving keys to keychain
-		public static void SaveKeys()
-		{
-			var s = new SecRecord (SecKind.GenericPassword) {
-				Server = "workoutanywhere.com",
-				Label = "Username",
-				Account = "WorkoutAnywhere",
-				Generic = NSData.FromString ( userName, NSStringEncoding.UTF8 )
-			};
-			var err = SecKeyChain.Add(s);
-			s = new SecRecord (SecKind.GenericPassword) {
-				Server = "workoutanywhere.com",
-				Label = "Password",
-				Account = "WorkoutAnywhere",
-				Generic = NSData.FromString ( userPassword, NSStringEncoding.UTF8 )
-			};
-			err = SecKeyChain.Add (s);
-		}		
-		public static Tuple<string, string> GetKeys()
-		{
-			var query = new SecRecord (SecKind.GenericPassword) {
-				Server = "workoutanywhere.com",
-				Label = "Username",
-				Account = "WorkoutAnywhere",
-			};
-			SecStatusCode code;
-			var username = SecKeyChain.QueryAsData(query);
-			//Console.WriteLine (code);
-			query = new SecRecord (SecKind.GenericPassword) {
-				Server = "workoutanywhere.com",
-				Label = "Password",
-				Account = "WorkoutAnywhere",
-			};
-
-			var password = SecKeyChain.QueryAsData (query);
-			//Console.WriteLine (code);
-			return new Tuple<string, string> (username.ToString(), password.ToString());
-		}
-
 		//Xamarin.Auth Attempt at using the keychain
 		public static void SaveCredentials( ){
 			if (!string.IsNullOrWhiteSpace (userName) && !string.IsNullOrWhiteSpace (userPassword)) {

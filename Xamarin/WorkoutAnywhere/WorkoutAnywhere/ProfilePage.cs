@@ -15,9 +15,8 @@ namespace WorkoutAnywhere
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-			Tuple<string, string> userInfo = UserDataManager.GetKeys ();
-			UsernameText.Text = userInfo.Item1;
-			PasswordText.Text = userInfo.Item2;
+			UsernameText.Text = UserDataManager.getUserName ();
+			PasswordText.Text = UserDataManager.getUserPassword ();
 		}
 	}
 }
