@@ -17,18 +17,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="168" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="Username" clearsOnBeginEditing="YES" clearButtonMode="whileEditing">
-                                <rect key="frame" x="85" y="225" width="250" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="168" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Username" clearsOnBeginEditing="YES" clearButtonMode="whileEditing">
+                                <rect key="frame" x="82" y="225" width="250" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                <constraints>
+                                    <constraint id="3069" firstAttribute="width" constant="250"/>
+                                </constraints>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="169" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="Password" clearsOnBeginEditing="YES" clearButtonMode="whileEditing">
-                                <rect key="frame" x="85" y="285" width="250" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="169" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Password" clearsOnBeginEditing="YES" clearButtonMode="whileEditing">
+                                <rect key="frame" x="82" y="285" width="250" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
+                                <constraints>
+                                    <constraint id="3065" firstAttribute="width" constant="250"/>
+                                </constraints>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="175" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="173" y="446" width="74" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="175" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="157" y="446" width="100" height="30"/>
                                 <state key="normal" title="Sign up">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -45,24 +51,50 @@
                                     <action selector="LoginButtonClick:" destination="BYZ-38-t0r" id="1174" eventType="touchUpInside"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="1017" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" textAlignment="center">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="1017" translatesAutoresizingMaskIntoConstraints="NO" textAlignment="center">
                                 <rect key="frame" x="85" y="346" width="244" height="44"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="3091" firstAttribute="width" constant="244"/>
+                                    <constraint id="3092" firstAttribute="height" constant="44"/>
+                                </constraints>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Don't have an account?" lineBreakMode="tailTruncation" minimumFontSize="10" id="2865" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" textAlignment="center">
-                                <rect key="frame" x="102" y="405" width="216" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Don't have an account?" lineBreakMode="tailTruncation" minimumFontSize="10" id="2865" translatesAutoresizingMaskIntoConstraints="NO" textAlignment="center" misplaced="YES">
+                                <rect key="frame" x="99" y="405" width="216" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="2871" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="BackgroundImages/WorkoutAnywherebyRundleFit.png">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="2871" translatesAutoresizingMaskIntoConstraints="NO" image="BackgroundImages/WorkoutAnywherebyRundleFit.png">
                                 <rect key="frame" x="39" y="72" width="336" height="128"/>
+                                <constraints>
+                                    <constraint id="3035" firstAttribute="width" constant="336"/>
+                                    <constraint id="3036" firstAttribute="height" constant="128"/>
+                                </constraints>
                             </imageView>
                         </subviews>
+                        <constraints>
+                            <constraint id="3033" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="2871" secondAttribute="trailing" constant="39"/>
+                            <constraint id="3034" firstItem="2871" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="72"/>
+                            <constraint id="3037" firstItem="2871" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="39"/>
+                            <constraint id="3063" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="169" secondAttribute="trailing" constant="82"/>
+                            <constraint id="3064" firstItem="169" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="285"/>
+                            <constraint id="3066" firstItem="169" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="82"/>
+                            <constraint id="3067" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="168" secondAttribute="trailing" constant="82"/>
+                            <constraint id="3068" firstItem="168" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="225"/>
+                            <constraint id="3070" firstItem="168" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="82"/>
+                            <constraint id="3073" firstItem="2865" firstAttribute="centerY" secondItem="2871" secondAttribute="centerY" constant="279"/>
+                            <constraint id="3074" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="2865" secondAttribute="trailing" constant="99"/>
+                            <constraint id="3075" firstItem="175" firstAttribute="top" secondItem="2865" secondAttribute="centerY" constant="30"/>
+                            <constraint id="3076" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="175" secondAttribute="trailing" constant="157"/>
+                            <constraint id="3079" firstItem="175" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="157"/>
+                            <constraint id="3089" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="1017" secondAttribute="trailing" constant="85"/>
+                            <constraint id="3090" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="1017" secondAttribute="bottom" constant="346"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="UsernameText" destination="168" id="name-outlet-168"/>
