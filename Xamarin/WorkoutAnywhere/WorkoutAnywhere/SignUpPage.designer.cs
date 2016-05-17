@@ -24,6 +24,10 @@ namespace WorkoutAnywhere
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
+		UITextField FirstNameChoice { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
 		UITextField PasswordChoice { get; set; }
 
 		[Outlet]
@@ -51,6 +55,10 @@ namespace WorkoutAnywhere
 			if (ErrorText != null) {
 				ErrorText.Dispose ();
 				ErrorText = null;
+			}
+			if (FirstNameChoice != null) {
+				FirstNameChoice.Dispose ();
+				FirstNameChoice = null;
 			}
 			if (PasswordChoice != null) {
 				PasswordChoice.Dispose ();

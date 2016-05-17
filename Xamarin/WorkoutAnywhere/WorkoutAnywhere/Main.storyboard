@@ -147,6 +147,7 @@
                         <outlet property="PasswordConfirm" destination="173" id="name-outlet-173"/>
                         <outlet property="Signup" destination="174" id="name-outlet-174"/>
                         <outlet property="ErrorText" destination="1625" id="name-outlet-1625"/>
+                        <outlet property="FirstNameChoice" destination="2867" id="name-outlet-2867"/>
                     </connections>
                     <navigationItem title="Sign Up" id="2770" translatesAutoresizingMaskIntoConstraints="NO" key="navigationItem"/>
                 </viewController>
@@ -553,5 +554,19 @@
         <image name="MainMenuImages/StatsButtonImage.png" width="626" height="626"/>
         <image name="MainMenuImages/WorkoutButtonImage.png" width="626" height="626"/>
         <image name="BackgroundImages/WorkoutAnywherebyRundleFit.png" width="1024" height="258"/>
+        <image name="BackgroundImages/LoadingScreenImage.JPG" width="960" height="720"/>
+        <image name="Workout Images/AbdominalWorkout.svg" width="178" height="178"/>
+        <image name="Workout Images/BenchWorkout.svg" width="597" height="597"/>
+        <image name="Workout Images/Dumbbell.svg" width="196" height="196"/>
+        <image name="Workout Images/FreeweightIcon.svg" width="197" height="197"/>
+        <image name="Workout Images/GymObjects.svg" width="185" height="185"/>
+        <image name="Workout Images/HeartIcon.svg" width="165" height="165"/>
+        <image name="Workout Images/LegWorkout.svg" width="224" height="224"/>
+        <image name="Workout Images/MealplanIcon.svg" width="194" height="194"/>
+        <image name="Workout Images/MedalIcon.svg" width="181" height="181"/>
+        <image name="Workout Images/OverheadLiftWorkout.svg" width="243" height="243"/>
+        <image name="Workout Images/PullupWorkout.svg" width="238" height="238"/>
+        <image name="Workout Images/TimerIcon.svg" width="179" height="179"/>
+        <image name="Workout Images/WaterBottleIcon.svg" width="146" height="146"/>
     </resources>
 </document>
