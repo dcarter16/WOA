@@ -26,7 +26,7 @@ namespace WorkoutAnywhere
 				ErrorText.Text = "New User Created";
 				UserDataManager.SetData(result);
 				UserDataManager.SetPassword(password);
-				UserDataManager.SaveKeys();
+				//UserDataManager.SaveKeys();
 				GoToMainMenu ();
 			}
 		}

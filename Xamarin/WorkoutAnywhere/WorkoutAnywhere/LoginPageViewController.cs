@@ -34,7 +34,6 @@ namespace WorkoutAnywhere
 				ErrorText.Text = "Logged In";
 				UserDataManager.SetData(result);
 				UserDataManager.SetPassword(PasswordText.Text);
-				//UserDataManager.SaveKeys();
 				UserDataManager.SaveCredentials(UserDataManager.getUserName(), UserDataManager.getUserPassword());
 				GoToMainMenu();
 			}
