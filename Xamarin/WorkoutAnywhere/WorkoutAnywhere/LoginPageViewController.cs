@@ -16,6 +16,9 @@ namespace WorkoutAnywhere
 		}
 		public override void ViewDidLoad(){
 			base.ViewDidLoad ();
+			NavigationController.NavigationBar.BarTintColor = UIColor.FromRGB(69,150,232);
+			NavigationController.NavigationBar.TitleTextAttributes = new UIStringAttributes () { ForegroundColor = UIColor.White };
+			//NavigationController.NavigationItem.BackBarButtonItem.TintColor = UIColor.LightGray;
 			UsernameText.Text = UserDataManager.UserName;
 			PasswordText.Text = UserDataManager.Password;
 		}

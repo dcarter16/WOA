@@ -34,5 +34,26 @@
 	</array>
 	<key>XSAppIconAssets</key>
 	<string>Resources/Images.xcassets/AppIcons.appiconset</string>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleBlackTranslucent</string>
+	<key>UIStatusBarTintParameters</key>
+	<dict>
+		<key>UINavigationBar</key>
+		<dict>
+			<key>Style</key>
+			<string>UIBarStyleDefault</string>
+			<key>Translucent</key>
+			<false/>
+			<key>TintColor</key>
+			<dict>
+				<key>Red</key>
+				<real>0.343999389639124</real>
+				<key>Green</key>
+				<real>0.833371480888075</real>
+				<key>Blue</key>
+				<real>0.93182269016556</real>
+			</dict>
+		</dict>
+	</dict>
 </dict>
 </plist>

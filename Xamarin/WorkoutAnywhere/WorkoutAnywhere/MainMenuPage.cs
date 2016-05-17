@@ -16,6 +16,7 @@ namespace WorkoutAnywhere
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
+
 			UIGraphics.BeginImageContext (this.View.Frame.Size);
 			UIImage i = UIImage.FromFile (@"BackgroundImages/fon-36630.jpg");
 			i = i.Scale (this.View.Frame.Size);
