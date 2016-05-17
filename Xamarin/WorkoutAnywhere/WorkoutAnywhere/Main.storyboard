@@ -92,8 +92,8 @@
                             <constraint id="3075" firstItem="175" firstAttribute="top" secondItem="2865" secondAttribute="centerY" constant="30"/>
                             <constraint id="3076" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="175" secondAttribute="trailing" constant="157"/>
                             <constraint id="3079" firstItem="175" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="157"/>
-                            <constraint id="3089" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="1017" secondAttribute="trailing" constant="85"/>
-                            <constraint id="3090" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="1017" secondAttribute="bottom" constant="346"/>
+                            <constraint id="3114" firstItem="1017" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
+                            <constraint id="3125" firstItem="1017" firstAttribute="top" secondItem="169" secondAttribute="bottom" constant="31"/>
                         </constraints>
                     </view>
                     <connections>
@@ -121,56 +121,112 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="170" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="Username" clearButtonMode="whileEditing">
-                                <rect key="frame" x="78" y="150" width="250" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="170" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Username" clearButtonMode="whileEditing">
+                                <rect key="frame" x="82" y="150" width="250" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <constraints>
+                                    <constraint id="3178" firstItem="170" firstAttribute="width" constant="250"/>
+                                    <constraint id="3179" firstItem="170" firstAttribute="height" constant="30"/>
+                                </constraints>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="171" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="Email" clearButtonMode="whileEditing">
-                                <rect key="frame" x="78" y="200" width="250" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="171" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Email" clearButtonMode="whileEditing">
+                                <rect key="frame" x="82" y="200" width="250" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <constraints>
+                                    <constraint id="3180" firstItem="171" firstAttribute="width" constant="250"/>
+                                    <constraint id="3181" firstItem="171" firstAttribute="height" constant="30"/>
+                                </constraints>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="172" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="Password" clearButtonMode="whileEditing" clearsOnBeginEditing="YES">
-                                <rect key="frame" x="78" y="350" width="250" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="172" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Password" clearButtonMode="whileEditing" clearsOnBeginEditing="YES">
+                                <rect key="frame" x="82" y="350" width="250" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <constraints>
+                                    <constraint id="3186" firstItem="172" firstAttribute="width" constant="250"/>
+                                    <constraint id="3187" firstItem="172" firstAttribute="height" constant="30"/>
+                                </constraints>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="173" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="Confirm Password" clearButtonMode="whileEditing" clearsOnBeginEditing="YES">
-                                <rect key="frame" x="78" y="400" width="250" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="173" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Confirm Password" clearButtonMode="whileEditing" clearsOnBeginEditing="YES">
+                                <rect key="frame" x="82" y="400" width="250" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <constraints>
+                                    <constraint id="3188" firstItem="173" firstAttribute="width" constant="250"/>
+                                    <constraint id="3189" firstItem="173" firstAttribute="height" constant="30"/>
+                                </constraints>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="174" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="171" y="445" width="64" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="174" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="175" y="445" width="64" height="30"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="Signup_TouchUpInside:" destination="12" id="1620" eventType="touchUpInside"/>
                                 </connections>
+                                <constraints>
+                                    <constraint id="3190" firstItem="174" firstAttribute="width" constant="64"/>
+                                    <constraint id="3191" firstItem="174" firstAttribute="height" constant="30"/>
+                                </constraints>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="1625" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" textAlignment="center">
-                                <rect key="frame" x="76" y="485" width="254" height="42"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="1625" translatesAutoresizingMaskIntoConstraints="NO" textAlignment="center">
+                                <rect key="frame" x="80" y="485" width="254" height="42"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="3192" firstItem="1625" firstAttribute="width" constant="254"/>
+                                    <constraint id="3193" firstItem="1625" firstAttribute="height" constant="42"/>
+                                </constraints>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="2867" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="First Name" clearButtonMode="whileEditing">
-                                <rect key="frame" x="78" y="250" width="250" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="2867" translatesAutoresizingMaskIntoConstraints="NO" placeholder="First Name" clearButtonMode="whileEditing">
+                                <rect key="frame" x="82" y="250" width="250" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <constraints>
+                                    <constraint id="3182" firstItem="2867" firstAttribute="width" constant="250"/>
+                                    <constraint id="3183" firstItem="2867" firstAttribute="height" constant="30"/>
+                                </constraints>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="2868" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="Last Name" clearButtonMode="whileEditing">
-                                <rect key="frame" x="78" y="300" width="250" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="2868" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Last Name" clearButtonMode="whileEditing">
+                                <rect key="frame" x="82" y="300" width="250" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <constraints>
+                                    <constraint id="3184" firstItem="2868" firstAttribute="width" constant="250"/>
+                                    <constraint id="3185" firstItem="2868" firstAttribute="height" constant="30"/>
+                                </constraints>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="2874" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="BackgroundImages/WorkoutAnywherebyRundleFit.png">
-                                <rect key="frame" x="41" y="75" width="325" height="63"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="2874" translatesAutoresizingMaskIntoConstraints="NO" image="BackgroundImages/WorkoutAnywherebyRundleFit.png">
+                                <rect key="frame" x="45" y="75" width="325" height="63"/>
+                                <constraints>
+                                    <constraint id="3176" firstItem="2874" firstAttribute="width" constant="325"/>
+                                    <constraint id="3177" firstItem="2874" firstAttribute="height" constant="63"/>
+                                </constraints>
                             </imageView>
                         </subviews>
+                        <constraints>
+                            <constraint id="3196" firstItem="2874" firstAttribute="top" secondItem="9" secondAttribute="bottom" constant="55"/>
+                            <constraint id="3197" firstItem="170" firstAttribute="top" secondItem="2874" secondAttribute="bottom" constant="12"/>
+                            <constraint id="3198" firstItem="171" firstAttribute="top" secondItem="170" secondAttribute="bottom" constant="20"/>
+                            <constraint id="3199" firstItem="2867" firstAttribute="top" secondItem="171" secondAttribute="bottom" constant="20"/>
+                            <constraint id="3200" firstItem="2868" firstAttribute="top" secondItem="2867" secondAttribute="bottom" constant="20"/>
+                            <constraint id="3201" firstItem="172" firstAttribute="top" secondItem="2868" secondAttribute="bottom" constant="20"/>
+                            <constraint id="3202" firstItem="173" firstAttribute="top" secondItem="172" secondAttribute="bottom" constant="20"/>
+                            <constraint id="3203" firstItem="174" firstAttribute="top" secondItem="173" secondAttribute="bottom" constant="15"/>
+                            <constraint id="3204" firstItem="1625" firstAttribute="top" secondItem="174" secondAttribute="bottom" constant="10"/>
+                            <constraint id="3222" firstItem="13" firstAttribute="centerX" secondItem="1625" secondAttribute="centerX"/>
+                            <constraint id="3223" firstItem="172" firstAttribute="centerX" secondItem="1625" secondAttribute="centerX"/>
+                            <constraint id="3224" firstItem="173" firstAttribute="centerX" secondItem="1625" secondAttribute="centerX"/>
+                            <constraint id="3225" firstItem="174" firstAttribute="centerX" secondItem="1625" secondAttribute="centerX"/>
+                            <constraint id="3226" firstItem="2868" firstAttribute="centerX" secondItem="1625" secondAttribute="centerX"/>
+                            <constraint id="3227" firstItem="171" firstAttribute="centerX" secondItem="1625" secondAttribute="centerX"/>
+                            <constraint id="3228" firstItem="2867" firstAttribute="centerX" secondItem="1625" secondAttribute="centerX"/>
+                            <constraint id="3229" firstItem="170" firstAttribute="centerX" secondItem="1625" secondAttribute="centerX"/>
+                            <constraint id="3230" firstItem="2874" firstAttribute="centerX" secondItem="1625" secondAttribute="centerX"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="UsernameChoice" destination="170" id="name-outlet-170"/>

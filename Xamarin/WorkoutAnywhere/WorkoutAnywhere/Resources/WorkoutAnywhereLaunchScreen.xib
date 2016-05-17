@@ -12,10 +12,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" id="2" translatesAutoresizingMaskIntoConstraints="NO" image="BackgroundImages/LoadingScreenImage.JPG" alpha="0.35" fixedFrame="YES">
-                    <rect key="frame" x="0.0" y="-2" width="480" height="783"/>
+                    <rect key="frame" x="5" y="-2" width="480" height="783"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="3" translatesAutoresizingMaskIntoConstraints="NO" image="BackgroundImages/WorkoutAnywherebyRundleFit.png">
-                    <rect key="frame" x="73" y="42" width="356" height="151"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="3" translatesAutoresizingMaskIntoConstraints="NO" image="BackgroundImages/WorkoutAnywherebyRundleFit.png" misplaced="YES">
+                    <rect key="frame" x="41" y="41" width="356" height="151"/>
                     <constraints>
                         <constraint id="119" firstAttribute="width" constant="356"/>
                         <constraint id="120" firstAttribute="height" constant="151"/>
@@ -27,7 +27,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="574" y="459"/>
             <constraints>
-                <constraint id="117" firstItem="iN0-l3-epB" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" constant="51"/>
+                <constraint id="117" firstItem="iN0-l3-epB" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" constant="10"/>
                 <constraint id="118" firstItem="3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="42"/>
             </constraints>
         </view>
