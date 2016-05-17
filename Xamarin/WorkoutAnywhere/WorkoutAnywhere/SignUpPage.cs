@@ -15,9 +15,9 @@ namespace WorkoutAnywhere
 
 		}
 
-		private void trySubmit (string email, string username, string password)
+		private void trySubmit (string email, string username, string password, string firstname, string lastname)
 		{
-			string result = trySignUp (email, username, password);
+			string result = trySignUp (email, username, password, String.Format("{0} {1}", firstname, lastname));
 			if (result == "0") {
 				ErrorText.Text = "Submission Failed";
 			} else if (result == "-1") {
@@ -26,7 +26,7 @@ namespace WorkoutAnywhere
 				ErrorText.Text = "New User Created";
 				UserDataManager.SetData(result);
 				UserDataManager.SetPassword(password);
-				//UserDataManager.SaveKeys();
+				UserDataManager.SaveCredentials(UserDataManager.getUserName, UserDataManager.getPassword);
 				GoToMainMenu ();
 			}
 		}
@@ -40,8 +40,10 @@ namespace WorkoutAnywhere
 
 		partial void Signup_TouchUpInside (UIButton sender)
 		{
-			if (PasswordChoice.Text == PasswordConfirm.Text) {
-				trySubmit (Email.Text, UsernameChoice.Text, PasswordChoice.Text);
+			if(Email.Text == "" || UsernameChoice.Text == "" || PasswordChoice.Text == "" || FirstNameChoice.Text == "" || LastNameChoice.Text ==""){
+				ErrorText.Text = "Please fill all fields.";
+			}else if (PasswordChoice.Text == PasswordConfirm.Text) {
+				trySubmit (Email.Text, UsernameChoice.Text, PasswordChoice.Text, FirstNameChoice.Text, LastNameChoice.Text);
 			} else {
 				ErrorText.Text = "Passwords do not match.";			
 			}
