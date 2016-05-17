@@ -1,26 +1,14 @@
 ﻿<Properties StartupItem="WorkoutAnywhere.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.3" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="UserDataManager.cs">
     <Files>
-      <File FileName="UserDataManager.cs" Line="96" Column="3" />
+      <File FileName="UserDataManager.cs" Line="17" Column="38" />
       <File FileName="WorkoutClassPage.cs" Line="1" Column="1" />
       <File FileName="MainMenuPage.cs" Line="1" Column="1" />
       <File FileName="WorkoutPage.cs" Line="1" Column="1" />
-      <File FileName="SignUpPage.cs" Line="1" Column="1" />
-      <File FileName="LoginPageViewController.cs" Line="20" Column="57" />
-      <File FileName="ProfilePage.cs" Line="1" Column="1" />
+      <File FileName="LoginPageViewController.cs" Line="1" Column="1" />
+      <File FileName="SignUpPage.cs" Line="51" Column="76" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="WorkoutAnywhere" expanded="True">
-            <Node name="WorkoutAnywhere" expanded="True">
-              <Node name="ComponentReferenceFolder" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

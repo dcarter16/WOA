@@ -16,13 +16,13 @@ namespace WorkoutAnywhere
 		protected string[] counts;
 		public WorkoutClassPage (IntPtr handle) : base (handle)
 		{
-
 		}
 		public override void ViewDidLoad(){
 			base.ViewDidLoad ();
 			tableItems  = WorkoutManager.GetLabelMenu();
 			ReformatData ();
 			WorkoutMenuTable.Source = new TableSource (titles, counts);
+			WorkoutMenuTable.Delegate = new TableDelegate ();
 		}
 		private void ReformatData(){
 			List<string> _titles = new List<string>();
@@ -55,10 +55,16 @@ namespace WorkoutAnywhere
 				cell.Accessory = UITableViewCellAccessory.DisclosureIndicator;
 				return cell;
 			}
-			//public override void AccessoryButtonTapped (UITableView tableView, NSIndexPath indexPath)
-			//{
-			//WorkoutsPage mainMenuController = this.Storyboard.InstantiateViewController("MainMenuPage") as MainMenuPage;
-			//this.NavigationController.PushViewController (mainMenuController, true);			}
+			public override void RowSelected(UITableView tableView, NSIndexPath indexPath){
+				//WorkoutListPage workoutListController = this.Storyboard.InstantiateViewController("WorkoutListPage") as WorkoutListPage;
+				//workoutListController.setLabels(tableItems[indexPath.Row]);
+				//this.NavigationController.PushViewController (workoutListController, true);	
+				Console.WriteLine(tableItems[indexPath.Row]);
+			}
+			//public override void AccessoryButtonTapped (UITableView tableView, NSIndexPath indexPath){}
+		}
+		public class TableDelegate :UITableViewDelegate{
+			
 		}
 	}
 }
