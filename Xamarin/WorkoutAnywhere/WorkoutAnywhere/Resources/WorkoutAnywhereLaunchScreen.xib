@@ -11,11 +11,11 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="2" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="BackgroundImages/LoadingScreenImage.JPG" alpha="0.35">
-                    <rect key="frame" x="0.0" y="-11" width="480" height="783"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" id="2" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="BackgroundImages/LoadingScreenImage.JPG" alpha="0.35">
+                    <rect key="frame" x="0.0" y="-2" width="480" height="783"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="3" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="BackgroundImages/WorkoutAnywherebyRundleFit.png">
-                    <rect key="frame" x="7" y="61" width="356" height="151"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="3" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="BackgroundImages/WorkoutAnywherebyRundleFit.png">
+                    <rect key="frame" x="62" y="42" width="356" height="151"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -32,5 +32,18 @@
         <image name="MainMenuImages/WorkoutButtonImage.png" width="626" height="626"/>
         <image name="BackgroundImages/WorkoutAnywherebyRundleFit.png" width="1024" height="258"/>
         <image name="BackgroundImages/LoadingScreenImage.JPG" width="960" height="720"/>
+        <image name="Workout Images/AbdominalWorkout.svg" width="178" height="178"/>
+        <image name="Workout Images/BenchWorkout.svg" width="597" height="597"/>
+        <image name="Workout Images/Dumbbell.svg" width="196" height="196"/>
+        <image name="Workout Images/FreeweightIcon.svg" width="197" height="197"/>
+        <image name="Workout Images/GymObjects.svg" width="185" height="185"/>
+        <image name="Workout Images/HeartIcon.svg" width="165" height="165"/>
+        <image name="Workout Images/LegWorkout.svg" width="224" height="224"/>
+        <image name="Workout Images/MealplanIcon.svg" width="194" height="194"/>
+        <image name="Workout Images/MedalIcon.svg" width="181" height="181"/>
+        <image name="Workout Images/OverheadLiftWorkout.svg" width="243" height="243"/>
+        <image name="Workout Images/PullupWorkout.svg" width="238" height="238"/>
+        <image name="Workout Images/TimerIcon.svg" width="179" height="179"/>
+        <image name="Workout Images/WaterBottleIcon.svg" width="146" height="146"/>
     </resources>
 </document>
