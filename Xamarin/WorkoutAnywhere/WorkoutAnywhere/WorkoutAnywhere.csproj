@@ -146,6 +146,10 @@
       <DependentUpon>WorkoutClassPage.cs</DependentUpon>
     </Compile>
     <Compile Include="UserDataManager.cs" />
+    <Compile Include="WorkoutListPage.cs" />
+    <Compile Include="WorkoutListPage.designer.cs">
+      <DependentUpon>WorkoutListPage.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
