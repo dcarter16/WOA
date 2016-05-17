@@ -28,6 +28,14 @@ namespace WorkoutAnywhere
 	        userDisplayName = "";
 	    }
 
+		public static string getUserName () {
+			return userName;
+		}
+
+		public static string getUserPassword () {
+			return userPassword;
+		}
+
 	    //from the returned json gotten from the login script, set the fields 
 	    //that were initially set to blank
 	    //used for displaying user information in profile section and on homepage
@@ -96,6 +104,19 @@ namespace WorkoutAnywhere
 			}
 		}
 
+		public static string UserName {
+			get {
+				var account = AccountStore.Create ().FindAccountsForService ("WorkoutAnywhere").FirstOrDefault ();
+				return (account != null) ? account.Username : null;
+			}
+		}
+
+		public static string Password {
+			get {
+				var account = AccountStore.Create ().FindAccountsForService ("WorkoutAnywhere").FirstOrDefault ();
+				return (account != null) ? account.Properties ["Password"] : null;
+			}
+		}
     }
 }
 

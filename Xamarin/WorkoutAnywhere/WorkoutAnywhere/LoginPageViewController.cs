@@ -16,6 +16,8 @@ namespace WorkoutAnywhere
 		}
 		public override void ViewDidLoad(){
 			base.ViewDidLoad ();
+			UsernameText.Text = UserDataManager.getUserName();
+			PasswordText.Text = UserDataManager.getUserPassword();
 		}
 		partial void SignUpClick (UIButton sender)
 		{
@@ -32,7 +34,8 @@ namespace WorkoutAnywhere
 				ErrorText.Text = "Logged In";
 				UserDataManager.SetData(result);
 				UserDataManager.SetPassword(PasswordText.Text);
-				UserDataManager.SaveKeys();
+				//UserDataManager.SaveKeys();
+				UserDataManager.SaveCredentials(UserDataManager.getUserName(), UserDataManager.getUserPassword());
 				GoToMainMenu();
 			}
 		}
