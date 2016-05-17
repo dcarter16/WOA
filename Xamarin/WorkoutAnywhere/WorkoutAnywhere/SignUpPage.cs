@@ -30,8 +30,8 @@ namespace WorkoutAnywhere
 				GoToMainMenu ();
 			}
 		}
-		private string trySignUp(string email, string username, string password){
-			HttpWebRequest request = WebRequest.Create ("http://workoutanywhere.net/DatabaseConnection_iOS_App/AddUser.php?user=" + username + "&pass=" + password + "&email=" + email) as HttpWebRequest;
+		private string trySignUp(string email, string username, string password, string fullName){
+			HttpWebRequest request = WebRequest.Create ("http://workoutanywhere.net/DatabaseConnection_iOS_App/PDOAddUser.php?user=" + username + "&pass=" + password + "&email=" + email + "&name=" + fullName) as HttpWebRequest;
 			using (HttpWebResponse response = request.GetResponse () as HttpWebResponse) {
 				StreamReader reader = new StreamReader (response.GetResponseStream ());
 				return reader.ReadLine ();

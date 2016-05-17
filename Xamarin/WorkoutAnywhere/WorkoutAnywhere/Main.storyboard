@@ -148,6 +148,7 @@
                         <outlet property="Signup" destination="174" id="name-outlet-174"/>
                         <outlet property="ErrorText" destination="1625" id="name-outlet-1625"/>
                         <outlet property="FirstNameChoice" destination="2867" id="name-outlet-2867"/>
+                        <outlet property="LastNameChoice" destination="2868" id="name-outlet-2868"/>
                     </connections>
                     <navigationItem title="Sign Up" id="2770" translatesAutoresizingMaskIntoConstraints="NO" key="navigationItem"/>
                 </viewController>

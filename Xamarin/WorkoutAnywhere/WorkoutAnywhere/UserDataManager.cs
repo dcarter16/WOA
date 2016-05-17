@@ -95,11 +95,11 @@ namespace WorkoutAnywhere
 		}
 
 		//Xamarin.Auth Attempt at using the keychain
-		public static void SaveCredentials(string username, string password){
-			if (!string.IsNullOrWhiteSpace (username) && !string.IsNullOrWhiteSpace (password)) {
+		public static void SaveCredentials( ){
+			if (!string.IsNullOrWhiteSpace (userName) && !string.IsNullOrWhiteSpace (userPassword)) {
 				Account account = new Account ();
-				account.Username = username;
-				account.Properties.Add("Password", password);
+				account.Username = userName;
+				account.Properties.Add("Password", userPassword);
 				AccountStore.Create ().Save (account, "WorkoutAnywhere");
 			}
 		}
