@@ -11,8 +11,8 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" id="2" translatesAutoresizingMaskIntoConstraints="NO" image="BackgroundImages/LoadingScreenImage.JPG" alpha="0.35" fixedFrame="YES">
-                    <rect key="frame" x="5" y="-2" width="480" height="783"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" id="2" translatesAutoresizingMaskIntoConstraints="NO" image="BackgroundImages/LoadingScreenImage.JPG" alpha="0.35" misplaced="YES">
+                    <rect key="frame" x="47" y="5" width="480" height="783"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="3" translatesAutoresizingMaskIntoConstraints="NO" image="BackgroundImages/WorkoutAnywherebyRundleFit.png" misplaced="YES">
                     <rect key="frame" x="41" y="41" width="356" height="151"/>
@@ -27,8 +27,9 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="574" y="459"/>
             <constraints>
-                <constraint id="117" firstItem="iN0-l3-epB" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" constant="10"/>
-                <constraint id="118" firstItem="3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="42"/>
+                <constraint id="124" firstItem="3" firstAttribute="top" secondItem="2" secondAttribute="top" constant="43"/>
+                <constraint id="128" firstItem="iN0-l3-epB" firstAttribute="centerX" secondItem="3" secondAttribute="centerX"/>
+                <constraint id="135" firstItem="2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="44"/>
             </constraints>
         </view>
     </objects>

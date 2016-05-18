@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CoreGraphics;
 
 namespace WorkoutAnywhere
 {
@@ -16,6 +17,9 @@ namespace WorkoutAnywhere
 		protected string[] counts;
 		public WorkoutClassPage (IntPtr handle) : base (handle)
 		{
+			/*nfloat ViewSize = View.Bounds.Size.Width;
+			WorkoutMenuTable.ContentSize.Width.Equals(ViewSize);*/
+			//Tried to set the menu to fill the screen but nothing I tried worked. Above is one example I found of what might work
 		}
 		public override void ViewDidLoad(){
 			base.ViewDidLoad ();
@@ -24,6 +28,7 @@ namespace WorkoutAnywhere
 			WorkoutMenuTable.Source = new TableSource (titles, counts);
 			WorkoutMenuTable.Delegate = new TableDelegate ();
 		}
+
 		private void ReformatData(){
 			List<string> _titles = new List<string>();
 			List<string> _counts = new List<string> ();
@@ -34,6 +39,7 @@ namespace WorkoutAnywhere
 			}
 			titles = _titles.ToArray();
 			counts = _counts.ToArray();
+
 		}
 		public class TableSource :UITableViewSource{
 			protected string[] tableItems;

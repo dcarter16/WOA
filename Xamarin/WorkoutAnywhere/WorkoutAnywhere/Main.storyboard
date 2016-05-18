@@ -257,7 +257,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="177" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="102" y="290" width="90" height="90"/>
+                                <rect key="frame" x="103" y="255" width="90" height="90"/>
                                 <color key="backgroundColor" colorSpace="calibratedRGB" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.54509803921568623"/>
                                 <state key="normal" backgroundImage="MainMenuImages/WorkoutButtonImage.png">
                                     <color key="titleShadowColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
@@ -271,7 +271,7 @@
                                 </constraints>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="178" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="220" y="291" width="90" height="90"/>
+                                <rect key="frame" x="221" y="256" width="90" height="90"/>
                                 <color key="backgroundColor" colorSpace="calibratedRGB" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.5490196078431373"/>
                                 <state key="normal" backgroundImage="MainMenuImages/NutritionButtonImage.png">
                                     <color key="titleShadowColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
@@ -285,7 +285,7 @@
                                 </constraints>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="179" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="102" y="399" width="90" height="90"/>
+                                <rect key="frame" x="102.5" y="364" width="90" height="90"/>
                                 <color key="backgroundColor" colorSpace="calibratedRGB" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.5490196078431373"/>
                                 <state key="normal" backgroundImage="MainMenuImages/CalendarButtonImage.png">
                                     <color key="titleShadowColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
@@ -299,7 +299,7 @@
                                 </constraints>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="180" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="220" y="399" width="91" height="88"/>
+                                <rect key="frame" x="220.5" y="364" width="91" height="88"/>
                                 <color key="backgroundColor" colorSpace="calibratedRGB" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.5490196078431373"/>
                                 <state key="normal" backgroundImage="MainMenuImages/StatsButtonImage.png">
                                     <color key="titleShadowColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
@@ -313,7 +313,7 @@
                                 </constraints>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="181" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="224" y="175" width="132" height="58"/>
+                                <rect key="frame" x="224" y="140" width="132" height="58"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Profile">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -328,7 +328,7 @@
                                 </constraints>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="2879" translatesAutoresizingMaskIntoConstraints="NO" image="BackgroundImages/WorkoutAnywherebyRundleFit.png">
-                                <rect key="frame" x="62" y="75" width="290" height="132"/>
+                                <rect key="frame" x="62" y="40" width="290" height="132"/>
                                 <constraints>
                                     <constraint id="3293" firstItem="2879" firstAttribute="width" constant="290"/>
                                     <constraint id="3294" firstItem="2879" firstAttribute="height" constant="132"/>
@@ -336,18 +336,19 @@
                             </imageView>
                         </subviews>
                         <constraints>
-                            <constraint id="3330" firstItem="2879" firstAttribute="top" secondItem="16" secondAttribute="bottom" constant="55"/>
+                            <constraint id="3330" firstItem="2879" firstAttribute="top" secondItem="16" secondAttribute="bottom" constant="20"/>
                             <constraint id="3331" firstItem="2879" firstAttribute="centerX" secondItem="20" secondAttribute="centerX"/>
                             <constraint id="3332" firstItem="177" firstAttribute="top" secondItem="2879" secondAttribute="bottom" constant="83"/>
                             <constraint id="3333" firstItem="178" firstAttribute="top" secondItem="2879" secondAttribute="bottom" constant="84"/>
-                            <constraint id="3334" firstItem="20" firstAttribute="trailing" secondItem="178" secondAttribute="trailing" constant="104"/>
-                            <constraint id="3336" firstItem="20" firstAttribute="trailing" secondItem="180" secondAttribute="trailing" constant="103"/>
                             <constraint id="3337" firstItem="180" firstAttribute="leading" secondItem="179" secondAttribute="trailing" constant="28"/>
                             <constraint id="3338" firstItem="178" firstAttribute="leading" secondItem="177" secondAttribute="trailing" constant="28"/>
                             <constraint id="3339" firstItem="180" firstAttribute="top" secondItem="178" secondAttribute="bottom" constant="18"/>
                             <constraint id="3340" firstItem="179" firstAttribute="top" secondItem="177" secondAttribute="bottom" constant="19"/>
                             <constraint id="3341" firstItem="20" firstAttribute="trailing" secondItem="181" secondAttribute="trailing" constant="58"/>
                             <constraint id="3342" firstItem="181" firstAttribute="top" secondItem="2879" secondAttribute="centerY" constant="34"/>
+                            <constraint id="3362" firstItem="20" firstAttribute="centerX" secondItem="177" secondAttribute="centerX" constant="59"/>
+                            <constraint id="3366" firstItem="178" firstAttribute="centerX" secondItem="20" secondAttribute="centerX" constant="59"/>
+                            <constraint id="3367" firstItem="180" firstAttribute="centerX" secondItem="20" secondAttribute="centerX" constant="59"/>
                         </constraints>
                     </view>
                     <connections>
@@ -625,6 +626,7 @@
                                 <rect key="frame" x="0.0" y="40" width="414" height="695"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes/>
+                                <constraints/>
                             </tableView>
                         </subviews>
                     </view>
