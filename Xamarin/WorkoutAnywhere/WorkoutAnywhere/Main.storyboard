@@ -532,7 +532,7 @@
         </scene>
         <scene sceneID="1246">
             <objects>
-                <viewController id="1247" sceneMemberID="viewController" customClass="SampleWorkoutController" storyboardIdentifier="SampleWorkoutController" title="Workout">
+                <viewController id="1247" sceneMemberID="viewController" customClass="SampleWorkoutController" storyboardIdentifier="SampleWorkoutController" title="Workout" useStoryboardIdentifierAsRestorationIdentifier="YES">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1244"/>
                         <viewControllerLayoutGuide type="bottom" id="1245"/>
@@ -714,7 +714,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="3521" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="0.0" y="46" width="414" height="690"/>
+                                <rect key="frame" x="0.0" y="46" width="414" height="670"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes/>
                             </tableView>
