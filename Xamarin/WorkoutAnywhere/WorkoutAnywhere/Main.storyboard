@@ -389,29 +389,66 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="2841" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="2841" translatesAutoresizingMaskIntoConstraints="NO">
                                 <rect key="frame" x="82" y="225" width="250" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="3425" firstAttribute="width" constant="250"/>
+                                    <constraint id="3426" firstAttribute="height" constant="50"/>
+                                </constraints>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="2842" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="2842" translatesAutoresizingMaskIntoConstraints="NO">
                                 <rect key="frame" x="82" y="300" width="250" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="3429" firstAttribute="width" constant="250"/>
+                                    <constraint id="3430" firstAttribute="height" constant="50"/>
+                                </constraints>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="2880" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="BackgroundImages/WorkoutAnywherebyRundleFit.png">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="2880" translatesAutoresizingMaskIntoConstraints="NO" image="BackgroundImages/WorkoutAnywherebyRundleFit.png">
                                 <rect key="frame" x="44" y="75" width="327" height="146"/>
+                                <constraints>
+                                    <constraint id="3421" firstAttribute="width" constant="327"/>
+                                    <constraint id="3422" firstAttribute="height" constant="146"/>
+                                </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3441" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="142" y="511" width="131" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="LogoutButton_TouchUpInside:" destination="192" id="3463" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
                         </subviews>
+                        <constraints>
+                            <constraint id="3419" firstItem="193" firstAttribute="trailing" secondItem="2880" secondAttribute="trailing" constant="43"/>
+                            <constraint id="3420" firstItem="2880" firstAttribute="top" secondItem="193" secondAttribute="top" constant="75"/>
+                            <constraint id="3423" firstItem="193" firstAttribute="trailing" secondItem="2841" secondAttribute="trailing" constant="82"/>
+                            <constraint id="3424" firstItem="2841" firstAttribute="top" secondItem="193" secondAttribute="top" constant="225"/>
+                            <constraint id="3427" firstItem="193" firstAttribute="trailing" secondItem="2842" secondAttribute="trailing" constant="82"/>
+                            <constraint id="3428" firstItem="2842" firstAttribute="top" secondItem="193" secondAttribute="top" constant="300"/>
+                            <constraint id="3433" firstItem="2880" firstAttribute="leading" secondItem="193" secondAttribute="leading" constant="44"/>
+                            <constraint id="3434" firstItem="2841" firstAttribute="top" secondItem="2880" secondAttribute="centerY" constant="77"/>
+                            <constraint id="3435" firstItem="2842" firstAttribute="top" secondItem="2841" secondAttribute="centerY" constant="50"/>
+                            <constraint id="3454" firstItem="3441" firstAttribute="top" secondItem="2842" secondAttribute="centerY" constant="186"/>
+                            <constraint id="3455" firstItem="3441" firstAttribute="leading" secondItem="193" secondAttribute="leading" constant="142"/>
+                            <constraint id="3456" firstItem="193" firstAttribute="trailing" secondItem="3441" secondAttribute="trailing" constant="141"/>
+                        </constraints>
                     </view>
                     <navigationItem title="Profile" id="2781" translatesAutoresizingMaskIntoConstraints="NO" key="navigationItem"/>
                     <connections>
                         <outlet property="UsernameText" destination="2841" id="name-outlet-2841"/>
                         <outlet property="PasswordText" destination="2842" id="name-outlet-2842"/>
+                        <outlet property="LogoutButton" destination="3441" id="name-outlet-3441"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="194" userLabel="First Responder" sceneMemberID="firstResponder"/>

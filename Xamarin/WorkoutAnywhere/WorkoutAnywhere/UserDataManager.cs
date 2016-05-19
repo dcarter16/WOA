@@ -18,6 +18,12 @@ namespace WorkoutAnywhere
 		private static string userName;
 		private static string userDisplayName;
 
+		//bool used to check if the logout button was pushed, if it was, then clear the fields on the login screen
+		public static bool isLoggedOut = false;
+		public static bool getIsLoggedOut(){
+			return isLoggedOut;
+		}
+
 	    private static bool member; //for future use; when adding member dependent functionality
 
 	    //when the app is initialzied, all fields are set to blank strings
