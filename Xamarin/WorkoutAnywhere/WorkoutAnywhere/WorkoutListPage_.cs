@@ -34,7 +34,7 @@ namespace WorkoutAnywhere
 			workoutTitles = _titles.ToArray ();
 		}
 		public void setLabel(string l){
-			label = l;
+			label = l.ToLower();
 		}
 		private class TableSource :UITableViewSource{
 			protected string[] tableItems;
@@ -61,7 +61,7 @@ namespace WorkoutAnywhere
 				//UIAlertController alertController = UIAlertController.Create ("Row Selected", tableItems[indexPath.Row], UIAlertControllerStyle.Alert);	
 				//alertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
 				//parent.PresentViewController (alertController, true, null);
-				WorkoutPage workoutPageController = parent.Storyboard.InstantiateViewController("WorkoutPage") as WorkoutPage;
+				GenericWorkoutPage workoutPageController = parent.Storyboard.InstantiateViewController("GenericWorkoutPage") as GenericWorkoutPage;
 				workoutPageController.setURL(urls[indexPath.Row]);
 				parent.NavigationController.PushViewController (workoutPageController, true);
 				tableView.DeselectRow (indexPath, true);

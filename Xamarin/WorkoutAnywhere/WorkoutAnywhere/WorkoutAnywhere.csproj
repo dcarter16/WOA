@@ -132,16 +132,12 @@
     <Compile Include="ProfilePage.designer.cs">
       <DependentUpon>ProfilePage.cs</DependentUpon>
     </Compile>
-    <Compile Include="WorkoutsPage.designer.cs">
-      <DependentUpon>WorkoutPage.cs</DependentUpon>
-    </Compile>
     <Compile Include="SampleWorkoutController.cs" />
     <Compile Include="SampleWorkoutController.designer.cs">
       <DependentUpon>SampleWorkoutController.cs</DependentUpon>
     </Compile>
     <Compile Include="MultiMap.cs" />
     <Compile Include="WorkoutManager.cs" />
-    <Compile Include="WorkoutPage.cs" />
     <Compile Include="WorkoutClassPage.cs" />
     <Compile Include="WorkoutClassPage.designer.cs">
       <DependentUpon>WorkoutClassPage.cs</DependentUpon>
@@ -154,6 +150,10 @@
     <Compile Include="WorkoutListPage_.cs" />
     <Compile Include="WorkoutListPage_.designer.cs">
       <DependentUpon>WorkoutListPage_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenericWorkoutPage.cs" />
+    <Compile Include="GenericWorkoutPage.designer.cs">
+      <DependentUpon>GenericWorkoutPage.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
