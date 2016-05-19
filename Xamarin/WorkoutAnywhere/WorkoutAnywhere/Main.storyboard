@@ -791,5 +791,6 @@
         <image name="MainMenuImages/FavoriteButtonImage.png" width="757" height="720"/>
         <image name="BackgroundImages/bg2.jpg" width="500" height="500"/>
         <image name="BackgroundImages/bg1.jpg" width="1350" height="810"/>
+        <image name="BackgroundImages/bg3.jpg" width="2560" height="1600"/>
     </resources>
 </document>
