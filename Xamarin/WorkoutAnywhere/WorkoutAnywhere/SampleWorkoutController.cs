@@ -72,15 +72,11 @@ namespace WorkoutAnywhere
 		partial void SampleSliderChanged (UISlider sender)
 		{
 			WorkoutAmount.Text = Convert.ToString(Math.Round(sender.Value)) + "%";
-			//throw new NotImplementedException ();
 		}
 
 		partial void UIButton1438_TouchUpInside (UIButton sender)
 		{
-			string title = null;
-			title = findValuebyKey("title");
-
-			Console.WriteLine(Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments));
+			string title = findValuebyKey("title");
 
 			var documents = Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments);
 			if (!Directory.Exists(documents + "/SavedWorkouts")) {
@@ -88,7 +84,7 @@ namespace WorkoutAnywhere
 				Directory.CreateDirectory(directoryname);
 			}
 
-			client.DownloadFile("http://workoutanywhere.net/MobileData/Workouts/15-minute-outdoor-hiit-workout-workout-anywhere.txt", documents + "/SavedWorkouts/" + title + ".txt");
+			client.DownloadFile(pageURL, documents + "/SavedWorkouts/" + title + ".txt");
 		}
 
 		private string findValuebyKey(string key) {
