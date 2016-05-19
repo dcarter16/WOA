@@ -10,6 +10,7 @@ namespace WorkoutAnywhere
 {
 	partial class SampleWorkoutController : UIViewController
 	{
+		private string pageURL;
 		private static WebClient client = new WebClient();
 		private static Stream stream = client.OpenRead("http://workoutanywhere.net/MobileData/Workouts/15-minute-outdoor-hiit-workout-workout-anywhere.txt");
 		private static StreamReader reader = new StreamReader(stream);
@@ -18,6 +19,9 @@ namespace WorkoutAnywhere
 
 		public SampleWorkoutController (IntPtr handle) : base (handle)
 		{
+		}
+		public void setURL(string url){
+			pageURL = url;
 		}
 		public override void ViewDidLoad ()
 		{

@@ -58,12 +58,13 @@ namespace WorkoutAnywhere
 				return cell;
 			}
 			public override void RowSelected(UITableView tableView, NSIndexPath indexPath){
-				//UIAlertController alertController = UIAlertController.Create ("Row Selected", tableItems[indexPath.Row], UIAlertControllerStyle.Alert);	
-				//alertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
-				//parent.PresentViewController (alertController, true, null);
-				GenericWorkoutPage workoutPageController = parent.Storyboard.InstantiateViewController("GenericWorkoutPage") as GenericWorkoutPage;
-				workoutPageController.setURL(urls[indexPath.Row]);
+				//GenericWorkoutPage workoutPageController = parent.Storyboard.InstantiateViewController("GenericWorkoutPage") as GenericWorkoutPage;
+				//workoutPageController.setURL(urls[indexPath.Row]);
+				//parent.NavigationController.PushViewController (workoutPageController, true);
+				SampleWorkoutController workoutPageController = parent.Storyboard.InstantiateViewController("SampleWorkoutController") as SampleWorkoutController;
+				workoutPageController.setURL (urls [indexPath.Row]);
 				parent.NavigationController.PushViewController (workoutPageController, true);
+
 				tableView.DeselectRow (indexPath, true);
 			}
 			public override void AccessoryButtonTapped (UITableView tableView, NSIndexPath indexPath){

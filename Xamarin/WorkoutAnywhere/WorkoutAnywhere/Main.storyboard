@@ -789,5 +789,7 @@
         <image name="Workout Images/WaterBottleIcon.svg" width="146" height="146"/>
         <image name="MainMenuImages/star.png" width="757" height="720"/>
         <image name="MainMenuImages/FavoriteButtonImage.png" width="757" height="720"/>
+        <image name="BackgroundImages/bg2.jpg" width="500" height="500"/>
+        <image name="BackgroundImages/bg1.jpg" width="1350" height="810"/>
     </resources>
 </document>

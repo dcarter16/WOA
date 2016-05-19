@@ -179,6 +179,8 @@
     <BundleResource Include="Resources\Workout Images\TimerIcon.svg" />
     <BundleResource Include="Resources\Workout Images\WaterBottleIcon.svg" />
     <BundleResource Include="Resources\MainMenuImages\FavoriteButtonImage.png" />
+    <BundleResource Include="Resources\BackgroundImages\bg2.jpg" />
+    <BundleResource Include="Resources\BackgroundImages\bg1.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="SavedWorkouts\" />
