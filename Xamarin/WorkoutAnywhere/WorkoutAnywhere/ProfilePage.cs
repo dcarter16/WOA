@@ -16,7 +16,8 @@ namespace WorkoutAnywhere
 		{
 			base.ViewDidLoad ();
 			UsernameText.Text = UserDataManager.getUserName ();
-			PasswordText.Text = UserDataManager.getUserPassword ();
+			//PasswordText.Text = UserDataManager.getUserPassword ();
+			PasswordText.Text = "Nobody can know";
 		}
 
 		partial void LogoutButton_TouchUpInside (UIButton sender)
