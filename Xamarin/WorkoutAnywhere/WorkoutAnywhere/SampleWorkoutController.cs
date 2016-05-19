@@ -13,7 +13,7 @@ namespace WorkoutAnywhere
 		private string pageURL;
 		private static WebClient client = new WebClient();
 		private static Stream stream;
-		private static StreamReader reader;
+		private StreamReader reader;
 		private static string line;
 		private static List<Tuple<string, string>> pageDetails = new List<Tuple<string, string>> ();
 
