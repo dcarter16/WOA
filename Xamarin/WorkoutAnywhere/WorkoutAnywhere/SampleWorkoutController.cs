@@ -12,8 +12,8 @@ namespace WorkoutAnywhere
 	{
 		private string pageURL;
 		private static WebClient client = new WebClient();
-		private static Stream stream = client.OpenRead("http://workoutanywhere.net/MobileData/Workouts/15-minute-outdoor-hiit-workout-workout-anywhere.txt");
-		private static StreamReader reader = new StreamReader(stream);
+		private static Stream stream;
+		private static StreamReader reader;
 		private static string line;
 		private static List<Tuple<string, string>> pageDetails = new List<Tuple<string, string>> ();
 
@@ -26,7 +26,8 @@ namespace WorkoutAnywhere
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-
+			stream = client.OpenRead (pageURL);
+			reader = new StreamReader (stream);
 			while ((line = reader.ReadLine()) != null)
 			{
 				if (line.Length > 0) {
