@@ -52,7 +52,7 @@ namespace WorkoutAnywhere
 						StepLabel.Text += "\t" + page.Item2.ToString ().Substring(1) + "\n";
 					}
 					else {
-						StepLabel.Text += "\n" + step + "." + page.Item2.ToString () + "\n";
+						StepLabel.Text += "\n" + step + ". " + page.Item2.ToString () + "\n";
 						step++;
 					}
 					break;
