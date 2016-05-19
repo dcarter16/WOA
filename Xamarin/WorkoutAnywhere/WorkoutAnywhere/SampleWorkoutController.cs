@@ -40,13 +40,10 @@ namespace WorkoutAnywhere
 			foreach (Tuple<string, string> page in pageDetails) {
 				switch (page.Item1.ToString()) {
 				case "title":
-					TitleLabel.Text = page.Item2.ToString ();
+					this.Title = page.Item2.ToString ();
 					break;
-				case "detail":
-					DetailLabel.Text = page.Item2.ToString ();
-					break;
-				case "step":
-					StepLabel.Text += page.Item2.ToString () + "\n";
+				case "step": // Format text box --- I'll do this later
+					StepLabel.Text += page.Item2.ToString ();
 					break;
 				case "video":
 					string video = null;
