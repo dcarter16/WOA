@@ -19,8 +19,20 @@ namespace WorkoutAnywhere
 			NavigationController.NavigationBar.BarTintColor = UIColor.FromRGB(69,150,232);
 			NavigationController.NavigationBar.TitleTextAttributes = new UIStringAttributes () { ForegroundColor = UIColor.White };
 			//NavigationController.NavigationItem.BackBarButtonItem.TintColor = UIColor.LightGray;
-			UsernameText.Text = UserDataManager.UserName;
-			PasswordText.Text = UserDataManager.Password;
+
+			NavigationItem.SetHidesBackButton (true, false);
+
+			//checking for if the logout button is pressed, then set the username and password fields to empty
+			//else, fill them with the keychain
+			if (UserDataManager.getIsLoggedOut() == true) {
+				UsernameText.Text = "";
+				PasswordText.Text = "";
+				UserDataManager.isLoggedOut = false;
+			} 
+			else {
+				UsernameText.Text = UserDataManager.UserName;
+				PasswordText.Text = UserDataManager.Password;
+			}
 		}
 		partial void SignUpClick (UIButton sender)
 		{
