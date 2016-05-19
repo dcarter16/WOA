@@ -18,5 +18,13 @@ namespace WorkoutAnywhere
 			UsernameText.Text = UserDataManager.getUserName ();
 			PasswordText.Text = UserDataManager.getUserPassword ();
 		}
+
+		partial void LogoutButton_TouchUpInside (UIButton sender)
+		{
+			//throw new NotImplementedException ();
+			UserDataManager.isLoggedOut = true;
+			LoginPageViewController loginController = this.Storyboard.InstantiateViewController("LoginPageViewController") as LoginPageViewController;
+			this.NavigationController.PushViewController (loginController, true);
+		}
 	}
 }
