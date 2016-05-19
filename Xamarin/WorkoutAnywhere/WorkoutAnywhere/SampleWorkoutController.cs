@@ -4,6 +4,7 @@ using System.CodeDom.Compiler;
 using UIKit;
 using System.Net;
 using System.IO;
+using System.Text;
 using System.Collections.Generic;
 
 namespace WorkoutAnywhere
@@ -75,16 +76,26 @@ namespace WorkoutAnywhere
 
 		partial void UIButton1438_TouchUpInside (UIButton sender)
 		{
-			string title = null;
+			/*string title = null;
 			foreach(Tuple<string, string> page in pageDetails) {
 				if (page.Item1.ToString() == "title") {
 					title = page.Item2.ToString();
 					break;
 				}
-			}
+			}*/
 
 			// DOESN'T WORK
-			client.DownloadFile("http://workoutanywhere.net/MobileData/Workouts/15-minute-outdoor-hiit-workout-workout-anywhere.txt", @"SavedWorkouts\test.txt");
+			//client.DownloadFile(pageURL, @"SavedWorkouts\test.txt");
+			client.DownloadStringCompleted += (s, e) => {
+				var text = e.Result; // get the downloaded text
+				string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+				string localFilename = String.Format("\"{0}\"", pageURL);
+				string localPath = Path.Combine (documentsPath, localFilename);
+				File.WriteAllText (localPath, text); // writes to local storage
+			};
+			var url = new Uri(pageURL);
+			client.Encoding = Encoding.UTF8;
+			client.DownloadStringAsync(url);
 		}
 	}
 }

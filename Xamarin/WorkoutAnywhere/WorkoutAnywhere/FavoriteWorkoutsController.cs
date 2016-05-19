@@ -21,9 +21,8 @@ namespace WorkoutAnywhere
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-			string path = @"SavedWorkouts/.";
-			string temp = "CD====" +Environment.CurrentDirectory;
-			var directories = System.IO.Directory.EnumerateFiles(Environment.CurrentDirectory);
+			string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+			var directories = System.IO.Directory.EnumerateFiles(documentsPath);
 			foreach (var dir in directories) {
 				Console.WriteLine (dir);
 			}
