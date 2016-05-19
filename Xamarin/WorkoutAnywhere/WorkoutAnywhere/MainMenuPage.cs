@@ -18,7 +18,7 @@ namespace WorkoutAnywhere
 			base.ViewDidLoad ();
 
 			UIGraphics.BeginImageContext (this.View.Frame.Size);
-			UIImage i = UIImage.FromFile (@"BackgroundImages/fon-36630.jpg");
+			UIImage i = UIImage.FromFile (@"BackgroundImages/bg3.jpg");
 			i = i.Scale (this.View.Frame.Size);
 			this.View.BackgroundColor = UIColor.FromPatternImage(i);
 			ProfileButton.SetTitle(String.Format("{0}", UserDataManager.getDisplayName()), UIControlState.Normal);
