@@ -5,17 +5,19 @@ using UIKit;
 using System.Net;
 using System.IO;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace WorkoutAnywhere
 {
 	partial class SampleWorkoutController : UIViewController
 	{
 		private string pageURL;
-		private static WebClient client = new WebClient();
-		private static Stream stream;
-		private static StreamReader reader;
-		private static string line;
-		private static List<Tuple<string, string>> pageDetails = new List<Tuple<string, string>> ();
+		public int step = 1;
+		private WebClient client = new WebClient();
+		private Stream stream;
+		private StreamReader reader;
+		private string line;
+		private List<Tuple<string, string>> pageDetails = new List<Tuple<string, string>> ();
 
 		public SampleWorkoutController (IntPtr handle) : base (handle)
 		{
@@ -43,7 +45,16 @@ namespace WorkoutAnywhere
 					this.Title = page.Item2.ToString ();
 					break;
 				case "step": // Format text box --- I'll do this later
-					StepLabel.Text += page.Item2.ToString ();
+					if (Regex.IsMatch (page.Item2.ToString (), @"^\d")) {
+						StepLabel.Text += "\t" + page.Item2.ToString () + "\n";
+					}
+					else if (page.Item2.ToString().StartsWith("@")) {
+						StepLabel.Text += "\t" + page.Item2.ToString ().Substring(1) + "\n";
+					}
+					else {
+						StepLabel.Text += "\n" + step + "." + page.Item2.ToString () + "\n";
+						step++;
+					}
 					break;
 				case "video":
 					string video = null;
