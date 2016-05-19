@@ -44,7 +44,7 @@ namespace WorkoutAnywhere
 				case "title":
 					this.Title = page.Item2.ToString ();
 					break;
-				case "step": // Format text box --- I'll do this later
+				case "step":
 					if (Regex.IsMatch (page.Item2.ToString (), @"^\d")) {
 						StepLabel.Text += "\t" + page.Item2.ToString () + "\n";
 					}

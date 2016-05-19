@@ -14,8 +14,16 @@ namespace WorkoutAnywhere
 	[Register ("FavoriteWorkoutsController")]
 	partial class FavoriteWorkoutsController
 	{
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UILabel TestLabel { get; set; }
+
 		void ReleaseDesignerOutlets ()
 		{
+			if (TestLabel != null) {
+				TestLabel.Dispose ();
+				TestLabel = null;
+			}
 		}
 	}
 }

@@ -21,11 +21,16 @@ namespace WorkoutAnywhere
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-			string path = @"SavedWorkouts/.";
-			string temp = "CD====" +Environment.CurrentDirectory;
-			var directories = System.IO.Directory.EnumerateFiles(Environment.CurrentDirectory);
-			foreach (var dir in directories) {
-				Console.WriteLine (dir);
+			string path = Directory.GetCurrentDirectory() + @"/SavedWorkouts/";
+			if (Directory.Exists (path)) {
+				var directories = Directory.EnumerateFiles (path);
+				foreach (var dir in directories) {
+					Console.WriteLine (dir);
+				}
+			}
+			else {
+				TestLabel.Text = "You have no saved workouts.";
+				Console.WriteLine(Directory.GetCurrentDirectory ());
 			}
 		}
 	}
