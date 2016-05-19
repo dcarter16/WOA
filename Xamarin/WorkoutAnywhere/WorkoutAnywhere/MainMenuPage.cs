@@ -53,5 +53,11 @@ namespace WorkoutAnywhere
 			SampleWorkoutController workoutController = this.Storyboard.InstantiateViewController("SampleWorkoutController") as SampleWorkoutController;
 			this.NavigationController.PushViewController (workoutController, true);
 		}
+
+		partial void FavoriteButton_TouchUpInside (UIButton sender)
+		{
+				FavoriteWorkoutsController favoriteWorkoutsController = this.Storyboard.InstantiateViewController ("FavoriteWorkoutsController") as FavoriteWorkoutsController;
+				this.NavigationController.PushViewController (favoriteWorkoutsController, true);
+		}
 	}
 }

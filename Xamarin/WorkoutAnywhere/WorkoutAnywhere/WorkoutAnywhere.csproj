@@ -99,6 +99,7 @@
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
     <None Include="packages.config" />
+    <None Include="SavedWorkouts\test.txt" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppDelegate.cs" />
@@ -146,6 +147,10 @@
       <DependentUpon>WorkoutClassPage.cs</DependentUpon>
     </Compile>
     <Compile Include="UserDataManager.cs" />
+    <Compile Include="FavoriteWorkoutsController.cs" />
+    <Compile Include="FavoriteWorkoutsController.designer.cs">
+      <DependentUpon>FavoriteWorkoutsController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -169,6 +174,7 @@
     <BundleResource Include="Resources\Workout Images\PullupWorkout.svg" />
     <BundleResource Include="Resources\Workout Images\TimerIcon.svg" />
     <BundleResource Include="Resources\Workout Images\WaterBottleIcon.svg" />
+    <BundleResource Include="Resources\MainMenuImages\FavoriteButtonImage.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="SavedWorkouts\" />

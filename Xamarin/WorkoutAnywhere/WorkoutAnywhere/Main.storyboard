@@ -334,6 +334,17 @@
                                     <constraint id="3294" firstItem="2879" firstAttribute="height" constant="132"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3381" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="102" y="478" width="90" height="90"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.46274509803921571" green="0.47450980392156861" blue="0.47058823529411764" alpha="1"/>
+                                <state key="normal" image="MainMenuImages/FavoriteButtonImage.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="FavoriteButton_TouchUpInside:" destination="19" id="3418" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint id="3330" firstItem="2879" firstAttribute="top" secondItem="16" secondAttribute="bottom" constant="20"/>
@@ -358,6 +369,7 @@
                         <outlet property="CalendarButton" destination="179" id="name-outlet-179"/>
                         <outlet property="StatsButton" destination="180" id="name-outlet-180"/>
                         <outlet property="NavBar" destination="2773" id="name-outlet-2773"/>
+                        <outlet property="FavoriteButton" destination="3381" id="name-outlet-3381"/>
                     </connections>
                     <navigationItem id="2773" translatesAutoresizingMaskIntoConstraints="NO" key="navigationItem" title="Main Menu"/>
                 </viewController>
@@ -667,6 +679,23 @@
             </objects>
             <point key="canvasLocation" x="1250" y="-806"/>
         </scene>
+        <scene sceneID="3397">
+            <objects>
+                <viewController id="3398" sceneMemberID="viewController" customClass="FavoriteWorkoutsController" storyboardIdentifier="FavoriteWorkoutsController" useStoryboardIdentifierAsRestorationIdentifier="YES">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3395"/>
+                        <viewControllerLayoutGuide type="bottom" id="3396"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3399">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3400" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2261" y="215"/>
+        </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedScreenMetrics key="destination" type="retina55"/>
@@ -697,5 +726,7 @@
         <image name="Workout Images/PullupWorkout.svg" width="238" height="238"/>
         <image name="Workout Images/TimerIcon.svg" width="179" height="179"/>
         <image name="Workout Images/WaterBottleIcon.svg" width="146" height="146"/>
+        <image name="MainMenuImages/star.png" width="757" height="720"/>
+        <image name="MainMenuImages/FavoriteButtonImage.png" width="757" height="720"/>
     </resources>
 </document>
