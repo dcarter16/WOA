@@ -99,7 +99,6 @@
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
     <None Include="packages.config" />
-    <None Include="SavedWorkouts\test.txt" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppDelegate.cs" />
@@ -182,9 +181,6 @@
     <BundleResource Include="Resources\BackgroundImages\bg2.jpg" />
     <BundleResource Include="Resources\BackgroundImages\bg1.jpg" />
     <BundleResource Include="Resources\BackgroundImages\bg3.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="SavedWorkouts\" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="xamarin.auth">

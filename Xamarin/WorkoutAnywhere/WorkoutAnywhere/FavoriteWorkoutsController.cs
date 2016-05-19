@@ -15,16 +15,29 @@ namespace WorkoutAnywhere
 		private List<string> favoritedWorkouts = new List<string> ();
 		public FavoriteWorkoutsController (IntPtr handle) : base (handle)
 		{
-			
+
 		}
 
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
+<<<<<<< HEAD
 			string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 			var directories = System.IO.Directory.EnumerateFiles(documentsPath);
 			foreach (var dir in directories) {
 				Console.WriteLine (dir);
+=======
+			string path = Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments) + "/SavedWorkouts";
+			if (Directory.Exists (path)) {
+				var directories = Directory.EnumerateFiles (path);
+				foreach (var dir in directories) {
+					string file = Path.GetFileName (path + "/") + Path.GetFileNameWithoutExtension (dir);
+					TestLabel.Text += file + "\n";
+				}
+			}
+			else {
+				TestLabel.Text = "You have no saved workouts.";
+>>>>>>> master
 			}
 		}
 	}

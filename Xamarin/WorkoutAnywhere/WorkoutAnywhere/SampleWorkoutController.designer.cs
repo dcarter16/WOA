@@ -16,10 +16,6 @@ namespace WorkoutAnywhere
 	{
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UILabel DetailLabel { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
 		UILabel SampleWorkoutAmount { get; set; }
 
 		[Outlet]
@@ -33,10 +29,6 @@ namespace WorkoutAnywhere
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
 		UILabel StepLabel { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UILabel TitleLabel { get; set; }
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
@@ -56,10 +48,6 @@ namespace WorkoutAnywhere
 
 		void ReleaseDesignerOutlets ()
 		{
-			if (DetailLabel != null) {
-				DetailLabel.Dispose ();
-				DetailLabel = null;
-			}
 			if (SampleWorkoutAmount != null) {
 				SampleWorkoutAmount.Dispose ();
 				SampleWorkoutAmount = null;
@@ -75,10 +63,6 @@ namespace WorkoutAnywhere
 			if (StepLabel != null) {
 				StepLabel.Dispose ();
 				StepLabel = null;
-			}
-			if (TitleLabel != null) {
-				TitleLabel.Dispose ();
-				TitleLabel = null;
 			}
 			if (VideoLabel != null) {
 				VideoLabel.Dispose ();

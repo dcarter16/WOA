@@ -6,17 +6,27 @@ using System.Net;
 using System.IO;
 using System.Text;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace WorkoutAnywhere
 {
 	partial class SampleWorkoutController : UIViewController
 	{
 		private string pageURL;
+<<<<<<< HEAD
 		private static WebClient client = new WebClient();
 		private static Stream stream;
 		private StreamReader reader;
 		private static string line;
 		private static List<Tuple<string, string>> pageDetails = new List<Tuple<string, string>> ();
+=======
+		public int step = 1;
+		private WebClient client = new WebClient();
+		private Stream stream;
+		private StreamReader reader;
+		private string line;
+		private List<Tuple<string, string>> pageDetails = new List<Tuple<string, string>> ();
+>>>>>>> master
 
 		public SampleWorkoutController (IntPtr handle) : base (handle)
 		{
@@ -41,23 +51,23 @@ namespace WorkoutAnywhere
 			foreach (Tuple<string, string> page in pageDetails) {
 				switch (page.Item1.ToString()) {
 				case "title":
-					TitleLabel.Text = page.Item2.ToString ();
-					break;
-				case "detail":
-					DetailLabel.Text = page.Item2.ToString ();
+					this.Title = page.Item2.ToString ();
 					break;
 				case "step":
-					StepLabel.Text += page.Item2.ToString ();
+					if (Regex.IsMatch (page.Item2.ToString (), @"^\d")) {
+						StepLabel.Text += "\t" + page.Item2.ToString () + "\n";
+					}
+					else if (page.Item2.ToString().StartsWith("@")) {
+						StepLabel.Text += "\t" + page.Item2.ToString ().Substring(1) + "\n";
+					}
+					else {
+						StepLabel.Text += "\n" + step + ". " + page.Item2.ToString () + "\n";
+						step++;
+					}
 					break;
 				case "video":
 					string video = null;
-					// SHOULD MAKE THIS A FUNCTION
-					foreach(Tuple<string, string> pagepage in pageDetails) {
-						if (pagepage.Item1.ToString() == "video") {
-							video = pagepage.Item2.ToString();
-							break;
-						}
-					}
+					video = findValuebyKey("video");
 					VideoLabel.LoadRequest (new NSUrlRequest (new NSUrl (video.ToString ())));
 					VideoLabel.ScalesPageToFit = true;
 					break;
@@ -71,17 +81,33 @@ namespace WorkoutAnywhere
 		partial void SampleSliderChanged (UISlider sender)
 		{
 			WorkoutAmount.Text = Convert.ToString(Math.Round(sender.Value)) + "%";
-			//throw new NotImplementedException ();
 		}
 
 		partial void UIButton1438_TouchUpInside (UIButton sender)
 		{
+<<<<<<< HEAD
 			/*string title = null;
+=======
+			string title = findValuebyKey("title");
+
+			var documents = Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments);
+			if (!Directory.Exists(documents + "/SavedWorkouts")) {
+				var directoryname = Path.Combine (documents, "SavedWorkouts");
+				Directory.CreateDirectory(directoryname);
+			}
+
+			client.DownloadFile(pageURL, documents + "/SavedWorkouts/" + title + ".txt");
+		}
+
+		private string findValuebyKey(string key) {
+			string value = null;
+>>>>>>> master
 			foreach(Tuple<string, string> page in pageDetails) {
-				if (page.Item1.ToString() == "title") {
-					title = page.Item2.ToString();
+				if (page.Item1.ToString() == key) {
+					value = page.Item2.ToString();
 					break;
 				}
+<<<<<<< HEAD
 			}*/
 
 			// DOESN'T WORK
@@ -96,6 +122,10 @@ namespace WorkoutAnywhere
 			var url = new Uri(pageURL);
 			client.Encoding = Encoding.UTF8;
 			client.DownloadStringAsync(url);
+=======
+			}
+			return value;
+>>>>>>> master
 		}
 	}
 }
