@@ -12,7 +12,7 @@ namespace WorkoutAnywhere
 {
 	partial class WorkoutListPage : UIViewController
 	{
-		/*
+		
 		protected string label;
 		public WorkoutListPage(): base ()
 		{
@@ -21,6 +21,5 @@ namespace WorkoutAnywhere
 		{
 			label = _label;
 		}
-		*/
 	}
 }

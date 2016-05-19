@@ -151,6 +151,7 @@
     <Compile Include="FavoriteWorkoutsController.designer.cs">
       <DependentUpon>FavoriteWorkoutsController.cs</DependentUpon>
     </Compile>
+    <Compile Include="WorkoutListPage.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
