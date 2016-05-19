@@ -26,9 +26,7 @@ namespace WorkoutAnywhere
 			tableItems  = WorkoutManager.GetLabelMenu();
 			ReformatData ();
 			WorkoutMenuTable.Source = new TableSource (titles, counts, this);
-			WorkoutListPage workoutListController = this.Storyboard.InstantiateViewController("WorkoutListPage") as WorkoutListPage;
-			//workoutListController.setLabels(tableItems[indexPath.Row]);
-			this.NavigationController.PushViewController (workoutListController, true);
+
 		}
 
 		private void ReformatData(){
@@ -43,7 +41,7 @@ namespace WorkoutAnywhere
 			counts = _counts.ToArray();
 
 		}
-		public class TableSource :UITableViewSource{
+		private class TableSource :UITableViewSource{
 			protected string[] tableItems;
 			protected string[] itemCounts;
 			protected string cellIdentifier = "TableCell";
@@ -70,7 +68,7 @@ namespace WorkoutAnywhere
 				//alertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
 				//parent.PresentViewController (alertController, true, null);
 				WorkoutListPage workoutListController = parent.Storyboard.InstantiateViewController("WorkoutListPage") as WorkoutListPage;
-				workoutListController.setLabels(tableItems[indexPath.Row]);
+				workoutListController.setLabel(tableItems[indexPath.Row]);
 				parent.NavigationController.PushViewController (workoutListController, true);
 				tableView.DeselectRow (indexPath, true);
 			}
