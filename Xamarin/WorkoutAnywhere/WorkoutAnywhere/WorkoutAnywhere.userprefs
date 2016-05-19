@@ -1,22 +1,8 @@
 ﻿<Properties StartupItem="WorkoutAnywhere.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6sPlus.9.1" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SampleWorkoutController.cs">
     <Files>
-      <File FileName="WorkoutPage.cs" Line="1" Column="1" />
-      <File FileName="LoginPageViewController.cs" Line="1" Column="1" />
-      <File FileName="WorkoutClassPage.cs" Line="18" Column="22" />
-      <File FileName="MainMenuPage.cs" Line="58" Column="84" />
-      <File FileName="Main.cs" Line="1" Column="1" />
-      <File FileName="AppDelegate.cs" Line="1" Column="1" />
-      <File FileName="CalendarPage.cs" Line="1" Column="1" />
-      <File FileName="WorkoutManager.cs" Line="1" Column="1" />
-      <File FileName="MultiMap.cs" Line="1" Column="1" />
-      <File FileName="UserDataManager.cs" Line="1" Column="1" />
-      <File FileName="MainMenuPage.designer.cs" Line="1" Column="1" />
-      <File FileName="SampleWorkoutController.cs" Line="1" Column="1" />
-      <File FileName="SignUpPage.cs" Line="1" Column="1" />
-      <File FileName="ProfilePage.cs" Line="1" Column="1" />
-      <File FileName="WorkoutListPage.cs" Line="1" Column="1" />
+      <File FileName="SampleWorkoutController.cs" Line="29" Column="39" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
