@@ -20,6 +20,10 @@ namespace WorkoutAnywhere
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton FavoriteButton { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
 		UINavigationItem NavBar { get; set; }
 
 		[Outlet]
@@ -46,6 +50,10 @@ namespace WorkoutAnywhere
 		[GeneratedCode ("iOS Designer", "1.0")]
 		partial void CommunityButton_TouchUpInside (UIButton sender);
 
+		[Action ("FavoriteButton_TouchUpInside:")]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		partial void FavoriteButton_TouchUpInside (UIButton sender);
+
 		[Action ("NutritionButton_TouchUpInside:")]
 		[GeneratedCode ("iOS Designer", "1.0")]
 		partial void NutritionButton_TouchUpInside (UIButton sender);
@@ -63,6 +71,10 @@ namespace WorkoutAnywhere
 			if (CalendarButton != null) {
 				CalendarButton.Dispose ();
 				CalendarButton = null;
+			}
+			if (FavoriteButton != null) {
+				FavoriteButton.Dispose ();
+				FavoriteButton = null;
 			}
 			if (NavBar != null) {
 				NavBar.Dispose ();

@@ -18,7 +18,7 @@ namespace WorkoutAnywhere
 			base.ViewDidLoad ();
 
 			UIGraphics.BeginImageContext (this.View.Frame.Size);
-			UIImage i = UIImage.FromFile (@"BackgroundImages/fon-36630.jpg");
+			UIImage i = UIImage.FromFile (@"BackgroundImages/bg1.jpg");
 			i = i.Scale (this.View.Frame.Size);
 			this.View.BackgroundColor = UIColor.FromPatternImage(i);
 			ProfileButton.SetTitle(String.Format("{0}", UserDataManager.getDisplayName()), UIControlState.Normal);
@@ -52,6 +52,12 @@ namespace WorkoutAnywhere
 		public void ViewWorkoutButton_TouchInside(UIButton sender){
 			SampleWorkoutController workoutController = this.Storyboard.InstantiateViewController("SampleWorkoutController") as SampleWorkoutController;
 			this.NavigationController.PushViewController (workoutController, true);
+		}
+
+		partial void FavoriteButton_TouchUpInside (UIButton sender)
+		{
+				FavoriteWorkoutsController favoriteWorkoutsController = this.Storyboard.InstantiateViewController ("FavoriteWorkoutsController") as FavoriteWorkoutsController;
+				this.NavigationController.PushViewController (favoriteWorkoutsController, true);
 		}
 	}
 }

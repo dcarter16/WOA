@@ -25,8 +25,8 @@ namespace WorkoutAnywhere
 			base.ViewDidLoad ();
 			tableItems  = WorkoutManager.GetLabelMenu();
 			ReformatData ();
-			WorkoutMenuTable.Source = new TableSource (titles, counts);
-			WorkoutMenuTable.Delegate = new TableDelegate ();
+			WorkoutMenuTable.Source = new TableSource (titles, counts, this);
+
 		}
 
 		private void ReformatData(){
@@ -41,13 +41,15 @@ namespace WorkoutAnywhere
 			counts = _counts.ToArray();
 
 		}
-		public class TableSource :UITableViewSource{
+		private class TableSource :UITableViewSource{
 			protected string[] tableItems;
 			protected string[] itemCounts;
 			protected string cellIdentifier = "TableCell";
-			public TableSource (string[] items, string[] counts){
+			protected UIViewController parent; 
+			public TableSource (string[] items, string[] counts, UIViewController _parent){
 				tableItems = items;
 				itemCounts = counts;
+				parent = _parent;
 			}
 			public override nint RowsInSection(UITableView tableview, nint section){
 				return tableItems.Length;
@@ -62,15 +64,19 @@ namespace WorkoutAnywhere
 				return cell;
 			}
 			public override void RowSelected(UITableView tableView, NSIndexPath indexPath){
-				//WorkoutListPage workoutListController = this.Storyboard.InstantiateViewController("WorkoutListPage") as WorkoutListPage;
-				//workoutListController.setLabels(tableItems[indexPath.Row]);
-				//this.NavigationController.PushViewController (workoutListController, true);	
-				Console.WriteLine(tableItems[indexPath.Row]);
+				//UIAlertController alertController = UIAlertController.Create ("Row Selected", tableItems[indexPath.Row], UIAlertControllerStyle.Alert);	
+				//alertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
+				//parent.PresentViewController (alertController, true, null);
+				WorkoutListPage workoutListController = parent.Storyboard.InstantiateViewController("WorkoutListPage") as WorkoutListPage;
+				workoutListController.setLabel(tableItems[indexPath.Row]);
+				parent.NavigationController.PushViewController (workoutListController, true);
+				tableView.DeselectRow (indexPath, true);
 			}
-			//public override void AccessoryButtonTapped (UITableView tableView, NSIndexPath indexPath){}
-		}
-		public class TableDelegate :UITableViewDelegate{
-			
+			public override void AccessoryButtonTapped (UITableView tableView, NSIndexPath indexPath){
+
+
+			}
+
 		}
 	}
 }

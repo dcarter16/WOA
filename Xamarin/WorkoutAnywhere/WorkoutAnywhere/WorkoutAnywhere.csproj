@@ -99,6 +99,7 @@
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
     <None Include="packages.config" />
+    <None Include="SavedWorkouts\test.txt" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppDelegate.cs" />
@@ -131,21 +132,29 @@
     <Compile Include="ProfilePage.designer.cs">
       <DependentUpon>ProfilePage.cs</DependentUpon>
     </Compile>
-    <Compile Include="WorkoutsPage.designer.cs">
-      <DependentUpon>WorkoutPage.cs</DependentUpon>
-    </Compile>
     <Compile Include="SampleWorkoutController.cs" />
     <Compile Include="SampleWorkoutController.designer.cs">
       <DependentUpon>SampleWorkoutController.cs</DependentUpon>
     </Compile>
     <Compile Include="MultiMap.cs" />
     <Compile Include="WorkoutManager.cs" />
-    <Compile Include="WorkoutPage.cs" />
     <Compile Include="WorkoutClassPage.cs" />
     <Compile Include="WorkoutClassPage.designer.cs">
       <DependentUpon>WorkoutClassPage.cs</DependentUpon>
     </Compile>
     <Compile Include="UserDataManager.cs" />
+    <Compile Include="FavoriteWorkoutsController.cs" />
+    <Compile Include="FavoriteWorkoutsController.designer.cs">
+      <DependentUpon>FavoriteWorkoutsController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkoutListPage_.cs" />
+    <Compile Include="WorkoutListPage_.designer.cs">
+      <DependentUpon>WorkoutListPage_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenericWorkoutPage.cs" />
+    <Compile Include="GenericWorkoutPage.designer.cs">
+      <DependentUpon>GenericWorkoutPage.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -169,6 +178,9 @@
     <BundleResource Include="Resources\Workout Images\PullupWorkout.svg" />
     <BundleResource Include="Resources\Workout Images\TimerIcon.svg" />
     <BundleResource Include="Resources\Workout Images\WaterBottleIcon.svg" />
+    <BundleResource Include="Resources\MainMenuImages\FavoriteButtonImage.png" />
+    <BundleResource Include="Resources\BackgroundImages\bg2.jpg" />
+    <BundleResource Include="Resources\BackgroundImages\bg1.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="SavedWorkouts\" />
