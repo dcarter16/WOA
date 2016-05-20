@@ -36,8 +36,11 @@ namespace WorkoutAnywhere
 		}
 		partial void CalendarButton_TouchUpInside (UIButton sender)
 		{
-			CalendarPage calendarController = this.Storyboard.InstantiateViewController("CalendarPage") as CalendarPage;
-			this.NavigationController.PushViewController (calendarController, true);
+			NutritionPage nutritionController = this.Storyboard.InstantiateViewController("NutritionPage") as NutritionPage;
+			nutritionController.Title = "Calendar";
+			this.NavigationController.PushViewController (nutritionController, true);
+			//CalendarPage calendarController = this.Storyboard.InstantiateViewController("CalendarPage") as CalendarPage;
+			//this.NavigationController.PushViewController (calendarController, true);
 		}
 		partial void ProfileButton_TouchUpInside (UIButton sender)
 		{

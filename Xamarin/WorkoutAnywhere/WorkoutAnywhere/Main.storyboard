@@ -659,7 +659,7 @@
         </scene>
         <scene sceneID="3397">
             <objects>
-                <viewController id="3398" sceneMemberID="viewController" customClass="FavoriteWorkoutsController" storyboardIdentifier="FavoriteWorkoutsController" useStoryboardIdentifierAsRestorationIdentifier="YES">
+                <viewController id="3398" sceneMemberID="viewController" customClass="FavoriteWorkoutsController" storyboardIdentifier="FavoriteWorkoutsController" useStoryboardIdentifierAsRestorationIdentifier="YES" title="Favorites">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3395"/>
                         <viewControllerLayoutGuide type="bottom" id="3396"/>
@@ -686,7 +686,7 @@
         </scene>
         <scene sceneID="3516">
             <objects>
-                <viewController id="3517" sceneMemberID="viewController" customClass="WorkoutListPage" storyboardIdentifier="WorkoutListPage" useStoryboardIdentifierAsRestorationIdentifier="YES">
+                <viewController id="3517" sceneMemberID="viewController" customClass="WorkoutListPage" storyboardIdentifier="WorkoutListPage" useStoryboardIdentifierAsRestorationIdentifier="YES" title="Workouts">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3514"/>
                         <viewControllerLayoutGuide type="bottom" id="3515"/>
