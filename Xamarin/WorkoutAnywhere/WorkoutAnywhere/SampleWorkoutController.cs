@@ -5,17 +5,20 @@ using UIKit;
 using System.Net;
 using System.IO;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
+using CoreGraphics;
 
 namespace WorkoutAnywhere
 {
 	partial class SampleWorkoutController : UIViewController
 	{
 		private string pageURL;
-		private static WebClient client = new WebClient();
-		private static Stream stream;
-		private static StreamReader reader;
-		private static string line;
-		private static List<Tuple<string, string>> pageDetails = new List<Tuple<string, string>> ();
+		public int step = 1;
+		private WebClient client = new WebClient();
+		private Stream stream;
+		private StreamReader reader;
+		private string line;
+		private List<Tuple<string, string>> pageDetails = new List<Tuple<string, string>> ();
 
 		public SampleWorkoutController (IntPtr handle) : base (handle)
 		{
@@ -42,8 +45,33 @@ namespace WorkoutAnywhere
 				case "title":
 					this.Title = page.Item2.ToString ();
 					break;
-				case "step": // Format text box --- I'll do this later
-					StepLabel.Text += page.Item2.ToString ();
+//				DOESN'T WORK -- TEXT DOESN'T SHOW UP
+//				case "step":
+//					UILabel label = new UILabel (new CGRect(UIScreen.MainScreen.Bounds.Width, UIScreen.MainScreen.Bounds.Height, UIScreen.MainScreen.Bounds.Width, 30));
+//					label.Lines = 1;
+//					if (Regex.IsMatch (page.Item2.ToString (), @"^\d")) {
+//						label.Text = "\t" + page.Item2.ToString () + "\n";
+//						label.Font.WithSize (18);
+//					} else if (page.Item2.ToString ().StartsWith ("@")) {
+//						label.Text = "\t" + page.Item2.ToString ().Substring (1) + "\n";
+//						label.Font.WithSize (20);
+//					} else {
+//						label.Text = "\n" + step + ". " + page.Item2.ToString () + "\n";
+//						label.Font.WithSize (24);
+//						label.TextColor = UIColor.Blue;
+//						step++;
+//					}
+//					this.View.AddSubview (label);
+//					break;
+				case "step":
+					if (Regex.IsMatch (page.Item2.ToString (), @"^\d\.")) {
+						StepLabel.Text += "\t" + page.Item2.ToString () + "\n";
+					} else if (page.Item2.ToString ().StartsWith ("@")) {
+						StepLabel.Text += "\t" + page.Item2.ToString ().Substring (1) + "\n";
+					} else {
+						StepLabel.Text += "\n" + step + ". " + page.Item2.ToString () + "\n";
+						step++;
+					}
 					break;
 				case "video":
 					string video = null;
@@ -61,15 +89,11 @@ namespace WorkoutAnywhere
 		partial void SampleSliderChanged (UISlider sender)
 		{
 			WorkoutAmount.Text = Convert.ToString(Math.Round(sender.Value)) + "%";
-			//throw new NotImplementedException ();
 		}
 
 		partial void UIButton1438_TouchUpInside (UIButton sender)
 		{
-			string title = null;
-			title = findValuebyKey("title");
-
-			Console.WriteLine(Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments));
+			string title = findValuebyKey("title");
 
 			var documents = Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments);
 			if (!Directory.Exists(documents + "/SavedWorkouts")) {
@@ -77,7 +101,7 @@ namespace WorkoutAnywhere
 				Directory.CreateDirectory(directoryname);
 			}
 
-			client.DownloadFile("http://workoutanywhere.net/MobileData/Workouts/15-minute-outdoor-hiit-workout-workout-anywhere.txt", documents + "/SavedWorkouts/" + title + ".txt");
+			client.DownloadFile(pageURL, documents + "/SavedWorkouts/" + title + ".txt");
 		}
 
 		private string findValuebyKey(string key) {
