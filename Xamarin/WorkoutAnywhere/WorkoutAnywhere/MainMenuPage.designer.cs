@@ -20,7 +20,7 @@ namespace WorkoutAnywhere
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UIButton FavoriteButton { get; set; }
+		UIButton FavoritesButton { get; set; }
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
@@ -36,23 +36,15 @@ namespace WorkoutAnywhere
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UIButton StatsButton { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
 		UIButton WorkoutsButton { get; set; }
 
 		[Action ("CalendarButton_TouchUpInside:")]
 		[GeneratedCode ("iOS Designer", "1.0")]
 		partial void CalendarButton_TouchUpInside (UIButton sender);
 
-		[Action ("CommunityButton_TouchUpInside:")]
+		[Action ("FavoritesButton_TouchUpInside:")]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		partial void CommunityButton_TouchUpInside (UIButton sender);
-
-		[Action ("FavoriteButton_TouchUpInside:")]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		partial void FavoriteButton_TouchUpInside (UIButton sender);
+		partial void FavoritesButton_TouchUpInside (UIButton sender);
 
 		[Action ("NutritionButton_TouchUpInside:")]
 		[GeneratedCode ("iOS Designer", "1.0")]
@@ -72,9 +64,9 @@ namespace WorkoutAnywhere
 				CalendarButton.Dispose ();
 				CalendarButton = null;
 			}
-			if (FavoriteButton != null) {
-				FavoriteButton.Dispose ();
-				FavoriteButton = null;
+			if (FavoritesButton != null) {
+				FavoritesButton.Dispose ();
+				FavoritesButton = null;
 			}
 			if (NavBar != null) {
 				NavBar.Dispose ();
@@ -87,10 +79,6 @@ namespace WorkoutAnywhere
 			if (ProfileButton != null) {
 				ProfileButton.Dispose ();
 				ProfileButton = null;
-			}
-			if (StatsButton != null) {
-				StatsButton.Dispose ();
-				StatsButton = null;
 			}
 			if (WorkoutsButton != null) {
 				WorkoutsButton.Dispose ();

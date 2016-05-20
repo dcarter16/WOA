@@ -269,9 +269,10 @@
                                     <constraint id="3285" firstItem="177" firstAttribute="height" constant="90"/>
                                 </constraints>
                             </button>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="178" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
-                                <rect key="frame" x="222" y="255" width="88" height="90"/>
-                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.34901960784313724"/>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="178" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="221" y="256" width="90" height="90"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.5490196078431373"/>
+                                <color key="tintColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                                 <state key="normal" backgroundImage="MainMenuImages/NutritionButtonImage.png">
                                     <color key="titleShadowColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
                                 </state>
@@ -297,31 +298,31 @@
                                 </constraints>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="180" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="221" y="363" width="90" height="90"/>
-                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.34901960784313724"/>
-                                <state key="normal" backgroundImage="MainMenuImages/StatsButtonImage.png">
+                                <rect key="frame" x="220.5" y="364" width="91" height="88"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.5490196078431373"/>
+                                <state key="normal" backgroundImage="MainMenuImages/FavoriteButtonImage.png">
                                     <color key="titleShadowColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
                                 </state>
                                 <connections>
-                                    <action selector="CommunityButton_TouchUpInside:" destination="19" id="2220" eventType="touchUpInside"/>
+                                    <action selector="FavoritesButton_TouchUpInside:" destination="19" id="3633" eventType="touchUpInside"/>
                                 </connections>
                                 <constraints>
                                     <constraint id="3288" firstItem="180" firstAttribute="height" constant="90"/>
                                 </constraints>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="181" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="224" y="140" width="132" height="58"/>
+                                <rect key="frame" x="224" y="175" width="132" height="58"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Profile">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleColor" colorSpace="calibratedWhite" white="0" alpha="1"/>
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                                 </state>
                                 <connections>
                                     <action selector="ProfileButton_TouchUpInside:" destination="19" id="2227" eventType="touchUpInside"/>
                                 </connections>
                                 <constraints>
-                                    <constraint id="3317" firstItem="181" firstAttribute="height" constant="58"/>
-                                    <constraint id="3318" firstItem="181" firstAttribute="width" constant="132"/>
+                                    <constraint id="3611" firstAttribute="width" constant="132"/>
+                                    <constraint id="3612" firstAttribute="height" constant="58"/>
                                 </constraints>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="2879" translatesAutoresizingMaskIntoConstraints="NO" image="BackgroundImages/WorkoutAnywherebyRundleFit.png">
@@ -331,47 +332,30 @@
                                     <constraint id="3294" firstItem="2879" firstAttribute="height" constant="132"/>
                                 </constraints>
                             </imageView>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3381" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="103" y="473" width="90" height="90"/>
-                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.34509803921568627"/>
-                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <state key="normal" image="MainMenuImages/FavoriteButtonImage.png"/>
-                                <connections>
-                                    <action selector="FavoriteButton_TouchUpInside:" destination="19" id="3418" eventType="touchUpInside"/>
-                                </connections>
-                                <constraints>
-                                    <constraint id="3493" firstAttribute="width" constant="90"/>
-                                    <constraint id="3494" firstAttribute="height" constant="90"/>
-                                </constraints>
-                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="3615" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" text="Welcome," textAlignment="right">
+                                <rect key="frame" x="280" y="151" width="72" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <constraints>
                             <constraint id="3330" firstItem="2879" firstAttribute="top" secondItem="16" secondAttribute="bottom" constant="20"/>
                             <constraint id="3331" firstItem="2879" firstAttribute="centerX" secondItem="20" secondAttribute="centerX"/>
                             <constraint id="3332" firstItem="177" firstAttribute="top" secondItem="2879" secondAttribute="bottom" constant="83"/>
-                            <constraint id="3333" firstItem="178" firstAttribute="top" secondItem="2879" secondAttribute="bottom" constant="83"/>
-                            <constraint id="3341" firstItem="20" firstAttribute="trailing" secondItem="181" secondAttribute="trailing" constant="58"/>
-                            <constraint id="3342" firstItem="181" firstAttribute="top" secondItem="2879" secondAttribute="centerY" constant="34"/>
-                            <constraint id="3602" firstItem="179" firstAttribute="leading" secondItem="3381" secondAttribute="leading"/>
-                            <constraint id="3604" firstItem="179" firstAttribute="leading" secondItem="177" secondAttribute="leading"/>
-                            <constraint id="3605" firstItem="3381" firstAttribute="leading" secondItem="177" secondAttribute="leading"/>
-                            <constraint id="3606" firstItem="178" firstAttribute="trailing" secondItem="180" secondAttribute="trailing"/>
-                            <constraint id="3631" firstItem="179" firstAttribute="width" secondItem="3381" secondAttribute="width"/>
-                            <constraint id="3632" firstItem="177" firstAttribute="width" secondItem="3381" secondAttribute="width"/>
-                            <constraint id="3633" firstItem="178" firstAttribute="width" secondItem="3381" secondAttribute="width"/>
-                            <constraint id="3634" firstItem="180" firstAttribute="width" secondItem="3381" secondAttribute="width"/>
-                            <constraint id="3635" firstItem="179" firstAttribute="height" secondItem="3381" secondAttribute="height"/>
-                            <constraint id="3636" firstItem="177" firstAttribute="height" secondItem="3381" secondAttribute="height"/>
-                            <constraint id="3637" firstItem="178" firstAttribute="height" secondItem="3381" secondAttribute="height"/>
-                            <constraint id="3638" firstItem="180" firstAttribute="height" secondItem="3381" secondAttribute="height"/>
-                            <constraint id="3639" firstItem="178" firstAttribute="centerX" secondItem="20" secondAttribute="centerX" constant="59"/>
-                            <constraint id="3640" firstItem="20" firstAttribute="centerX" secondItem="177" secondAttribute="centerX" constant="59"/>
-                            <constraint id="3641" firstItem="20" firstAttribute="centerX" secondItem="179" secondAttribute="centerX" constant="59"/>
-                            <constraint id="3642" firstItem="20" firstAttribute="centerX" secondItem="3381" secondAttribute="centerX" constant="59"/>
-                            <constraint id="3643" firstItem="180" firstAttribute="centerX" secondItem="20" secondAttribute="centerX" constant="59"/>
-                            <constraint id="3648" firstItem="179" firstAttribute="top" secondItem="177" secondAttribute="bottom" constant="19"/>
-                            <constraint id="3649" firstItem="180" firstAttribute="top" secondItem="178" secondAttribute="bottom" constant="18"/>
-                            <constraint id="3650" firstItem="3381" firstAttribute="top" secondItem="179" secondAttribute="bottom" constant="19"/>
+                            <constraint id="3333" firstItem="178" firstAttribute="top" secondItem="2879" secondAttribute="bottom" constant="84"/>
+                            <constraint id="3337" firstItem="180" firstAttribute="leading" secondItem="179" secondAttribute="trailing" constant="28"/>
+                            <constraint id="3338" firstItem="178" firstAttribute="leading" secondItem="177" secondAttribute="trailing" constant="28"/>
+                            <constraint id="3339" firstItem="180" firstAttribute="top" secondItem="178" secondAttribute="bottom" constant="18"/>
+                            <constraint id="3340" firstItem="179" firstAttribute="top" secondItem="177" secondAttribute="bottom" constant="19"/>
+                            <constraint id="3362" firstItem="20" firstAttribute="centerX" secondItem="177" secondAttribute="centerX" constant="59"/>
+                            <constraint id="3366" firstItem="178" firstAttribute="centerX" secondItem="20" secondAttribute="centerX" constant="59"/>
+                            <constraint id="3367" firstItem="180" firstAttribute="centerX" secondItem="20" secondAttribute="centerX" constant="59"/>
+                            <constraint id="3609" firstItem="20" firstAttribute="trailing" secondItem="181" secondAttribute="trailing" constant="58"/>
+                            <constraint id="3610" firstItem="181" firstAttribute="top" secondItem="20" secondAttribute="top" constant="175"/>
+                            <constraint id="3613" firstItem="20" firstAttribute="trailing" secondItem="181" secondAttribute="trailing" constant="58"/>
+                            <constraint id="3614" firstItem="178" firstAttribute="top" secondItem="181" secondAttribute="bottom" constant="23"/>
                         </constraints>
                     </view>
                     <connections>
@@ -379,9 +363,8 @@
                         <outlet property="WorkoutsButton" destination="177" id="name-outlet-177"/>
                         <outlet property="NutritionButton" destination="178" id="name-outlet-178"/>
                         <outlet property="CalendarButton" destination="179" id="name-outlet-179"/>
-                        <outlet property="StatsButton" destination="180" id="name-outlet-180"/>
+                        <outlet property="FavoritesButton" destination="180" id="name-outlet-180"/>
                         <outlet property="NavBar" destination="2773" id="name-outlet-2773"/>
-                        <outlet property="FavoriteButton" destination="3381" id="name-outlet-3381"/>
                     </connections>
                     <navigationItem id="2773" translatesAutoresizingMaskIntoConstraints="NO" key="navigationItem" title="Main Menu"/>
                 </viewController>
@@ -658,7 +641,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="2127" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="0.0" y="20" width="414" height="715"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes/>
                                 <constraints/>
@@ -686,17 +669,15 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="3599" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" numberOfLines="10">
-                                <rect key="frame" x="56" y="200" width="306" height="196"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="3638" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes/>
+                            </tableView>
                         </subviews>
                     </view>
                     <connections>
-                        <outlet property="TestLabel" destination="3599" id="name-outlet-3599"/>
+                        <outlet property="FavoriteMenuTable" destination="3638" id="name-outlet-3638"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3400" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -716,7 +697,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="3521" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="0.0" y="46" width="414" height="670"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes/>
                             </tableView>
