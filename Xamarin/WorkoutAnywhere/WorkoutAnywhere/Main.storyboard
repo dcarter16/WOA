@@ -568,13 +568,17 @@
                                     <constraint id="3482" firstAttribute="width" constant="46"/>
                                 </constraints>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0" minValue="0.0" maxValue="100" id="1442" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0" minValue="0.0" maxValue="100" id="1442" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
                                 <rect key="frame" x="20" y="685" width="310" height="31"/>
                                 <connections>
                                     <action selector="SampleSliderChanged:" destination="1247" id="1446" eventType="valueChanged"/>
                                 </connections>
+                                <constraints>
+                                    <constraint id="3676" firstItem="1442" firstAttribute="width" constant="310"/>
+                                    <constraint id="3677" firstItem="1442" firstAttribute="height" constant="31"/>
+                                </constraints>
                             </slider>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="%" lineBreakMode="tailTruncation" minimumFontSize="10" id="1444" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="%" lineBreakMode="tailTruncation" minimumFontSize="10" id="1444" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
                                 <rect key="frame" x="20" y="657" width="42" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -602,7 +606,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="2798" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" numberOfLines="10">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="2798" translatesAutoresizingMaskIntoConstraints="NO" numberOfLines="10" misplaced="YES">
                                 <rect key="frame" x="0.0" y="301" width="414" height="342"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -615,6 +619,14 @@
                             <constraint id="1421" firstItem="1419" firstAttribute="top" secondItem="1248" secondAttribute="top" constant="48"/>
                             <constraint id="3480" firstItem="1248" firstAttribute="trailing" secondItem="1438" secondAttribute="trailing" constant="20"/>
                             <constraint id="3481" firstItem="1248" firstAttribute="bottom" secondItem="1438" secondAttribute="bottom" constant="20"/>
+                            <constraint id="3666" firstItem="2798" firstAttribute="top" secondItem="1419" secondAttribute="bottom"/>
+                            <constraint id="3667" firstItem="1442" firstAttribute="top" secondItem="1444" secondAttribute="bottom" constant="7"/>
+                            <constraint id="3668" firstItem="1248" firstAttribute="centerX" secondItem="1444" secondAttribute="centerX" constant="166"/>
+                            <constraint id="3669" firstItem="1419" firstAttribute="trailing" secondItem="1248" secondAttribute="trailing"/>
+                            <constraint id="3673" firstItem="1248" firstAttribute="trailing" secondItem="1438" secondAttribute="trailing" constant="20"/>
+                            <constraint id="3678" firstItem="1248" firstAttribute="bottom" secondItem="1442" secondAttribute="bottom" constant="20"/>
+                            <constraint id="3679" firstItem="1442" firstAttribute="top" secondItem="1444" secondAttribute="bottom" constant="7"/>
+                            <constraint id="3680" firstItem="1248" firstAttribute="centerX" secondItem="1442" secondAttribute="centerX" constant="32"/>
                         </constraints>
                     </view>
                     <connections>
