@@ -1,6 +1,10 @@
 ﻿using Foundation;
 using UIKit;
 
+using System.IO;
+using System.Collections.Generic;
+using System;
+
 namespace WorkoutAnywhere
 {
 	// The UIApplicationDelegate for the application. This class is responsible for launching the
@@ -21,6 +25,7 @@ namespace WorkoutAnywhere
 			// If not required for your application you can safely delete this method
 			InitializeWorkoutManager();
 			InitializeUserDataManager();
+			ClearSavedDir ();
 			return true;
 		}
 		private void InitializeWorkoutManager(){
@@ -28,6 +33,12 @@ namespace WorkoutAnywhere
 		}
 		private void InitializeUserDataManager(){
 			UserDataManager.Initialize();
+		}
+		private void ClearSavedDir(){
+			string path = Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments);
+			if (Directory.Exists (path + "/SavedWorkouts")) {
+				Directory.Delete (path + "/SavedWorkouts");
+			}
 		}
 
 		public override void OnResignActivation (UIApplication application)

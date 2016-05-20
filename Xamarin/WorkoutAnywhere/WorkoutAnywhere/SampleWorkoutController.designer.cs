@@ -28,6 +28,10 @@ namespace WorkoutAnywhere
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton SaveButton { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
 		UILabel StepLabel { get; set; }
 
 		[Outlet]
@@ -42,9 +46,9 @@ namespace WorkoutAnywhere
 		[GeneratedCode ("iOS Designer", "1.0")]
 		partial void SampleSliderChanged (UISlider sender);
 
-		[Action ("UIButton1438_TouchUpInside:")]
+		[Action ("SaveButton_TouchUpInside:")]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		partial void UIButton1438_TouchUpInside (UIButton sender);
+		partial void SaveButton_TouchUpInside (UIButton sender);
 
 		void ReleaseDesignerOutlets ()
 		{
@@ -59,6 +63,10 @@ namespace WorkoutAnywhere
 			if (SampleWorkoutView != null) {
 				SampleWorkoutView.Dispose ();
 				SampleWorkoutView = null;
+			}
+			if (SaveButton != null) {
+				SaveButton.Dispose ();
+				SaveButton = null;
 			}
 			if (StepLabel != null) {
 				StepLabel.Dispose ();

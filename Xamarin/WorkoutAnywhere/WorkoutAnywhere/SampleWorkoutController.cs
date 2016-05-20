@@ -48,6 +48,7 @@ namespace WorkoutAnywhere
 				pageDetails.Add (new Tuple<string, string> (words [0], words [1]));
 			}
 			PopulatePage ();
+			SaveButton.Enabled = false;
 		}
 		private void ReadFromServer(){
 			stream = client.OpenRead (pageURL);
@@ -97,20 +98,6 @@ namespace WorkoutAnywhere
 			WorkoutAmount.Text = Convert.ToString(Math.Round(sender.Value)) + "%";
 		}
 
-		partial void UIButton1438_TouchUpInside (UIButton sender)
-		{
-			string[] temp = pageURL.Split('/');
-			string title = temp[temp.Length -1];
-
-			var documents = Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments);
-			if (!Directory.Exists(documents + "/SavedWorkouts")) {
-				var directoryname = Path.Combine (documents, "SavedWorkouts");
-				Directory.CreateDirectory(directoryname);
-			}
-
-			client.DownloadFile(pageURL, documents + "/SavedWorkouts/" + title );
-		}
-
 		private string findValuebyKey(string key) {
 			string value = null;
 			foreach(Tuple<string, string> page in pageDetails) {
@@ -121,5 +108,18 @@ namespace WorkoutAnywhere
 			}
 			return value;
 		}
+
+		partial void SaveButton_TouchUpInside (UIButton sender)
+		{
+			string[] temp = pageURL.Split('/');
+			string title = temp[temp.Length -1];
+
+			var documents = Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments);
+			if (!Directory.Exists(documents + "/SavedWorkouts")) {
+				var directoryname = Path.Combine (documents, "SavedWorkouts");
+				Directory.CreateDirectory(directoryname);
+			}
+
+			client.DownloadFile(pageURL, documents + "/SavedWorkouts/" + title );		}
 	}
 }

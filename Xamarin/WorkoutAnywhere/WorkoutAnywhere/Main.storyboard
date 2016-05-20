@@ -314,7 +314,7 @@
                                 </constraints>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="181" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="224" y="175" width="132" height="58"/>
+                                <rect key="frame" x="224" y="180" width="132" height="45"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Profile">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -324,8 +324,8 @@
                                     <action selector="ProfileButton_TouchUpInside:" destination="19" id="2227" eventType="touchUpInside"/>
                                 </connections>
                                 <constraints>
-                                    <constraint id="3611" firstAttribute="width" constant="132"/>
-                                    <constraint id="3612" firstAttribute="height" constant="58"/>
+                                    <constraint id="3696" firstAttribute="width" constant="132"/>
+                                    <constraint id="3697" firstAttribute="height" constant="45"/>
                                 </constraints>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="2879" translatesAutoresizingMaskIntoConstraints="NO" image="BackgroundImages/WorkoutAnywherebyRundleFit.png">
@@ -335,7 +335,7 @@
                                     <constraint id="3294" firstItem="2879" firstAttribute="height" constant="132"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="3615" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" text="Welcome," textAlignment="right">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="3615" translatesAutoresizingMaskIntoConstraints="NO" text="Welcome," textAlignment="right" fixedFrame="YES">
                                 <rect key="frame" x="280" y="151" width="72" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -355,10 +355,9 @@
                             <constraint id="3362" firstItem="20" firstAttribute="centerX" secondItem="177" secondAttribute="centerX" constant="59"/>
                             <constraint id="3366" firstItem="178" firstAttribute="centerX" secondItem="20" secondAttribute="centerX" constant="59"/>
                             <constraint id="3367" firstItem="180" firstAttribute="centerX" secondItem="20" secondAttribute="centerX" constant="59"/>
-                            <constraint id="3609" firstItem="20" firstAttribute="trailing" secondItem="181" secondAttribute="trailing" constant="58"/>
-                            <constraint id="3610" firstItem="181" firstAttribute="top" secondItem="20" secondAttribute="top" constant="175"/>
-                            <constraint id="3613" firstItem="20" firstAttribute="trailing" secondItem="181" secondAttribute="trailing" constant="58"/>
-                            <constraint id="3614" firstItem="178" firstAttribute="top" secondItem="181" secondAttribute="bottom" constant="23"/>
+                            <constraint id="3694" firstItem="20" firstAttribute="trailing" secondItem="181" secondAttribute="trailing" constant="58"/>
+                            <constraint id="3695" firstItem="181" firstAttribute="top" secondItem="20" secondAttribute="top" constant="180"/>
+                            <constraint id="3698" firstItem="20" firstAttribute="trailing" secondItem="181" secondAttribute="trailing" constant="58"/>
                         </constraints>
                     </view>
                     <connections>
@@ -548,7 +547,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="UIButton1438_TouchUpInside:" destination="1247" id="2818" eventType="touchUpInside"/>
+                                    <action selector="SaveButton_TouchUpInside:" destination="1247" id="3712" eventType="touchUpInside"/>
                                 </connections>
                                 <constraints>
                                     <constraint id="3482" firstAttribute="width" constant="46"/>
@@ -610,6 +609,7 @@
                         <outlet property="SampleWorkoutAmount" destination="1445" id="name-outlet-1445"/>
                         <outlet property="StepLabel" destination="2798" id="name-outlet-2798"/>
                         <outlet property="WorkoutAmount" destination="1444" id="name-outlet-1444"/>
+                        <outlet property="SaveButton" destination="1438" id="name-outlet-1438"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1249" userLabel="First Responder" sceneMemberID="firstResponder"/>
