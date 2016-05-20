@@ -256,9 +256,9 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="177" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="103" y="255" width="90" height="90"/>
-                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.54509803921568623"/>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="177" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="104" y="255" width="88" height="90"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.34901960784313724"/>
                                 <state key="normal" backgroundImage="MainMenuImages/WorkoutButtonImage.png">
                                     <color key="titleShadowColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
                                 </state>
@@ -266,13 +266,12 @@
                                     <action selector="WorkoutsButton_TouchUpInside:" destination="19" id="2205" eventType="touchUpInside"/>
                                 </connections>
                                 <constraints>
-                                    <constraint id="3284" firstItem="177" firstAttribute="width" constant="90"/>
                                     <constraint id="3285" firstItem="177" firstAttribute="height" constant="90"/>
                                 </constraints>
                             </button>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="178" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="221" y="256" width="90" height="90"/>
-                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.5490196078431373"/>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="178" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="222" y="255" width="88" height="90"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.34901960784313724"/>
                                 <state key="normal" backgroundImage="MainMenuImages/NutritionButtonImage.png">
                                     <color key="titleShadowColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
                                 </state>
@@ -280,13 +279,12 @@
                                     <action selector="NutritionButton_TouchUpInside:" destination="19" id="2218" eventType="touchUpInside"/>
                                 </connections>
                                 <constraints>
-                                    <constraint id="3286" firstItem="178" firstAttribute="width" constant="90"/>
                                     <constraint id="3287" firstItem="178" firstAttribute="height" constant="90"/>
                                 </constraints>
                             </button>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="179" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="102.5" y="364" width="90" height="90"/>
-                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.5490196078431373"/>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="179" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="102" y="364" width="90" height="90"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.34901960784313724"/>
                                 <state key="normal" backgroundImage="MainMenuImages/CalendarButtonImage.png">
                                     <color key="titleShadowColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
                                 </state>
@@ -299,8 +297,8 @@
                                 </constraints>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="180" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="220.5" y="364" width="91" height="88"/>
-                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.5490196078431373"/>
+                                <rect key="frame" x="221" y="363" width="90" height="90"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.34901960784313724"/>
                                 <state key="normal" backgroundImage="MainMenuImages/StatsButtonImage.png">
                                     <color key="titleShadowColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
                                 </state>
@@ -308,8 +306,7 @@
                                     <action selector="CommunityButton_TouchUpInside:" destination="19" id="2220" eventType="touchUpInside"/>
                                 </connections>
                                 <constraints>
-                                    <constraint id="3288" firstItem="180" firstAttribute="height" constant="88"/>
-                                    <constraint id="3289" firstItem="180" firstAttribute="width" constant="91"/>
+                                    <constraint id="3288" firstItem="180" firstAttribute="height" constant="90"/>
                                 </constraints>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="181" translatesAutoresizingMaskIntoConstraints="NO">
@@ -334,13 +331,11 @@
                                     <constraint id="3294" firstItem="2879" firstAttribute="height" constant="132"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3381" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="102" y="479" width="90" height="90"/>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3381" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="103" y="473" width="90" height="90"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.34509803921568627"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.46274509803921571" green="0.47450980392156861" blue="0.47058823529411764" alpha="1"/>
-                                <state key="normal" image="MainMenuImages/FavoriteButtonImage.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <state key="normal" image="MainMenuImages/FavoriteButtonImage.png"/>
                                 <connections>
                                     <action selector="FavoriteButton_TouchUpInside:" destination="19" id="3418" eventType="touchUpInside"/>
                                 </connections>
@@ -354,18 +349,29 @@
                             <constraint id="3330" firstItem="2879" firstAttribute="top" secondItem="16" secondAttribute="bottom" constant="20"/>
                             <constraint id="3331" firstItem="2879" firstAttribute="centerX" secondItem="20" secondAttribute="centerX"/>
                             <constraint id="3332" firstItem="177" firstAttribute="top" secondItem="2879" secondAttribute="bottom" constant="83"/>
-                            <constraint id="3333" firstItem="178" firstAttribute="top" secondItem="2879" secondAttribute="bottom" constant="84"/>
-                            <constraint id="3337" firstItem="180" firstAttribute="leading" secondItem="179" secondAttribute="trailing" constant="28"/>
-                            <constraint id="3338" firstItem="178" firstAttribute="leading" secondItem="177" secondAttribute="trailing" constant="28"/>
-                            <constraint id="3339" firstItem="180" firstAttribute="top" secondItem="178" secondAttribute="bottom" constant="18"/>
-                            <constraint id="3340" firstItem="179" firstAttribute="top" secondItem="177" secondAttribute="bottom" constant="19"/>
+                            <constraint id="3333" firstItem="178" firstAttribute="top" secondItem="2879" secondAttribute="bottom" constant="83"/>
                             <constraint id="3341" firstItem="20" firstAttribute="trailing" secondItem="181" secondAttribute="trailing" constant="58"/>
                             <constraint id="3342" firstItem="181" firstAttribute="top" secondItem="2879" secondAttribute="centerY" constant="34"/>
-                            <constraint id="3362" firstItem="20" firstAttribute="centerX" secondItem="177" secondAttribute="centerX" constant="59"/>
-                            <constraint id="3366" firstItem="178" firstAttribute="centerX" secondItem="20" secondAttribute="centerX" constant="59"/>
-                            <constraint id="3367" firstItem="180" firstAttribute="centerX" secondItem="20" secondAttribute="centerX" constant="59"/>
-                            <constraint id="3498" firstItem="3381" firstAttribute="leading" secondItem="20" secondAttribute="leading" constant="102"/>
-                            <constraint id="3499" firstItem="20" firstAttribute="bottom" secondItem="3381" secondAttribute="bottom" constant="167"/>
+                            <constraint id="3602" firstItem="179" firstAttribute="leading" secondItem="3381" secondAttribute="leading"/>
+                            <constraint id="3604" firstItem="179" firstAttribute="leading" secondItem="177" secondAttribute="leading"/>
+                            <constraint id="3605" firstItem="3381" firstAttribute="leading" secondItem="177" secondAttribute="leading"/>
+                            <constraint id="3606" firstItem="178" firstAttribute="trailing" secondItem="180" secondAttribute="trailing"/>
+                            <constraint id="3631" firstItem="179" firstAttribute="width" secondItem="3381" secondAttribute="width"/>
+                            <constraint id="3632" firstItem="177" firstAttribute="width" secondItem="3381" secondAttribute="width"/>
+                            <constraint id="3633" firstItem="178" firstAttribute="width" secondItem="3381" secondAttribute="width"/>
+                            <constraint id="3634" firstItem="180" firstAttribute="width" secondItem="3381" secondAttribute="width"/>
+                            <constraint id="3635" firstItem="179" firstAttribute="height" secondItem="3381" secondAttribute="height"/>
+                            <constraint id="3636" firstItem="177" firstAttribute="height" secondItem="3381" secondAttribute="height"/>
+                            <constraint id="3637" firstItem="178" firstAttribute="height" secondItem="3381" secondAttribute="height"/>
+                            <constraint id="3638" firstItem="180" firstAttribute="height" secondItem="3381" secondAttribute="height"/>
+                            <constraint id="3639" firstItem="178" firstAttribute="centerX" secondItem="20" secondAttribute="centerX" constant="59"/>
+                            <constraint id="3640" firstItem="20" firstAttribute="centerX" secondItem="177" secondAttribute="centerX" constant="59"/>
+                            <constraint id="3641" firstItem="20" firstAttribute="centerX" secondItem="179" secondAttribute="centerX" constant="59"/>
+                            <constraint id="3642" firstItem="20" firstAttribute="centerX" secondItem="3381" secondAttribute="centerX" constant="59"/>
+                            <constraint id="3643" firstItem="180" firstAttribute="centerX" secondItem="20" secondAttribute="centerX" constant="59"/>
+                            <constraint id="3648" firstItem="179" firstAttribute="top" secondItem="177" secondAttribute="bottom" constant="19"/>
+                            <constraint id="3649" firstItem="180" firstAttribute="top" secondItem="178" secondAttribute="bottom" constant="18"/>
+                            <constraint id="3650" firstItem="3381" firstAttribute="top" secondItem="179" secondAttribute="bottom" constant="19"/>
                         </constraints>
                     </view>
                     <connections>
