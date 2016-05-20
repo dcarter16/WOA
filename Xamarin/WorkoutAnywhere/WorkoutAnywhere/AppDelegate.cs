@@ -37,6 +37,10 @@ namespace WorkoutAnywhere
 		private void ClearSavedDir(){
 			string path = Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments);
 			if (Directory.Exists (path + "/SavedWorkouts")) {
+				var directories = Directory.EnumerateFiles (path + "/SavedWorkouts");
+				foreach (var d in directories) {
+					File.Delete (d);
+				}
 				Directory.Delete (path + "/SavedWorkouts");
 			}
 		}
