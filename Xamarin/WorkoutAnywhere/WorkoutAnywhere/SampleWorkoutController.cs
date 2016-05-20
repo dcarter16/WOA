@@ -13,20 +13,12 @@ namespace WorkoutAnywhere
 	partial class SampleWorkoutController : UIViewController
 	{
 		private string pageURL;
-<<<<<<< HEAD
-		private static WebClient client = new WebClient();
-		private static Stream stream;
-		private StreamReader reader;
-		private static string line;
-		private static List<Tuple<string, string>> pageDetails = new List<Tuple<string, string>> ();
-=======
 		public int step = 1;
 		private WebClient client = new WebClient();
 		private Stream stream;
 		private StreamReader reader;
 		private string line;
 		private List<Tuple<string, string>> pageDetails = new List<Tuple<string, string>> ();
->>>>>>> master
 
 		public SampleWorkoutController (IntPtr handle) : base (handle)
 		{
@@ -37,6 +29,27 @@ namespace WorkoutAnywhere
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
+			ReadFile ();
+
+		}
+		private void ReadFile(){
+			string[] temp = pageURL.Split ('/');
+			if (temp [0] == "http:")
+				ReadFromServer ();
+			else 
+				ReadFromLocal ();
+
+		}
+		private void ReadFromLocal(){
+			string filePath = Path.Combine (Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "SavedWorkouts/" + pageURL);
+			string[] temp = System.IO.File.ReadAllLines (filePath);
+			foreach (string s in temp) {
+				string[] words = s.Split ('~');
+				pageDetails.Add (new Tuple<string, string> (words [0], words [1]));
+			}
+			PopulatePage ();
+		}
+		private void ReadFromServer(){
 			stream = client.OpenRead (pageURL);
 			reader = new StreamReader (stream);
 			while ((line = reader.ReadLine()) != null)
@@ -47,7 +60,9 @@ namespace WorkoutAnywhere
 					pageDetails.Add(new Tuple<string, string>(words[0], words[1]));
 				}
 			}
-
+			PopulatePage ();
+		}
+		private void PopulatePage(){
 			foreach (Tuple<string, string> page in pageDetails) {
 				switch (page.Item1.ToString()) {
 				case "title":
@@ -75,7 +90,6 @@ namespace WorkoutAnywhere
 					break;
 				}
 			}
-
 		}
 
 		partial void SampleSliderChanged (UISlider sender)
@@ -85,10 +99,8 @@ namespace WorkoutAnywhere
 
 		partial void UIButton1438_TouchUpInside (UIButton sender)
 		{
-<<<<<<< HEAD
-			/*string title = null;
-=======
-			string title = findValuebyKey("title");
+			string[] temp = pageURL.Split('/');
+			string title = temp[temp.Length -1];
 
 			var documents = Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments);
 			if (!Directory.Exists(documents + "/SavedWorkouts")) {
@@ -96,36 +108,18 @@ namespace WorkoutAnywhere
 				Directory.CreateDirectory(directoryname);
 			}
 
-			client.DownloadFile(pageURL, documents + "/SavedWorkouts/" + title + ".txt");
+			client.DownloadFile(pageURL, documents + "/SavedWorkouts/" + title );
 		}
 
 		private string findValuebyKey(string key) {
 			string value = null;
->>>>>>> master
 			foreach(Tuple<string, string> page in pageDetails) {
 				if (page.Item1.ToString() == key) {
 					value = page.Item2.ToString();
 					break;
 				}
-<<<<<<< HEAD
-			}*/
-
-			// DOESN'T WORK
-			//client.DownloadFile(pageURL, @"SavedWorkouts\test.txt");
-			client.DownloadStringCompleted += (s, e) => {
-				var text = e.Result; // get the downloaded text
-				string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-				string localFilename = String.Format("\"{0}\"", pageURL);
-				string localPath = Path.Combine (documentsPath, localFilename);
-				File.WriteAllText (localPath, text); // writes to local storage
-			};
-			var url = new Uri(pageURL);
-			client.Encoding = Encoding.UTF8;
-			client.DownloadStringAsync(url);
-=======
 			}
 			return value;
->>>>>>> master
 		}
 	}
 }

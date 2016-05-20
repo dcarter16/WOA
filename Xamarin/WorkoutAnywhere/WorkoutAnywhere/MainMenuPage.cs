@@ -39,11 +39,6 @@ namespace WorkoutAnywhere
 			CalendarPage calendarController = this.Storyboard.InstantiateViewController("CalendarPage") as CalendarPage;
 			this.NavigationController.PushViewController (calendarController, true);
 		}
-		partial void CommunityButton_TouchUpInside (UIButton sender)
-		{
-			SampleWorkoutController communityController = this.Storyboard.InstantiateViewController("SampleWorkoutController") as SampleWorkoutController;
-			this.NavigationController.PushViewController (communityController, true);
-		}
 		partial void ProfileButton_TouchUpInside (UIButton sender)
 		{
 			ProfilePage profileController = this.Storyboard.InstantiateViewController("ProfilePage") as ProfilePage;
@@ -54,7 +49,7 @@ namespace WorkoutAnywhere
 			this.NavigationController.PushViewController (workoutController, true);
 		}
 
-		partial void FavoriteButton_TouchUpInside (UIButton sender)
+		partial void FavoritesButton_TouchUpInside (UIButton sender)
 		{
 				FavoriteWorkoutsController favoriteWorkoutsController = this.Storyboard.InstantiateViewController ("FavoriteWorkoutsController") as FavoriteWorkoutsController;
 				this.NavigationController.PushViewController (favoriteWorkoutsController, true);

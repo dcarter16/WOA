@@ -13,13 +13,13 @@ namespace WorkoutAnywhere
         private static MultiMap<string> labelMappings;			//label -> List<string> urls
         private static Dictionary<string, string> urlMappings;	//url -> title
         private static string filePath = "http://workoutanywhere.net/MobileData/mappings.txt";
-
+		private static string basePath = "http://workoutanywhere.net/MobileData/Workouts/";
 		public static void Initialize(){
 			labelMappings = new MultiMap<string>();
 			urlMappings = new Dictionary<string, string>();
 			ReadFileFromServer();
 		}
-
+		public static string GetTitle(string url){ return urlMappings[basePath+ url];}
 		private static void ParseLine(string s)
         {
             string[] words = s.Split('~');

@@ -16,13 +16,13 @@ namespace WorkoutAnywhere
 	{
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UILabel TestLabel { get; set; }
+		UITableView FavoriteMenuTable { get; set; }
 
 		void ReleaseDesignerOutlets ()
 		{
-			if (TestLabel != null) {
-				TestLabel.Dispose ();
-				TestLabel = null;
+			if (FavoriteMenuTable != null) {
+				FavoriteMenuTable.Dispose ();
+				FavoriteMenuTable = null;
 			}
 		}
 	}
